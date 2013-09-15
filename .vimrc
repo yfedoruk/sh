@@ -8,6 +8,11 @@ source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
 " set backupdir=~/tmp/vim
 "++++++++++++++++++++++++++++"
 
+" -------------- colorscheme ---------------- "
+colorscheme askapachecode
+"colorscheme default1
+
+
 " ***************  mapping *************** "
 map <C-t> :tabnew<cr>
 map <C-w> :tabclose<cr>
@@ -69,10 +74,6 @@ set list
 
 "  FOLDING INDENT OPTIONS
     set shiftwidth=4
-
-" -------------- colorscheme ---------------- "
-colorscheme askapachecode
-colorscheme default1
 
 set cursorline                                                          "select current line "
 hi cursorline term=bold cterm=bold guibg=#E5E5E5                        "cur. line color"
