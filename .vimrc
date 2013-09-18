@@ -27,11 +27,15 @@ map <M-8> 8gt
 map <M-9> 9gt
 map <M-0> 1gT
 
+map <LEADER>w :w<CR>
 :map <Home> ^
 :imap <Home> <Esc>^i
 
  " :map <End> A
- 
+
+" set VISUAL mode instead of SELECT on shift-arrows
+nmap <S-Up> V
+nmap <S-Down> V
 " ******************************************** "
 " tabs
     " Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
