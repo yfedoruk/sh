@@ -9,9 +9,9 @@ source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
 "++++++++++++++++++++++++++++"
 
 " -------------- colorscheme ---------------- "
-colorscheme askapachecode
-"colorscheme default1
-
+"colorscheme askapachecode
+colorscheme default1
+"hi Normal guifg=white guibg=black
 
 " ***************  mapping *************** "
 map <C-t> :tabnew<cr>
