@@ -10,7 +10,8 @@ source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
 
 " -------------- colorscheme ---------------- "
 "colorscheme askapachecode
-colorscheme default1
+"colorscheme default1
+colorscheme ron
 "hi Normal guifg=white guibg=black
 
 " ***************  mapping *************** "
@@ -26,6 +27,16 @@ map <M-7> 7gt
 map <M-8> 8gt
 map <M-9> 9gt
 map <M-0> 1gT
+
+nmap <leader>tn :tabnew<cr>
+nmap <leader>tc :tabclose<cr>
+nmap <leader>1 1gt
+nmap <leader>2 2gt
+nmap <leader>3 3gt
+nmap <leader>4 4gt
+nmap <leader>5 5gt
+
+
 
 map <LEADER>w :w<CR>
 :map <Home> ^
