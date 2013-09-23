@@ -39,6 +39,7 @@ nmap <leader>5 5gt
 
 
 map <LEADER>w :w<CR>
+map <LEADER>q :q<CR>
 :map <Home> ^
 :imap <Home> <Esc>^i
 
@@ -47,6 +48,9 @@ map <LEADER>w :w<CR>
 " set VISUAL mode instead of SELECT on shift-arrows
 nmap <S-Up> V
 nmap <S-Down> V
+"redo
+nnoremap r <C-R>
+" vnoremap <S-End> $
 " ******************************************** "
 " tabs
     " Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
@@ -138,6 +142,7 @@ set nocompatible               " be iMproved
  
  Bundle 'git@github.com:xolox/vim-misc.git'
  Bundle 'git@github.com:xolox/vim-session.git'
+ Bundle 'git@github.com:jiangmiao/auto-pairs.git'
  "Bundle 'matze/vim-move'
  Bundle 't9md/vim-textmanip'
  filetype plugin indent on     " required!
