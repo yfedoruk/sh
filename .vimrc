@@ -50,6 +50,7 @@ nmap <S-Up> V
 nmap <S-Down> V
 "redo
 nnoremap r <C-R>
+noremap <M-q> <ESC>
 " vnoremap <S-End> $
 " ******************************************** "
 " tabs
