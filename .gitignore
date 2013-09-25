@@ -1,5 +1,11 @@
-*
-!.gitignore
-!.vimrc
-!./.config/mc/ini
-!./.config/mc/mc.ext
+/*
+!/.gitignore
+!/.vimrc
+
+#!.bashrc
+!/.config/
+/.config/*
+!/.config/mc/
+/.config/mc/*
+!/.config/mc/ini
+!/.config/mc/mc.ext
