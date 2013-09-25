@@ -1,3 +1,5 @@
 *
 !.gitignore
 !.vimrc
+!./.config/mc/ini
+!./.config/mc/mc.ext
