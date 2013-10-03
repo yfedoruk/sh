@@ -40,6 +40,7 @@ nmap <leader>5 5gt
 
 map <LEADER>w :w<CR>
 map <LEADER>q :q<CR>
+map <LEADER>wq :wq<CR>
 :map <Home> ^
 :imap <Home> <Esc>^i
 
@@ -48,10 +49,12 @@ map <LEADER>q :q<CR>
 " set VISUAL mode instead of SELECT on shift-arrows
 nmap <S-Up> V
 nmap <S-Down> V
+
 "redo
 nnoremap r <C-R>
 noremap <M-q> <ESC>
 " vnoremap <S-End> $
+
 " ******************************************** "
 " tabs
     " Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
@@ -181,6 +184,15 @@ let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
     set guicursor=n-v-c:ver25-Cursor
     "set guicursor+=i:block-Cursor
     "set guicursor=n-v-c:blinkon0-block-Cursor
+	let &t_EI = "\<Esc>]12;red\x7"
+	autocmd InsertEnter * set cul
+	autocmd InsertLeave * set nocul
+
+if has("autocmd")
+	au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+	au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+	au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+endif
 
 " set backspace=2
 " set backspace=indent,eol,start
