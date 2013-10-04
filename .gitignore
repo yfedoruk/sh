@@ -2,7 +2,7 @@
 !/.gitignore
 !/.vimrc
 
-#!.bashrc
+!/.bash_aliases
 !/.config/
 /.config/*
 !/.config/mc/
