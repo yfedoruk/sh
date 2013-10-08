@@ -42,6 +42,7 @@ map <LEADER>w :w<CR>
 map <LEADER>q :q<CR>
 map <LEADER>wq :wq<CR>
 :map <Home> ^
+map <End> $
 :imap <Home> <Esc>^i
 
  " :map <End> A
