@@ -244,3 +244,16 @@ set scrolljump=5
 " echo $TERM -- term env variable
 set nu
 highlight LineNr guifg=#050505 ctermfg=grey     " line number color
+
+" Disable annoying auto line break
+fu! local:disableBr()
+  set wrap
+  set linebreak
+  set nolist  " list disables linebreak
+  set textwidth=0
+  set wrapmargin=0
+  set fo-=t
+endfu
+
+" Disable line breaks for all file types
+:au BufNewFile,BufRead *.* call local:disableBr()
