@@ -10,6 +10,12 @@
 !/.config/emacs/
 !.emacs
 
+!/.gconf/
+/.gconf/*
+!/.gconf/apps/
+/.gconf/apps/*
+!/.gconf/apps/gnome-terminal/
+
 !/.config/geany/
 /.config/geany/*
 !/.config/geany/keybindings.conf
