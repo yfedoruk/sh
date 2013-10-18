@@ -7,6 +7,9 @@
 !/.config/
 /.config/*
 
+!/.config/emacs/
+!.emacs
+
 !/.config/geany/
 /.config/geany/*
 !/.config/geany/keybindings.conf
