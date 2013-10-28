@@ -1,3 +1,13 @@
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
+
+;; ********************** plugins *****************
+(require 'php-mode)
+(elscreen-start)
+
 ;;cedet (instead of semantic)
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
@@ -9,18 +19,12 @@
 (require 'ecb)
 (add-to-list 'load-path "~/.config/emacs")
 
-
-
-;; php-mode 
-(require 'php-mode)
-
 ;; Enable whitespace visible
 (require 'whitespace)
     (autoload 'whitespace-mode           "whitespace"
       "Toggle whitespace visualization."        t)
     (autoload 'whitespace-toggle-options "whitespace"
       "Toggle local `whitespace-mode' options." t)
-
 
 ;; php-mode 
 (defun duplicate-line()
@@ -36,28 +40,33 @@
 
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 ;; Remove startup message
-(setq inhibit-startup-message t)
+	(setq inhibit-startup-message t)
 
 ;; Show the column number
-(column-number-mode t)
+	(column-number-mode t)
 
 ;; parenthesis highlight
-(show-paren-mode t)
+	(show-paren-mode t)
 
 ;; save session
-(desktop-save-mode t)
+	(desktop-save-mode t)
 
 ;; yes/no
-(fset 'yes-or-no-p 'y-or-n-p)
+	(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; scrolling 1-string
-(setq scroll-step 1)
+	(setq scroll-step 1)
 
 ;; highlight current string
-(global-hl-line-mode 1)
+	(global-hl-line-mode 1)
+	(set-face-background 'hl-line "#CCCCCC")
+
+;; no-wrap off
+	;;(toggle-truncate-lines)
+	(global-visual-line-mode t)
 
 ;; utf-8
-(setq file-name-coding-system 'utf-8)
+	(setq file-name-coding-system 'utf-8)
 
 
 ;;colors
@@ -88,3 +97,16 @@
 (global-set-key (kbd "C-s") 'save-buffer)  ;; (global-set-key (kbd "C-S-s") 'another-command)  //C-S-s (Ctrl+Shift+s)
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+ 
