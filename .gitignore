@@ -15,7 +15,7 @@
 !/.gconf/apps/
 /.gconf/apps/*
 !/.gconf/apps/gnome-terminal/
-/.gconf/apps/gnome-terminal/Profiles/Default/%gconf.xml
+/.gconf/apps/gnome-terminal/profiles/Default/%gconf.xml
 
 
 !/.config/geany/
