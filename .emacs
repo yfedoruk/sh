@@ -5,8 +5,12 @@
   )
 
 ;; ********************** plugins *****************
-(require 'php-mode)
+;; (php-mode)
 (elscreen-start)
+(add-to-list 'load-path "~/.emacs.d/")
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(ac-config-default)
 
 ;;cedet (instead of semantic)
 ;;Configuration variables here:
@@ -40,33 +44,33 @@
 
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 ;; Remove startup message
-	(setq inhibit-startup-message t)
+    (setq inhibit-startup-message t)
 
 ;; Show the column number
-	(column-number-mode t)
+    (column-number-mode t)
 
 ;; parenthesis highlight
-	(show-paren-mode t)
+    (show-paren-mode t)
 
 ;; save session
-	(desktop-save-mode t)
+    (desktop-save-mode t)
 
 ;; yes/no
-	(fset 'yes-or-no-p 'y-or-n-p)
+    (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; scrolling 1-string
-	(setq scroll-step 1)
+    (setq scroll-step 1)
 
 ;; highlight current string
-	(global-hl-line-mode 1)
-	(set-face-background 'hl-line "#CCCCCC")
+    (global-hl-line-mode 1)
+    (set-face-background 'hl-line "#CCCCCC")
 
 ;; no-wrap off
-	;;(toggle-truncate-lines)
-	(global-visual-line-mode t)
+    ;;(toggle-truncate-lines)
+    (global-visual-line-mode t)
 
 ;; utf-8
-	(setq file-name-coding-system 'utf-8)
+    (setq file-name-coding-system 'utf-8)
 
 
 ;;colors
