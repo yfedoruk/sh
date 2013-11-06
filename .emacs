@@ -4,24 +4,40 @@
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
   )
 
-;; ********************** plugins *****************
-;; (php-mode)
-(elscreen-start)
 (add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.config/emacs")
+;; (add-to-list 'load-path "/usr/local/share/emacs/ecb-new-cedet")
+
+
+;; ********************** plugins *****************
+(elscreen-start)
+(require 'php-mode)
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+
 (ac-config-default)
 
-;;cedet (instead of semantic)
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
-;; Load CEDET
-(load-file "/usr/local/share/emacs/cedet-1.1/common/cedet.el")
+
+;; CEDET (instead of semantic)
+;; (load-file "/usr/local/share/emacs/cedet-1.1/common/cedet.el")
+(load-file "~/.emacs.d/cedet/common/cedet.el")
+(global-ede-mode 1)
+(semantic-load-enable-code-helpers)
+(semantic-load-enable-gaudy-code-helpers)
+(semantic-load-enable-all-exuberent-ctags-support)
+(require 'wisent-php)
+(defun my-semantic-hook ()
+  (imenu-add-to-menubar "TAGS"))
+(add-hook 'semantic-init-hooks 'my-semantic-hook)
+;; END CEDET
+
+
 
 ;;code view
-(add-to-list 'load-path "/usr/local/share/emacs/ecb-new-cedet")
-(require 'ecb)
-(add-to-list 'load-path "~/.config/emacs")
+;; (require 'ecb)
+
 
 ;; Enable whitespace visible
 (require 'whitespace)
