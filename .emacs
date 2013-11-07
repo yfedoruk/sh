@@ -1,12 +1,20 @@
 (when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  )
+	(require 'package)
+	(add-to-list 'package-archives
+				 '("marmalade" . "http://marmalade-repo.org/packages/"))
+	(add-to-list 'package-archives
+				 '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+	;; Install a hook running post-init.el *after* initialization took place
+	(add-hook 'after-init-hook (lambda () (load "post-init.el")))
+		;; disable automatic loading of packages after init.el is done
+		(setq package-enable-at-startup nil)
+	(package-initialize)
+)
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
-;; (add-to-list 'load-path "/usr/local/share/emacs/ecb-new-cedet")
+(add-to-list 'load-path "/usr/local/share/emacs/ecb-new-cedet")
 
 
 ;; ********************** plugins *****************
@@ -21,8 +29,8 @@
 (setq semantic-load-turn-useful-things-on t)
 
 ;; CEDET (instead of semantic)
-;; (load-file "/usr/local/share/emacs/cedet-1.1/common/cedet.el")
-(load-file "~/.emacs.d/cedet/common/cedet.el")
+(load-file "/usr/local/share/emacs/cedet-1.1/common/cedet.el")
+;;(load-file "~/.emacs.d/cedet/common/cedet.el")
 (global-ede-mode 1)
 (semantic-load-enable-code-helpers)
 (semantic-load-enable-gaudy-code-helpers)
@@ -36,7 +44,7 @@
 
 
 ;;code view
-;; (require 'ecb)
+(require 'ecb)
 
 
 ;; Enable whitespace visible
