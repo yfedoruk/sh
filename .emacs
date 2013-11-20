@@ -1,50 +1,117 @@
 (when (>= emacs-major-version 24)
-	(require 'package)
-	(add-to-list 'package-archives
-				 '("marmalade" . "http://marmalade-repo.org/packages/"))
-	(add-to-list 'package-archives
-				 '("melpa" . "http://melpa.milkbox.net/packages/") t)
+    (require 'package)
+    (add-to-list 'package-archives
+                 '("marmalade" . "http://marmalade-repo.org/packages/"))
+    (add-to-list 'package-archives
+                 '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
-	;; Install a hook running post-init.el *after* initialization took place
-	(add-hook 'after-init-hook (lambda () (load "post-init.el")))
-		;; disable automatic loading of packages after init.el is done
-		(setq package-enable-at-startup nil)
-	(package-initialize)
+    ;; Install a hook running post-init.el *after* initialization took place
+    (add-hook 'after-init-hook (lambda () (load "post-init.el")))
+        ;; disable automatic loading of packages after init.el is done
+        (setq package-enable-at-startup nil)
+    (package-initialize)
 )
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
-(add-to-list 'load-path "/usr/local/share/emacs/ecb-new-cedet")
+
+;*********** CEDET ********
+;; Load CEDET.
+;; See cedet/common/cedet.info for configuration details.
+;; IMPORTANT: Tou must place this *before* any CEDET component (including
+;; EIEIO) gets activated by another package (Gnus, auth-source, ...).
+(load-file "/home/slava/.emacs.d/cedet/cedet-devel-load.el")
+
+;; Add further minor-modes to be enabled by semantic-mode.
+;; See doc-string of `semantic-default-submodes' for other things
+;; you can use here.
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
+
+;; Enable Semantic
+(semantic-mode 1)
+
+;; Enable EDE (Project Management) features
+(global-ede-mode 1)
+;; END CEDET
+
 
 
 ;; ********************** plugins *****************
 (elscreen-start)
 (require 'php-mode)
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 
-(ac-config-default)
+;; auto-complete
+    (require 'auto-complete-config)
+    (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    (define-key ac-completing-map "\t" 'ac-complete)
+    (define-key ac-completing-map "\r" nil)
+    (setq ac-ignore-case nil)
+
+;; yasnippet
+    (require 'yasnippet)
+    (yas-global-mode 1)
+      ;; Load the snippet files themselves
+    (yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")
+      ;; Let's have snippets in the auto-complete dropdown
+    (add-to-list 'ac-sources 'ac-source-yasnippet)
+
+;; JavaScript
+    (require 'js-comint)
+    (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
+    (add-hook 'js2-mode-hook '(lambda () 
+                    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
+                    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
+                    (local-set-key "\C-cb" 'js-send-buffer)
+                    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
+                    (local-set-key "\C-cl" 'js-load-file-and-go)
+                    ))
+
+
+
 
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
 
-;; CEDET (instead of semantic)
-(load-file "/usr/local/share/emacs/cedet-1.1/common/cedet.el")
-;;(load-file "~/.emacs.d/cedet/common/cedet.el")
-(global-ede-mode 1)
-(semantic-load-enable-code-helpers)
-(semantic-load-enable-gaudy-code-helpers)
-(semantic-load-enable-all-exuberent-ctags-support)
-(require 'wisent-php)
-(defun my-semantic-hook ()
-  (imenu-add-to-menubar "TAGS"))
-(add-hook 'semantic-init-hooks 'my-semantic-hook)
-;; END CEDET
-
-
 
 ;;code view
 (require 'ecb)
+  (require 'ecb-autoloads)
+  (setq ecb-auto-expand-tag-tree 'all)
+  
+  (global-set-key (kbd "C-x C-;") 'ecb-activate)
+  (global-set-key (kbd "C-x C-'") 'ecb-deactivate)
+  (global-set-key (kbd "C-.") 'ecb-goto-window-edit1)
+  (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
+  
+(custom-set-variables
+         ;; custom-set-variables was added by Custom.
+         ;; If you edit it by hand, you could mess it up, so be careful.
+         ;; Your init file should contain only one such instance.
+         ;; If there is more than one, they won't work right.
+ '(current-language-environment "utf-8")
+ '(ecb-layout-name "left9")
+ '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.15028901734104047 . 0.975)))))
+ '(ecb-options-version "2.40")
+ '(speedbar-use-imenu-flag t)
+ '(ecb-tip-of-the-day nil)
+ '(ecb-expand-methods-nodes "10")
+ '(ecb-tree-expand-symbol-before t)
+ '(ecb-display-image-icons-for-semantic-tags t)
+ '(ecb-use-speedbar-instead-native-tree-buffer nil)
+)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+ 
+
+
 
 
 ;; Enable whitespace visible
@@ -87,7 +154,7 @@
 
 ;; highlight current string
     (global-hl-line-mode 1)
-    (set-face-background 'hl-line "#CCCCCC")
+    (set-face-background 'hl-line "#E6E6E6")
 
 ;; no-wrap off
     ;;(toggle-truncate-lines)
@@ -122,20 +189,7 @@
 (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING))
 
 ;; Other global keybindings
-(global-set-key (kbd "C-s") 'save-buffer)  ;; (global-set-key (kbd "C-S-s") 'another-command)  //C-S-s (Ctrl+Shift+s)
+;(global-set-key (kbd "C-s") 'save-buffer)  ;; (global-set-key (kbd "C-S-s") 'another-command)  ;;C-S-s (Ctrl+Shift+s)
 
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40")
- '(speedbar-use-imenu-flag t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
- 
+
