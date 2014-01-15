@@ -22,3 +22,4 @@ PATH=$PATH:/home/slava/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #echo "keycode 14 = BackSpace" | loadkeys
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; 
+NODE_PATH=/usr/lib/node_modules
