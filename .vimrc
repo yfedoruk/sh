@@ -44,7 +44,7 @@ map <LEADER>wq :wq<CR>
 :map <Home> ^
 map <End> $
 :imap <Home> <Esc>^i
-
+imap jk <Esc>
  " :map <End> A
 
 " set VISUAL mode instead of SELECT on shift-arrows

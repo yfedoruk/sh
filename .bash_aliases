@@ -3,6 +3,12 @@ alias ge='geany'
 alias em='emacs'
 alias gvi='gvim'
 alias ..='cd ../'
+alias ll='ls -alFh'
+
+
+#scripts
+alias suspend="sh ~/.sh/suspend.sh"
+
 #Git aliases
 alias gittree='git diff-tree --no-commit-id --name-only -r'
 alias gs='git status'
