@@ -38,3 +38,8 @@
 !/.config/mc/mc.ext
 !/.config/gtk-3.0/
 /.config/gtk-3.0/bookmarks
+
+
+!/.vim/
+/.vim/*
+!/.vim/settings/
