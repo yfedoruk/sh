@@ -187,4 +187,4 @@ endfu
 " Disable line breaks for all file types
 :au BufNewFile,BufRead *.* call local:disableBr()
 
-:au VimEnter * :source ~/.vimrc
+:au SessionLoadPost * :source ~/.vimrc
