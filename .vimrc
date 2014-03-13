@@ -74,7 +74,7 @@ set nocompatible               " be iMproved
  Bundle 'L9'
  Bundle 'FuzzyFinder'
  " non github repos
- Bundle 'git://git.wincent.com/command-t.git'
+ " Bundle 'git://git.wincent.com/command-t.git'
  " git repos on your local machine (ie. when working on your own plugin)
 " Bundle 'file:///Users/gmarik/path/to/plugin'
  " ...
@@ -90,6 +90,7 @@ set nocompatible               " be iMproved
  Bundle 'git@github.com:jiangmiao/auto-pairs.git'
  "Bundle 'matze/vim-move'
  Bundle 't9md/vim-textmanip'
+ Bundle 'terryma/vim-multiple-cursors'
  filetype plugin indent on     " required!
 
 filetype on
@@ -188,3 +189,6 @@ endfu
 :au BufNewFile,BufRead *.* call local:disableBr()
 
 :au SessionLoadPost * :source ~/.vimrc
+
+
+let g:multi_cursor_next_key='<C-l>'
