@@ -7,4 +7,4 @@
   (next-line 1)
   (yank)
 )
-(global-set-key (kbd "C-M-kp-0") 'duplicate-line)
+(global-set-key (kbd "C-M-<kp-1>") 'duplicate-line)
