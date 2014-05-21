@@ -12,6 +12,9 @@
     (package-initialize)
 )
 
+;; M-x package-list-packages
+;; M-x list-packages
+
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
 
@@ -51,7 +54,7 @@
     (define-key ac-completing-map "\r" nil)
     (setq ac-ignore-case nil)
 
-;; yasnippet
+;; yasnippet ( http://github.com/capitaomorte/yasnippet )
     (require 'yasnippet)
     (yas-global-mode 1)
       ;; Load the snippet files themselves
