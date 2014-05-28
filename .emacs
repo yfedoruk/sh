@@ -70,6 +70,9 @@
                     (local-set-key "\C-cl" 'js-load-file-and-go)
                     ))
 
+;; undo-tree
+    (require 'undo-tree)
+    (global-undo-tree-mode 1)
 
 
 
