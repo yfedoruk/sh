@@ -115,9 +115,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
- 
 
 
+;; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
 
 ;; Enable whitespace visible
@@ -129,6 +129,9 @@
 
 ;; duplicate-line 
 (load-file "~/.config/emacs/duplicate-line.el")
+
+; smart-line-beginning
+(load-file "~/.config/emacs/beginning-of-line.el")
 
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 ;; Remove startup message
