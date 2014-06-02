@@ -133,6 +133,9 @@
 ; smart-line-beginning
 (load-file "~/.config/emacs/beginning-of-line.el")
 
+; indent-region
+(load-file "~/.config/emacs/unindent-region.el")
+
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 ;; Remove startup message
     (setq inhibit-startup-message t)
@@ -174,6 +177,10 @@
 ;; kill current line
 (global-set-key (kbd "C-d") 'kill-whole-line)
 
+
+ ;; JavaScript
+ (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
+ (smart-tabs-advice js2-indent-line js2-basic-offset)
 
 ;; CUA
 (load-file "~/.config/emacs/cua.el")
