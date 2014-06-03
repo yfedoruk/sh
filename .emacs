@@ -23,7 +23,7 @@
 ;; See cedet/common/cedet.info for configuration details.
 ;; IMPORTANT: Tou must place this *before* any CEDET component (including
 ;; EIEIO) gets activated by another package (Gnus, auth-source, ...).
-(load-file "/home/slava/.emacs.d/cedet/cedet-devel-load.el")
+;(load-file "/home/slava/.emacs.d/cedet/cedet-devel-load.el")           // bug
 
 ;; Add further minor-modes to be enabled by semantic-mode.
 ;; See doc-string of `semantic-default-submodes' for other things
@@ -33,7 +33,7 @@
 (add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
 
 ;; Enable Semantic
-(semantic-mode 1)
+;(semantic-mode 1)                                                      // bug
 
 ;; Enable EDE (Project Management) features
 (global-ede-mode 1)
@@ -58,7 +58,7 @@
     (require 'yasnippet)
     (yas-global-mode 1)
       ;; Load the snippet files themselves
-    (yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")
+    ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   // bug
       ;; Let's have snippets in the auto-complete dropdown
     (add-to-list 'ac-sources 'ac-source-yasnippet)
 
