@@ -84,6 +84,12 @@
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
 
+;; Color themes
+(require 'color-theme)
+    (color-theme-initialize)
+    (color-theme-dark-laptop)
+
+
 
 ;;code view
 (require 'ecb)
@@ -159,7 +165,7 @@
 
 ;; highlight current string
     (global-hl-line-mode 1)
-    (set-face-background 'hl-line "#E6E6E6")
+    ;(set-face-background 'hl-line "#E6E6E6")
 
 ;; no-wrap off
     ;;(toggle-truncate-lines)
