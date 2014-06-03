@@ -180,7 +180,7 @@
 ;;(set-foreground-color «#ffffff»)
 
 ;;cursor-line
-;; (bar-cursor-mode t) ;; deprecated ????
+(setq-default cursor-type 'bar)
 
 ;; kill current line
 (global-set-key (kbd "C-d") 'kill-whole-line)
