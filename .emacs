@@ -77,7 +77,9 @@
     (require 'undo-tree)
     (global-undo-tree-mode 1)
 
-
+;; smart-tabs-mode
+    (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
+    (smart-tabs-advice js2-indent-line js2-basic-offset)
 
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
@@ -178,9 +180,7 @@
 (global-set-key (kbd "C-d") 'kill-whole-line)
 
 
- ;; JavaScript
- (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
- (smart-tabs-advice js2-indent-line js2-basic-offset)
+
 
 ;; CUA
 (load-file "~/.config/emacs/cua.el")
