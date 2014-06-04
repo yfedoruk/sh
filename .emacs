@@ -43,6 +43,7 @@
 
 ;; ********************** plugins *****************
 (elscreen-start)
+    (global-set-key (kbd "C-t") 'elscreen-create)
 (require 'php-mode)
 
 ;; auto-complete
@@ -193,5 +194,3 @@
 
 ;; CUA
 (load-file "~/.config/emacs/cua.el")
-
-
