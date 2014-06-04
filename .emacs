@@ -44,6 +44,9 @@
 ;; ********************** plugins *****************
 (elscreen-start)
     (global-set-key (kbd "C-t") 'elscreen-create)
+    (global-set-key (kbd "M-1") (lambda () (interactive) (elscreen-goto 0)))
+    (global-set-key (kbd "M-2") (lambda () (interactive) (elscreen-goto 1)))
+    (global-set-key (kbd "M-3") (lambda () (interactive) (elscreen-goto 2)))
 (require 'php-mode)
 
 ;; auto-complete
