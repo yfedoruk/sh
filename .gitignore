@@ -2,6 +2,7 @@
 !/.gitignore
 !/.vimrc
 !.xbindkeysrc
+!.Guardfile
 
 !/.bash_aliases
 !/.config/
