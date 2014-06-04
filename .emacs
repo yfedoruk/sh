@@ -89,7 +89,10 @@
     (color-theme-initialize)
     (color-theme-dark-laptop)
 
-
+;; move-text
+(require 'move-text)
+(global-set-key [C-up] 'move-text-up)
+(global-set-key [C-down] 'move-text-down)
 
 ;;code view
 (require 'ecb)
