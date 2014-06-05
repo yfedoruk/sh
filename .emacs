@@ -42,11 +42,11 @@
 
 
 ;; ********************** plugins *****************
-(elscreen-start)
-    (global-set-key (kbd "C-t") 'elscreen-create)
-    (global-set-key (kbd "M-1") (lambda () (interactive) (elscreen-goto 0)))
-    (global-set-key (kbd "M-2") (lambda () (interactive) (elscreen-goto 1)))
-    (global-set-key (kbd "M-3") (lambda () (interactive) (elscreen-goto 2)))
+;(elscreen-start)
+    ;(global-set-key (kbd "C-t") 'elscreen-create)
+    ;(global-set-key (kbd "M-1") (lambda () (interactive) (elscreen-goto 0)))
+    ;(global-set-key (kbd "M-2") (lambda () (interactive) (elscreen-goto 1)))
+    ;(global-set-key (kbd "M-3") (lambda () (interactive) (elscreen-goto 2)))
 (require 'php-mode)
 
 ;; auto-complete
@@ -109,21 +109,19 @@
   (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
   
 (custom-set-variables
-         ;; custom-set-variables was added by Custom.
-         ;; If you edit it by hand, you could mess it up, so be careful.
-         ;; Your init file should contain only one such instance.
-         ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(current-language-environment "utf-8")
+ '(ecb-display-image-icons-for-semantic-tags t)
+ '(ecb-expand-methods-nodes "10")
  '(ecb-layout-name "left9")
  '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.15028901734104047 . 0.975)))))
  '(ecb-options-version "2.40")
- '(speedbar-use-imenu-flag t)
  '(ecb-tip-of-the-day nil)
- '(ecb-expand-methods-nodes "10")
  '(ecb-tree-expand-symbol-before t)
- '(ecb-display-image-icons-for-semantic-tags t)
- '(ecb-use-speedbar-instead-native-tree-buffer nil)
-)
+ '(ecb-use-speedbar-instead-native-tree-buffer nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -151,6 +149,10 @@
 ; indent-region
 (load-file "~/.config/emacs/unindent-region.el")
 
+; session manager
+(load-file "~/.config/emacs/session.el")
+
+
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 ;; Remove startup message
     (setq inhibit-startup-message t)
@@ -162,7 +164,7 @@
     (show-paren-mode t)
 
 ;; save session
-    (desktop-save-mode t)
+    ;(desktop-save-mode t)
 
 ;; yes/no
     (fset 'yes-or-no-p 'y-or-n-p)
@@ -180,6 +182,11 @@
 
 ;; utf-8
     (setq file-name-coding-system 'utf-8)
+
+;; ido - interactively doing things
+(ido-mode 1)
+(ido-everywhere 1)
+(ido-mode 'buffer) 
 
 
 ;;colors
