@@ -1,5 +1,5 @@
 (defvar my-desktop-session-dir
-  (concat (getenv "HOME") "/eproects/")
+  (concat (getenv "HOME") "/Dropbox/work/eproects/")
   "*Directory to save desktop sessions in")
 
 (defvar my-desktop-session-name-hist nil
@@ -13,7 +13,7 @@
   (make-directory (concat my-desktop-session-dir name) t)
   (desktop-save (concat my-desktop-session-dir name) t))
 
-(defun my-desktop-read (&optional name)
+(defun my-desktop-load (&optional name)
   "Read desktop with a name."
   (interactive)
   (unless name
