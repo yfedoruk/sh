@@ -6,11 +6,11 @@
                  '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
     ;; Install a hook running post-init.el *after* initialization took place
-    (add-hook 'after-init-hook (lambda () (load "post-init.el")))
+    ;;(add-hook 'after-init-hook (lambda () (load "post-init.el")))
         ;; disable automatic loading of packages after init.el is done
         (setq package-enable-at-startup nil)
     (package-initialize)
-)
+)   ;;http://www.logilab.org/173886
 
 ;; M-x package-list-packages
 ;; M-x list-packages
@@ -80,6 +80,9 @@
 ;; undo-tree
     (require 'undo-tree)
     (global-undo-tree-mode 1)
+    (defalias 'redo 'undo-tree-redo)
+    (global-set-key (kbd "C-z") 'undo)
+    (global-set-key (kbd "C-S-z") 'redo)
 
 ;; smart-tabs-mode
     (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
@@ -154,17 +157,23 @@
 
 
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
-;; Remove startup message
-    (setq inhibit-startup-message t)
+(setq inhibit-startup-message t)    ; remove startup message
+(setq make-backup-files nil)        ; stop creating those backup~ files
+(setq auto-save-default nil)        ; stop creating those #autosave# files
+(defalias 'list-buffers 'ibuffer)   ; buffers tool
 
-;; Show the column number
-    (column-number-mode t)
+; keep a list of recently opened files
+    (recentf-mode 1)
+    (global-set-key (kbd "<f7>") 'recentf-open-files)
+
+;; Show the column number ( in bottom bar )
+    (column-number-mode 1)
+
+; display line numbers in margin
+    (global-linum-mode 1) 
 
 ;; parenthesis highlight
-    (show-paren-mode t)
-
-;; save session
-    ;(desktop-save-mode t)
+    (show-paren-mode 1)
 
 ;; yes/no
     (fset 'yes-or-no-p 'y-or-n-p)
@@ -184,14 +193,10 @@
     (setq file-name-coding-system 'utf-8)
 
 ;; ido - interactively doing things
-(ido-mode 1)
-(ido-everywhere 1)
-(ido-mode 'buffer) 
+    (ido-mode 1)
+    (ido-everywhere 1)
+    (ido-mode 'buffer) 
 
-
-;;colors
-;;(set-background-color «#333333»)
-;;(set-foreground-color «#ffffff»)
 
 ;;cursor-line
 (setq-default cursor-type 'bar)
@@ -200,6 +205,10 @@
 (global-set-key (kbd "C-d") 'kill-whole-line)
 
 
+; close brackets 
+    (electric-pair-mode 1)
+; make electric-pair-mode work on {} brackets
+    (setq electric-pair-pairs '(  (?\" . ?\")  (?\{ . ?\})  ) )
 
 
 ;; CUA
