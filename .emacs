@@ -101,6 +101,21 @@
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
 
+;; evil
+    ;(require 'evil)
+    ;(evil-mode 1)
+        ; esc quits
+    ;(define-key evil-normal-state-map [escape] 'keyboard-quit)
+    ;(define-key evil-visual-state-map [escape] 'keyboard-quit)
+    ;(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+    ;(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+    ;(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+    ;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+    ;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+
+
+
+
 ;;code view
 (require 'ecb)
   (require 'ecb-autoloads)
@@ -218,3 +233,11 @@
 
 ;; CUA
 (load-file "~/.config/emacs/cua.el")
+
+
+;;; global
+
+(global-set-key (kbd "M-a") 'mark-whole-buffer)
+(global-set-key (kbd "M-s") 'save-buffer)
+(global-set-key (kbd "M-w") 'quit-window)
+;(global-set-key (kbd "C-SPC") 'comment-or-uncomment-region-or-line)
