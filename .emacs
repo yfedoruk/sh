@@ -113,7 +113,9 @@
     ;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
     ;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 
-
+	; Map escape to cancel (like C-g)
+	(define-key isearch-mode-map [escape] 'isearch-abort)   ;; isearch
+	(global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
 
 
 ;;code view
@@ -241,3 +243,10 @@
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-w") 'quit-window)
 ;(global-set-key (kbd "C-SPC") 'comment-or-uncomment-region-or-line)
+
+(global-set-key (kbd "<f8>") 'switch-to-buffer)
+(global-set-key (kbd "C-x s") 'multi-occur)
+;(add-hook 'change-major-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-yellow)))
+;(add-hook 'change-major-mode-hook '(lambda () (highlight-regexp 'hi-yellow)))
+(global-hi-lock-mode 1)
+(setq hi-lock-file-patterns-policy #'(lambda (dummy) t))
