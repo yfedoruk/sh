@@ -244,7 +244,7 @@
 (global-set-key (kbd "M-w") 'quit-window)
 ;(global-set-key (kbd "C-SPC") 'comment-or-uncomment-region-or-line)
 
-(global-set-key (kbd "<f8>") 'switch-to-buffer)
+(global-set-key (kbd "H-/") 'switch-to-buffer)
 (global-set-key (kbd "C-x s") 'multi-occur)
 ;(add-hook 'change-major-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-yellow)))
 ;(add-hook 'change-major-mode-hook '(lambda () (highlight-regexp 'hi-yellow)))
