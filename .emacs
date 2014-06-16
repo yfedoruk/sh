@@ -85,8 +85,8 @@
     (global-set-key (kbd "C-S-z") 'redo)
 
 ;; smart-tabs-mode
-    (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
-    (smart-tabs-advice js2-indent-line js2-basic-offset)
+    ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
+    ;(smart-tabs-advice js2-indent-line js2-basic-offset)
 
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
@@ -127,6 +127,7 @@
   (global-set-key (kbd "C-x C-'") 'ecb-deactivate)
   (global-set-key (kbd "C-.") 'ecb-goto-window-edit1)
   (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
+  
   
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -232,6 +233,21 @@
 ; make electric-pair-mode work on {} brackets
     (setq electric-pair-pairs '(  (?\" . ?\")  (?\{ . ?\})  ) )
 
+;; make whitespace-mode use just basic coloring
+(global-whitespace-mode t)
+(setq whitespace-style (quote (spaces tabs newline space-mark tab-mark newline-mark)))
+
+(custom-set-variables
+ '(whitespace-display-mappings
+   '((space-mark 32 [183]
+      [46])
+     (space-mark 160 [164]
+      [95])
+     ;; (newline-mark 10 [36 10])
+     (tab-mark 9 [8594 9]
+      [92 9]))))
+
+;; tabs
 
 ;; CUA
 (load-file "~/.config/emacs/cua.el")
@@ -242,9 +258,12 @@
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "M-s") 'save-buffer)
 (global-set-key (kbd "M-w") 'quit-window)
+(global-set-key (kbd "RET") 'newline-and-indent)
 ;(global-set-key (kbd "C-SPC") 'comment-or-uncomment-region-or-line)
 
 (global-set-key (kbd "H-/") 'switch-to-buffer)
+(global-set-key (kbd "s-/") 'switch-to-buffer)
+(global-set-key (kbd "M-z") 'switch-to-buffer)
 (global-set-key (kbd "C-x s") 'multi-occur)
 ;(add-hook 'change-major-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-yellow)))
 ;(add-hook 'change-major-mode-hook '(lambda () (highlight-regexp 'hi-yellow)))
