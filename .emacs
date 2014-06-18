@@ -48,7 +48,11 @@
     ;(global-set-key (kbd "M-2") (lambda () (interactive) (elscreen-goto 1)))
     ;(global-set-key (kbd "M-3") (lambda () (interactive) (elscreen-goto 2)))
 (require 'php-mode)
+;(require 'php+-mode)
 
+(load-file "~/.config/emacs/php-electric.el")
+(require 'php-electric)
+(php-electric-mode 1)
 ;; auto-complete
     (require 'auto-complete-config)
     (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
@@ -93,8 +97,12 @@
 
 ;; Color themes
 (require 'color-theme)
-    (color-theme-initialize)
-    (color-theme-dark-laptop)
+    ;(color-theme-initialize)
+    ;(color-theme-dark-laptop)
+	;(load-file "~/.config/emacs/elegant-theme.el")
+	;(color-theme-pomgranate-explosion)
+	(color-theme-solarized-dark)
+
 
 ;; move-text
 (require 'move-text)
@@ -176,6 +184,10 @@
 (load-file "~/.config/emacs/session.el")
 
 
+(load-file "~/.config/emacs/comment.el")
+;(global-set-key (kbd "C-q") 'comment-or-uncomment-line-or-region)
+(global-set-key [remap comment-dwim] 'comment-or-uncomment-region-or-line)
+
 ;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 (setq inhibit-startup-message t)    ; remove startup message
 (setq make-backup-files nil)        ; stop creating those backup~ files
@@ -211,6 +223,10 @@
 
 ;; utf-8
     (setq file-name-coding-system 'utf-8)
+
+; save history in mini-buffer
+(savehist-mode 1)
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 
 ;; ido - interactively doing things
     (ido-mode 1)
