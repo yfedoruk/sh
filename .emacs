@@ -92,9 +92,6 @@
     ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
     ;(smart-tabs-advice js2-indent-line js2-basic-offset)
 
-; tabbar
-(load-file "~/.config/emacs/tabbar.el")
-
 ;;Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
 
@@ -290,3 +287,7 @@
 ;(add-hook 'change-major-mode-hook '(lambda () (highlight-regexp 'hi-yellow)))
 (global-hi-lock-mode 1)
 (setq hi-lock-file-patterns-policy #'(lambda (dummy) t))
+
+
+; tabbar
+(load-file "~/.config/emacs/tabbar-ini.el")
