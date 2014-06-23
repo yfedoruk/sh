@@ -277,3 +277,8 @@
 ;(eval-after-load "speedbar" '(speedbar-add-supported-extension ".php"))
 (speedbar-add-supported-extension ".php") 
 
+
+(defun search-all-buffers (regexp)
+   (interactive "sRegexp: ")
+   (multi-occur-in-matching-buffers "." regexp t))
+ (global-set-key [f6] 'search-all-buffers)
