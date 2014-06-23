@@ -23,20 +23,22 @@
 ;; See cedet/common/cedet.info for configuration details.
 ;; IMPORTANT: Tou must place this *before* any CEDET component (including
 ;; EIEIO) gets activated by another package (Gnus, auth-source, ...).
-;(load-file "/home/slava/.emacs.d/cedet/cedet-devel-load.el")           // bug
+;(load-file "/home/slava/.emacs.d/cedet/cedet-devel-load.el")           ; bug
 
 ;; Add further minor-modes to be enabled by semantic-mode.
 ;; See doc-string of `semantic-default-submodes' for other things
 ;; you can use here.
-(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
-(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
-(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+;(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+;(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
 
 ;; Enable Semantic
-;(semantic-mode 1)                                                      // bug
+;(semantic-mode 1)
 
 ;; Enable EDE (Project Management) features
-(global-ede-mode 1)
+;(global-ede-mode 1)
+(load-file "~/.config/emacs/minimial-cedet-config.el")
+
 ;; END CEDET
 
 
@@ -63,12 +65,12 @@
     (setq ac-ignore-case nil)
 
 ;; yasnippet ( http://github.com/capitaomorte/yasnippet )
-    (require 'yasnippet)
-    (yas-global-mode 1)
+    ;(require 'yasnippet)
+    ;(yas-global-mode 1)
       ;; Load the snippet files themselves
-    ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   // bug
+    ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   ; bug
       ;; Let's have snippets in the auto-complete dropdown
-    (add-to-list 'ac-sources 'ac-source-yasnippet)
+    ;(add-to-list 'ac-sources 'ac-source-yasnippet)
 
 ;; JavaScript
     (require 'js-comint)
@@ -136,8 +138,6 @@
   (global-set-key (kbd "C-.") 'ecb-goto-window-edit1)
   (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
   
-  
-(require 'sr-speedbar)
   
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -291,3 +291,10 @@
 
 ; tabbar
 (load-file "~/.config/emacs/tabbar-ini.el")
+
+;speedbar
+(require 'sr-speedbar)
+;(custom-set-variables '(speedbar-show-unknown-files t))
+;(eval-after-load "speedbar" '(speedbar-add-supported-extension ".php"))
+(speedbar-add-supported-extension ".php") 
+
