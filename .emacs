@@ -22,8 +22,6 @@
 (load-file "~/.config/emacs/minimial-cedet-config.el")
 
 
-
-
 ;; ********************** plugins *****************
 ;(elscreen-start)
     ;(global-set-key (kbd "C-t") 'elscreen-create)
