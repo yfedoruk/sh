@@ -23,7 +23,7 @@ alias guin='git update-index --no-assume-unchanged'
 alias gll='git pull origin develop'
 alias gsh='git push origin develop'
 alias gls='git pull origin develop && git push origin develop'
-alias gauto='git add --all && git commit -m"--" && git push origin master'
+alias gauto='git add --all && git commit -m"--" && git push origin develop'
 
 PS1='\[\e[1;31m\][\A]\[\e[1;33m\]\u\[\e[1;35m\]:\[\e[1;34m\]\w\$\[\e[0m\] '
 PATH=$PATH:/home/slava/bin
