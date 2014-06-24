@@ -197,7 +197,7 @@
     ;(set-face-background 'hl-line "#E6E6E6")
 
 ;; no-wrap off
-    ;;(toggle-truncate-lines)
+    (setq toggle-truncate-lines t)
     (global-visual-line-mode t)
 
 ;; utf-8
@@ -277,6 +277,7 @@
 ;(eval-after-load "speedbar" '(speedbar-add-supported-extension ".php"))
 (speedbar-add-supported-extension ".php") 
 (setq speedbar-use-images nil)
+(setq sr-speedbar-right-side nil)
 
 
 (defun search-all-buffers (regexp)
