@@ -276,6 +276,7 @@
 ;(custom-set-variables '(speedbar-show-unknown-files t))
 ;(eval-after-load "speedbar" '(speedbar-add-supported-extension ".php"))
 (speedbar-add-supported-extension ".php") 
+(setq speedbar-use-images nil)
 
 
 (defun search-all-buffers (regexp)
