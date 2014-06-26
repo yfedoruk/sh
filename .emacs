@@ -7,15 +7,15 @@
 (load-file "~/.config/emacs/minimial-cedet-config.el")
 
 
-;; ********************** plugins *****************
+; ********************** plugins *****************
 
 (require 'php-mode)
-;(require 'php+-mode)
+	;(require 'php+-mode)
 
 (load-file "~/.config/emacs/php-electric.el")
 (require 'php-electric)
 (php-electric-mode 1)
-;; auto-complete
+; auto-complete
     (require 'auto-complete-config)
     (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
     (ac-config-default)
@@ -24,7 +24,7 @@
     (define-key ac-completing-map "\r" nil)
     (setq ac-ignore-case nil)
 
-;; JavaScript
+; JavaScript
     (require 'js-comint)
     (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
     (add-hook 'js2-mode-hook '(lambda () 
@@ -35,21 +35,17 @@
                     (local-set-key "\C-cl" 'js-load-file-and-go)
                     ))
 
-;; undo-tree
-    (require 'undo-tree)
-    (global-undo-tree-mode 1)
-    (defalias 'redo 'undo-tree-redo)
-    (global-set-key (kbd "C-z") 'undo)
-    (global-set-key (kbd "C-S-z") 'redo)
+; undo-tree
+(load-file "~/.config/emacs/undo.el")
 
-;; smart-tabs-mode
+; smart-tabs-mode
     ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
     ;(smart-tabs-advice js2-indent-line js2-basic-offset)
 
-;;Configuration variables here:
+; Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
 
-;; Color themes
+; Color themes
 (require 'color-theme)
     ;(color-theme-initialize)
     ;(color-theme-dark-laptop)
@@ -58,12 +54,12 @@
 	(color-theme-solarized-dark)
 
 
-;; move-text
+; move-text
 (require 'move-text)
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
 
-;;code view
+;code view
 (require 'ecb)
   (require 'ecb-autoloads)
   (setq ecb-auto-expand-tag-tree 'all)
@@ -96,17 +92,17 @@
  )
 
 
-;; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
+; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
 
-;; Enable whitespace visible
+; Enable whitespace visible
 (require 'whitespace)
     (autoload 'whitespace-mode           "whitespace"
       "Toggle whitespace visualization."        t)
     (autoload 'whitespace-toggle-options "whitespace"
       "Toggle local `whitespace-mode' options." t)
 
-;; duplicate-line 
+; duplicate-line 
 (load-file "~/.config/emacs/duplicate-line.el")
 
 ; smart-line-beginning
@@ -123,7 +119,7 @@
 ;(global-set-key (kbd "C-q") 'comment-or-uncomment-line-or-region)
 (global-set-key [remap comment-dwim] 'comment-or-uncomment-region-or-line)
 
-;; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
+; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 (setq inhibit-startup-message t)    ; remove startup message
 (setq make-backup-files nil)        ; stop creating those backup~ files
 (setq auto-save-default nil)        ; stop creating those #autosave# files
@@ -133,37 +129,37 @@
     (recentf-mode 1)
     (global-set-key (kbd "<f7>") 'recentf-open-files)
 
-;; Show the column number ( in bottom bar )
+; Show the column number ( in bottom bar )
     (column-number-mode 1)
 
 ; display line numbers in margin
     (global-linum-mode 1) 
 
-;; parenthesis highlight
+; parenthesis highlight
     (show-paren-mode 1)
 
-;; yes/no
+; yes/no
     (fset 'yes-or-no-p 'y-or-n-p)
 
-;; scrolling 1-string
+; scrolling 1-string
     (setq scroll-step 1)
 
-;; highlight current string
+; highlight current string
     ;(global-hl-line-mode 1)
     ;(set-face-background 'hl-line "#E6E6E6")
 
-;; no-wrap off
+; no-wrap off
     (setq toggle-truncate-lines t)
     (global-visual-line-mode t)
 
-;; utf-8
+; utf-8
     (setq file-name-coding-system 'utf-8)
 
 ; save history in mini-buffer
 (savehist-mode 1)
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 
-;; ido - interactively doing things
+; ido - interactively doing things
 ;(load-file "~/.config/emacs/ido-ini.el")
 
 ; icicles
@@ -174,10 +170,10 @@
 
 
 
-;;cursor-line
+;cursor-line
 (setq-default cursor-type 'bar)
 
-;; kill current line
+; kill current line
 (global-set-key (kbd "C-d") 'kill-whole-line)
 
 
@@ -186,7 +182,7 @@
 ; make electric-pair-mode work on {} brackets
     (setq electric-pair-pairs '(  (?\" . ?\")  (?\{ . ?\})  ) )
 
-;; make whitespace-mode use just basic coloring
+; make whitespace-mode use just basic coloring
 (global-whitespace-mode t)
 (setq whitespace-style (quote (spaces tabs newline space-mark tab-mark newline-mark)))
 
@@ -200,13 +196,11 @@
      (tab-mark 9 [8594 9]
       [92 9]))))
 
-;; tabs
-
-;; CUA
+; CUA
 (load-file "~/.config/emacs/cua.el")
 
 
-;;; global
+; ++++++++++++++ global +++++++++++++++++
 
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
 (global-set-key (kbd "M-s") 'save-buffer)
@@ -242,7 +236,7 @@
  (global-set-key [f6] 'search-all-buffers)
  
 
-;; fullscreen 
+; fullscreen 
 (load-file "~/.config/emacs/fullscreen.el")
 
 (require 'helm-swoop)
