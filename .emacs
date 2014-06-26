@@ -1,19 +1,4 @@
-(when (>= emacs-major-version 24)
-    (require 'package)
-    (add-to-list 'package-archives
-                 '("marmalade" . "http://marmalade-repo.org/packages/"))
-    (add-to-list 'package-archives
-                 '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
-    ;; Install a hook running post-init.el *after* initialization took place
-    ;;(add-hook 'after-init-hook (lambda () (load "post-init.el")))
-        ;; disable automatic loading of packages after init.el is done
-        (setq package-enable-at-startup nil)
-    (package-initialize)
-)   ;;http://www.logilab.org/173886
-
-;; M-x package-list-packages
-;; M-x list-packages
+(load-file "~/.config/emacs/melpa.el")
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
@@ -23,11 +8,7 @@
 
 
 ;; ********************** plugins *****************
-;(elscreen-start)
-    ;(global-set-key (kbd "C-t") 'elscreen-create)
-    ;(global-set-key (kbd "M-1") (lambda () (interactive) (elscreen-goto 0)))
-    ;(global-set-key (kbd "M-2") (lambda () (interactive) (elscreen-goto 1)))
-    ;(global-set-key (kbd "M-3") (lambda () (interactive) (elscreen-goto 2)))
+
 (require 'php-mode)
 ;(require 'php+-mode)
 
@@ -42,14 +23,6 @@
     (define-key ac-completing-map "\t" 'ac-complete)
     (define-key ac-completing-map "\r" nil)
     (setq ac-ignore-case nil)
-
-;; yasnippet ( http://github.com/capitaomorte/yasnippet )
-    ;(require 'yasnippet)
-    ;(yas-global-mode 1)
-      ;; Load the snippet files themselves
-    ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   ; bug
-      ;; Let's have snippets in the auto-complete dropdown
-    ;(add-to-list 'ac-sources 'ac-source-yasnippet)
 
 ;; JavaScript
     (require 'js-comint)
@@ -89,23 +62,6 @@
 (require 'move-text)
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
-
-;; evil
-    ;(require 'evil)
-    ;(evil-mode 1)
-        ; esc quits
-    ;(define-key evil-normal-state-map [escape] 'keyboard-quit)
-    ;(define-key evil-visual-state-map [escape] 'keyboard-quit)
-    ;(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
-
-	; Map escape to cancel (like C-g)
-	(define-key isearch-mode-map [escape] 'isearch-abort)   ;; isearch
-	(global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
-
 
 ;;code view
 (require 'ecb)
@@ -212,7 +168,10 @@
 
 ; icicles
 (require 'icicles)
-;(icy-mode 1)
+(icy-mode 1)
+
+(global-set-key [f9] 'isearchb-activate)	;(global-set-key (kbd "<f9>") 'isearchb-activate)
+
 
 
 ;;cursor-line
@@ -290,3 +249,9 @@
        (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
                '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 (fullscreen)
+
+(require 'helm-swoop)
+
+; Map escape to cancel (like C-g)
+(global-set-key [escape] 'keyboard-escape-quit)				;; everywhere else
+;(define-key isearch-mode-map [escape] 'isearch-abort)		;; isearch ESC key. Need be define after icicles
