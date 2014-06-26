@@ -208,15 +208,12 @@
 (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 
 ;; ido - interactively doing things
-    (ido-mode 1)
-    (ido-everywhere 1)
-    (ido-mode 'buffer) 
-    ; ignore '*' buffers
-(defun ido-ignore-non-user-except-ielm (name)
-  "Ignore all non-user (a.k.a. *starred*) buffers except *ielm*."
-  (and (string-match "^\*" name)
-       (not (string= name "*ielm*"))))
-(setq ido-ignore-buffers '("\\` " ido-ignore-non-user-except-ielm))
+;(load-file "~/.config/emacs/ido-ini.el")
+
+; icicles
+(require 'icicles)
+;(icy-mode 1)
+
 
 ;;cursor-line
 (setq-default cursor-type 'bar)
