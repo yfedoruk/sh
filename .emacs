@@ -1,4 +1,5 @@
-(load-file "~/.config/emacs/melpa.el")
+(load-file "~/.config/emacs/melpa-ini.el")
+(load-file "~/.config/emacs/quelpa-ini.el")
 
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
@@ -155,10 +156,6 @@
 ; utf-8
     (setq file-name-coding-system 'utf-8)
 
-; save history in mini-buffer
-(savehist-mode 1)
-(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
-
 ; ido - interactively doing things
 ;(load-file "~/.config/emacs/ido-ini.el")
 
@@ -239,7 +236,14 @@
 ; fullscreen 
 (load-file "~/.config/emacs/fullscreen.el")
 
-(require 'helm-swoop)
+;helm
+(load-file "~/.config/emacs/helm-ini.el")
+;(require 'helm-swoop)
+
+; save history in mini-buffer (+ icycles history)
+(savehist-mode 1)
+(setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring icicle-history))
+
 
 ; Map escape to cancel (like C-g)
 (global-set-key [escape] 'keyboard-escape-quit)				;; everywhere else
