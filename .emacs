@@ -21,7 +21,8 @@
     (ac-config-default)
     (global-auto-complete-mode t)
     (define-key ac-completing-map "\t" 'ac-complete)
-    (define-key ac-completing-map "\r" nil)
+    (define-key ac-completing-map "RET" 'ac-complete)
+    ;(define-key ac-completing-map "\r" nil) 	; disable autocomplete on press enter
     (setq ac-ignore-case nil)
 
 ; JavaScript
