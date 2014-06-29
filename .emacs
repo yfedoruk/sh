@@ -218,3 +218,5 @@
 
 ; new buffer
 (load "buffer-new")
+
+(add-hook 'occur-hook (lambda () (other-window 1))) ;;  "Switch cursor to *Occur* buffer, if `occur'."
