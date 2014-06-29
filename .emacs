@@ -1,11 +1,12 @@
-(load-file "~/.config/emacs/melpa-ini.el")
-(load-file "~/.config/emacs/quelpa-ini.el")
-
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
 
+(load "melpa-ini")
+;(load "quelpa-ini")
+
+
 ; CEDET
-(load-file "~/.config/emacs/minimial-cedet-config.el")
+(load "minimial-cedet-config")
 
 
 ; ********************** plugins *****************
@@ -13,7 +14,7 @@
 (require 'php-mode)
 	;(require 'php+-mode)
 
-(load-file "~/.config/emacs/php-electric.el")
+(load "php-electric.el")
 (require 'php-electric)
 (php-electric-mode 1)
 ; auto-complete
@@ -38,7 +39,7 @@
                     ))
 
 ; undo-tree
-(load-file "~/.config/emacs/undo.el")
+(load "undo.el")
 
 ; smart-tabs-mode
     ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
@@ -51,7 +52,7 @@
 (require 'color-theme)
     ;(color-theme-initialize)
     ;(color-theme-dark-laptop)
-	;(load-file "~/.config/emacs/elegant-theme.el")
+	;(load "elegant-theme.el")
 	;(color-theme-pomgranate-explosion)
 	(color-theme-solarized-dark)
 
@@ -61,63 +62,26 @@
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
 
-;code view
-(require 'ecb)
-  (require 'ecb-autoloads)
-  (setq ecb-auto-expand-tag-tree 'all)
-  
-  (global-set-key (kbd "C-x C-;") 'ecb-activate)
-  (global-set-key (kbd "C-x C-'") 'ecb-deactivate)
-  (global-set-key (kbd "C-.") 'ecb-goto-window-edit1)
-  (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
-  
-  
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(current-language-environment "utf-8")
- '(ecb-display-image-icons-for-semantic-tags t)
- '(ecb-expand-methods-nodes "10")
- '(ecb-layout-name "left9")
- '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.15028901734104047 . 0.975)))))
- '(ecb-options-version "2.40")
- '(ecb-tip-of-the-day nil)
- '(ecb-tree-expand-symbol-before t)
- '(ecb-use-speedbar-instead-native-tree-buffer nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
-
 ; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
 
 ; Enable whitespace visible
 (require 'whitespace)
-    (autoload 'whitespace-mode           "whitespace"
-      "Toggle whitespace visualization."        t)
-    (autoload 'whitespace-toggle-options "whitespace"
-      "Toggle local `whitespace-mode' options." t)
 
 ; duplicate-line 
-(load-file "~/.config/emacs/duplicate-line.el")
+(load "duplicate-line.el")
 
 ; smart-line-beginning
-(load-file "~/.config/emacs/beginning-of-line.el")
+(load "beginning-of-line.el")
 
 ; indent-region
-(load-file "~/.config/emacs/unindent-region.el")
+(load "unindent-region.el")
 
 ; session manager
-(load-file "~/.config/emacs/session.el")
+(load "session.el")
 
 
-(load-file "~/.config/emacs/comment.el")
+(load "comment.el")
 ;(global-set-key (kbd "C-q") 'comment-or-uncomment-line-or-region)
 (global-set-key [remap comment-dwim] 'comment-or-uncomment-region-or-line)
 
@@ -158,7 +122,7 @@
     (setq file-name-coding-system 'utf-8)
 
 ; ido - interactively doing things
-;(load-file "~/.config/emacs/ido-ini.el")
+;(load "ido-ini.el")
 
 ; icicles
 (require 'icicles)
@@ -195,7 +159,7 @@
       [92 9]))))
 
 ; CUA
-(load-file "~/.config/emacs/cua.el")
+(load "cua.el")
 
 
 ; ++++++++++++++ global +++++++++++++++++
@@ -215,9 +179,14 @@
 (global-hi-lock-mode 1)
 (setq hi-lock-file-patterns-policy #'(lambda (dummy) t))
 
+; Goto-line short-cut key
+(global-set-key "\M-l" 'goto-line)
+
 
 ; tabbar
-(load-file "~/.config/emacs/tabbar-ini.el")
+(load "tabbar-ini.el")
+;(load "tabbar-tweak.el")
+(load "tabbar-china.el")
 
 ;speedbar
 (require 'sr-speedbar)
@@ -235,10 +204,10 @@
  
 
 ; fullscreen 
-(load-file "~/.config/emacs/fullscreen.el")
+(load "fullscreen.el")
 
 ;helm
-(load-file "~/.config/emacs/helm-ini.el")
+(load "helm-ini.el")
 ;(require 'helm-swoop)
 
 ; save history in mini-buffer (+ icycles history)
@@ -249,3 +218,6 @@
 ; Map escape to cancel (like C-g)
 (global-set-key [escape] 'keyboard-escape-quit)				;; everywhere else
 ;(define-key isearch-mode-map [escape] 'isearch-abort)		;; isearch ESC key. Need be define after icicles
+
+; new buffer
+(load "buffer-new")

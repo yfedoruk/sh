@@ -25,5 +25,9 @@ Emacs buffer are those starting with “*”."
 
 (setq tabbar-buffer-groups-function 'tabbar-buffer-groups)
 
-(global-set-key [M-s-left] 'tabbar-backward)
-(global-set-key [M-s-right] 'tabbar-forward)
+(global-set-key [M-S-left] 'tabbar-backward)
+(global-set-key [M-S-right] 'tabbar-forward)
+
+;(setq 'tabbar-use-images nil) ; ???
+
+

@@ -32,3 +32,11 @@
     ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   ; bug
       ;; Let's have snippets in the auto-complete dropdown
     ;(add-to-list 'ac-sources 'ac-source-yasnippet)
+    
+    
+; generate new buffer (is better solution)
+;; (setq confirm-nonexistent-file-or-buffer nil) ;; ???
+(defun generate-buffer ()
+  (interactive)
+  (switch-to-buffer (make-temp-name "tmp")))
+(global-set-key (kbd "C-t") 'generate-buffer)
