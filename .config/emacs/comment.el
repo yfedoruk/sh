@@ -15,4 +15,8 @@
   (set (make-local-variable 'comment-padding) " ")
   (set (make-local-variable 'comment-end) "")
   (set (make-local-variable 'comment-style) 'indent))
+  
+;;(global-set-key [remap comment-dwim] 'comment-or-uncomment-region-or-line)
+(global-set-key (kbd "C-q") 'comment-or-uncomment-region-or-line)
+
 

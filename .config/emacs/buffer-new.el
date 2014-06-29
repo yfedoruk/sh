@@ -5,4 +5,6 @@
     (switch-to-buffer buf)
     (funcall (and initial-major-mode))
     (setq buffer-offer-save t)))
+
+(setq initial-major-mode (quote text-mode))
 (global-set-key (kbd "C-t") 'xah-new-empty-buffer)

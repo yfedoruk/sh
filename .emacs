@@ -14,9 +14,9 @@
 (require 'php-mode)
 	;(require 'php+-mode)
 
-(load "php-electric.el")
-(require 'php-electric)
-(php-electric-mode 1)
+;(load "php-electric.el")
+;(require 'php-electric)
+;(php-electric-mode 1)
 ; auto-complete
     (require 'auto-complete-config)
     (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
@@ -62,11 +62,10 @@
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
 
-; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
-
-
 ; Enable whitespace visible
 (require 'whitespace)
+
+; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
 ; duplicate-line 
 (load "duplicate-line.el")
@@ -80,10 +79,8 @@
 ; session manager
 (load "session.el")
 
-
+; comment
 (load "comment.el")
-;(global-set-key (kbd "C-q") 'comment-or-uncomment-line-or-region)
-(global-set-key [remap comment-dwim] 'comment-or-uncomment-region-or-line)
 
 ; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 (setq inhibit-startup-message t)    ; remove startup message
