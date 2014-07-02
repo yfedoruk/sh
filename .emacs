@@ -192,6 +192,7 @@
 (speedbar-add-supported-extension ".php") 
 (setq speedbar-use-images nil)
 (setq sr-speedbar-right-side nil)
+(global-set-key [f4] 'sr-speedbar-toggle)
 
 
 (defun search-all-buffers (regexp)
