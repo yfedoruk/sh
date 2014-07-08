@@ -5,7 +5,7 @@
 (defvar my-desktop-session-name-hist nil
   "Desktop session name history")
 
-(defun my-desktop-save (&optional name)
+(defun session-save (&optional name)
   "Save desktop with a name."
   (interactive)
   (unless name
@@ -13,7 +13,7 @@
   (make-directory (concat my-desktop-session-dir name) t)
   (desktop-save (concat my-desktop-session-dir name) t))
 
-(defun my-desktop-load (&optional name)
+(defun my-project-load (&optional name)
   "Read desktop with a name."
   (interactive)
   (unless name

@@ -69,6 +69,7 @@
 
 ; duplicate-line 
 (load "duplicate-line.el")
+(global-set-key (kbd "C-d") 'duplicate-line)
 
 ; smart-line-beginning
 (load "beginning-of-line.el")
@@ -81,6 +82,9 @@
 
 ; comment
 (load "comment.el")
+
+; kill current buffer
+(global-set-key (kbd "C-w") 'kill-buffer)
 
 ; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 (setq inhibit-startup-message t)    ; remove startup message
@@ -133,7 +137,7 @@
 (setq-default cursor-type 'bar)
 
 ; kill current line
-(global-set-key (kbd "C-d") 'kill-whole-line)
+(global-set-key (kbd "C-S-d") 'kill-whole-line)
 
 
 ; close brackets 
@@ -162,7 +166,8 @@
 ; ++++++++++++++ global +++++++++++++++++
 
 (global-set-key (kbd "M-a") 'mark-whole-buffer)
-(global-set-key (kbd "M-s") 'save-buffer)
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "M-w") 'quit-window)
 (global-set-key (kbd "RET") 'newline-and-indent)
 ;(global-set-key (kbd "C-SPC") 'comment-or-uncomment-region-or-line)
