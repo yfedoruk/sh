@@ -65,6 +65,10 @@
 ; Enable whitespace visible
 (require 'whitespace)
 
+; ECB
+(load "ecb-ini.el")
+(setq ecb-mouse-click-destination 1)
+
 ; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
 ; duplicate-line 

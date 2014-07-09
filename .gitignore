@@ -33,6 +33,8 @@
 /.config/geany/filedefs/colorschemes/*
 !/.config/geany/filedefs/colorschemes/alt.conf
 
+!/.config/Terminal/
+
 !/.config/mc/
 /.config/mc/*
 # /.config/mc/ini
