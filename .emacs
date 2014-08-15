@@ -240,3 +240,11 @@
 	(cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
 		((looking-at "\\s\)") (forward-char 1) (backward-list 1))
 		(t (self-insert-command (or arg 1)))))
+
+
+
+
+;; Emacs will not automatically add new lines
+(setq next-line-add-newlines nil)
+(setq recenter-positions '(top middle bottom))
+(setq scroll-preserve-screen-position t)
