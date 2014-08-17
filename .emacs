@@ -11,7 +11,7 @@
 
 ; ********************** plugins *****************
 
-(require 'php-mode)
+;(require 'php-mode)
 	;(require 'php+-mode)
 
 ;(load "php-electric.el")
@@ -40,6 +40,14 @@
 
 ; undo-tree
 (load "undo.el")
+
+; undo-tree
+(load "highlight-symbol.el")
+(require 'highlight-symbol)
+(global-set-key [(control f3)] 'highlight-symbol-at-point)
+(global-set-key [f3] 'highlight-symbol-next)
+(global-set-key [(shift f3)] 'highlight-symbol-prev)
+(global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
 ; smart-tabs-mode
     ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
@@ -89,6 +97,9 @@
 
 ; kill current buffer
 (global-set-key (kbd "C-w") 'kill-buffer)
+
+; reload file f5
+(load "reload-file.el")
 
 ; +++++++++++++++++++++++++++++ settings ++++++++++++++++++++++++++++++
 (setq inhibit-startup-message t)    ; remove startup message
@@ -248,3 +259,10 @@
 (setq next-line-add-newlines nil)
 (setq recenter-positions '(top middle bottom))
 (setq scroll-preserve-screen-position t)
+
+(setq-default tab-width 4)
+;(setq-default indent-tabs-mode nil) 
+
+
+(define-key minibuffer-local-map (kbd "M-<up>") 'next-history-element)
+(define-key minibuffer-local-map (kbd "M-<down>") 'previous-history-element)
