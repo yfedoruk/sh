@@ -138,11 +138,11 @@
     (setq file-name-coding-system 'utf-8)
 
 ; ido - interactively doing things
-;(load "ido-ini.el")
+(load "ido-ini.el")
 
 ; icicles
-(require 'icicles)
-(icy-mode 1)
+;(require 'icicles)
+;(icy-mode 1)
 
 (global-set-key [f9] 'isearchb-activate)	;(global-set-key (kbd "<f9>") 'isearchb-activate)
 
