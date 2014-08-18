@@ -11,12 +11,6 @@
 
 ; ********************** plugins *****************
 
-;(require 'php-mode)
-	;(require 'php+-mode)
-
-;(load "php-electric.el")
-;(require 'php-electric)
-;(php-electric-mode 1)
 ; auto-complete
     (require 'auto-complete-config)
     (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
@@ -26,17 +20,6 @@
     (define-key ac-completing-map "RET" 'ac-complete)
     ;(define-key ac-completing-map "\r" nil) 	; disable autocomplete on press enter
     (setq ac-ignore-case nil)
-
-; JavaScript
-    (require 'js-comint)
-    (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
-    (add-hook 'js2-mode-hook '(lambda () 
-                    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
-                    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
-                    (local-set-key "\C-cb" 'js-send-buffer)
-                    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
-                    (local-set-key "\C-cl" 'js-load-file-and-go)
-                    ))
 
 ; undo-tree
 (load "undo.el")
@@ -48,10 +31,6 @@
 (global-set-key [f3] 'highlight-symbol-next)
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
-
-; smart-tabs-mode
-    ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
-    ;(smart-tabs-advice js2-indent-line js2-basic-offset)
 
 ; Configuration variables here:
 (setq semantic-load-turn-useful-things-on t)
@@ -72,10 +51,6 @@
 
 ; Enable whitespace visible
 (require 'whitespace)
-
-; ECB
-(load "ecb-ini.el")
-(setq ecb-mouse-click-destination 1)
 
 ; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++
 
@@ -141,8 +116,8 @@
 (load "ido-ini.el")
 
 ; icicles
-;(require 'icicles)
-;(icy-mode 1)
+(require 'icicles)
+(icy-mode 1)
 
 (global-set-key [f9] 'isearchb-activate)	;(global-set-key (kbd "<f9>") 'isearchb-activate)
 
@@ -229,7 +204,7 @@
 (load "fullscreen.el")
 
 ;helm
-(load "helm-ini.el")
+; (load "helm-ini.el")
 ;(require 'helm-swoop)
 
 ; save history in mini-buffer (+ icycles history)

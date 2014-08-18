@@ -40,3 +40,33 @@
   (interactive)
   (switch-to-buffer (make-temp-name "tmp")))
 (global-set-key (kbd "C-t") 'generate-buffer)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; smart-tabs-mode
+    ;(add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
+    ;(smart-tabs-advice js2-indent-line js2-basic-offset)
+    
+    
+; JavaScript
+    (require 'js-comint)
+    (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
+    (add-hook 'js2-mode-hook '(lambda () 
+                    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
+                    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
+                    (local-set-key "\C-cb" 'js-send-buffer)
+                    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
+                    (local-set-key "\C-cl" 'js-load-file-and-go)
+                    ))
+                    
+;(require 'php-mode)
+	;(require 'php+-mode)
+
+;(load "php-electric.el")
+;(require 'php-electric)
+;(php-electric-mode 1)
+
+
+; ECB
+(load "ecb-ini.el")
+(setq ecb-mouse-click-destination 1)
