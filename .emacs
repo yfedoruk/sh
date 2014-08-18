@@ -213,6 +213,10 @@
 (setq speedbar-use-images nil)
 (setq sr-speedbar-right-side nil)
 (global-set-key [f4] 'sr-speedbar-toggle)
+(sr-speedbar-open)
+(setq sr-speedbar-width-x 150)
+(setq sr-speedbar-width-console 150)
+(global-set-key (kbd "C-c o") 'speedbar-get-focus)
 
 
 (defun search-all-buffers (regexp)
