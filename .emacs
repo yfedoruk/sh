@@ -1,3 +1,7 @@
+;; M-x load-file ENTER
+;; ~/.emacs
+;; ENTER
+
 (add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
 
@@ -10,6 +14,12 @@
 
 
 ; ********************** plugins *****************
+
+(require 'php-mode)
+	;(require 'php+-mode)
+;(setq php-mode-warn-if-mumamo-off nil)
+;(setq php-enable-wordpress-coding-style t)
+
 
 ; auto-complete
     (require 'auto-complete-config)
@@ -239,9 +249,28 @@
 (setq recenter-positions '(top middle bottom))
 (setq scroll-preserve-screen-position t)
 
+
+;; Turn on tabs
+(setq indent-tabs-mode t)
+(setq-default indent-tabs-mode t)
+
+;; Bind the TAB key
+(global-set-key (kbd "TAB") 'self-insert-command)
+
 (setq-default tab-width 4)
 ;(setq-default indent-tabs-mode nil) 
 
 
 (define-key minibuffer-local-map (kbd "M-<up>") 'next-history-element)
 (define-key minibuffer-local-map (kbd "M-<down>") 'previous-history-element)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+;(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[gj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
