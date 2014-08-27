@@ -15,7 +15,7 @@
 
 ; ********************** plugins *****************
 
-(require 'php-mode)
+;(require 'php-mode)
 	;(require 'php+-mode)
 ;(setq php-mode-warn-if-mumamo-off nil)
 ;(setq php-enable-wordpress-coding-style t)
@@ -266,7 +266,7 @@
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-;(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[gj]sp\\'" . web-mode))
