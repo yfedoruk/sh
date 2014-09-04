@@ -70,3 +70,10 @@
 ; ECB
 (load "ecb-ini.el")
 (setq ecb-mouse-click-destination 1)
+
+
+
+
+
+; C-h v package-activated-list
+(auto-complete color-theme-solarized color-theme ecb ecb-snapshot elscreen helm-descbinds helm-gtags helm-projectile helm-swoop helm icicles js-comint move-text php+-mode php-completion popup projectile pkg-info epl dash quelpa package-build s smart-tabs-mode sr-speedbar tabbar undo-tree web-mode yasnippet)

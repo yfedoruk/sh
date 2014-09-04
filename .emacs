@@ -126,8 +126,8 @@
 (load "ido-ini.el")
 
 ; icicles
-(require 'icicles)
-(icy-mode 1)
+;(require 'icicles)
+;(icy-mode 1)
 
 (global-set-key [f9] 'isearchb-activate)	;(global-set-key (kbd "<f9>") 'isearchb-activate)
 
