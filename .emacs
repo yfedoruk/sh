@@ -255,7 +255,7 @@
 (setq-default indent-tabs-mode t)
 
 ;; Bind the TAB key
-(global-set-key (kbd "TAB") 'self-insert-command)
+;(global-set-key (kbd "TAB") 'self-insert-command)						; troubles in select mode 
 
 (setq-default tab-width 4)
 ;(setq-default indent-tabs-mode nil) 

@@ -83,8 +83,8 @@ Return only one group for each buffer."
 ; ++++++++++++++++ Key Binds
 
 
-(global-set-key [(control tab)] 'tabbar-change-group)
-(global-set-key [(S-iso-lefttab)] '(lambda () (interactive) (tabbar-change-group t)))
+(global-set-key [(control tab)] 'tabbar-change-group)					; C-t
+; (global-set-key [(S-iso-lefttab)] '(lambda () (interactive) (tabbar-change-group t)))					; Don't use it! Shift + tab need for moving text in select mode. 
 (global-set-key "\261" '(lambda () (interactive) (tabbar-goto-nth-buffer 0)))
 (global-set-key "\262" '(lambda () (interactive) (tabbar-goto-nth-buffer 1)))
 (global-set-key "\263" '(lambda () (interactive) (tabbar-goto-nth-buffer 2)))
