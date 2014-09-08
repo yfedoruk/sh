@@ -15,7 +15,7 @@
 
 ; ********************** plugins *****************
 
-;(require 'php-mode)
+(require 'pi-php-mode)
 	;(require 'php+-mode)
 ;(setq php-mode-warn-if-mumamo-off nil)
 ;(setq php-enable-wordpress-coding-style t)
@@ -72,7 +72,7 @@
 (load "beginning-of-line.el")
 
 ; indent-region
-(load "unindent-region.el")
+;(load "unindent-region.el")
 
 ; session manager
 (load "session.el")
@@ -255,7 +255,7 @@
 (setq-default indent-tabs-mode t)
 
 ;; Bind the TAB key
-;(global-set-key (kbd "TAB") 'self-insert-command)						; troubles in select mode 
+(global-set-key (kbd "TAB") 'self-insert-command)						; troubles in select mode 
 (delete-selection-mode nil)
 
 
@@ -268,7 +268,7 @@
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+;(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[gj]sp\\'" . web-mode))
