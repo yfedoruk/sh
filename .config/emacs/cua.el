@@ -1,7 +1,7 @@
 ;; ++++++++ CUA mode: C-x, C-c, C-v for copying, pasting, C-z for undo ++++++
 
 (cua-mode t)
-(setq cua-enable-cua-keys nil)											;; prevent cua-mode from replacing a bunch of standard keyboard shortcuts with Windows-style things
+;(setq cua-enable-cua-keys nil)											;; prevent cua-mode from replacing a bunch of standard keyboard shortcuts with Windows-style things
 (transient-mark-mode 1)													;; No region when it is not highlighted
 (setq cua-keep-region-after-copy t)										;; Standard Windows behaviour 
 

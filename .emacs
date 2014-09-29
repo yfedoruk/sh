@@ -159,8 +159,7 @@
      (tab-mark 9 [8594 9]
       [92 9]))))
 
-; CUA
-(load "cua.el")
+
 
 
 ; ++++++++++++++ global +++++++++++++++++
@@ -276,3 +275,6 @@
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+; CUA
+(load "cua.el")
