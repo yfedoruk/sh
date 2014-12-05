@@ -27,4 +27,5 @@ AccelNewWindow=<Primary>n
 AccelCloseTab=<Primary>w
 AccelPaste=<Primary>v
 ScrollingLines=1000000
+ShortcutsNoMenukey=TRUE
 
