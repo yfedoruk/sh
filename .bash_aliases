@@ -5,7 +5,7 @@ alias gvi='gvim'
 alias ..='cd ../'
 alias ll='ls -alFh'
 
-
+alias ffind='find . -name'
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
 
