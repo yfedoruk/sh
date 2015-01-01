@@ -23,12 +23,7 @@
 /.config/geany/*
 !/.config/geany/keybindings.conf
 !/.config/geany/filedefs/
-/.config/geany/filedefs/*
-!/.config/geany/filedefs/filetypes.common
-!/.config/geany/filedefs/filetypes.css
-!/.config/geany/filedefs/filetypes.javascript
-!/.config/geany/filedefs/filetypes.php
-!/.config/geany/filedefs/filetypes.xml
+!/.config/geany/readme.txt
 !/.config/geany/filedefs/colorschemes
 /.config/geany/filedefs/colorschemes/*
 !/.config/geany/filedefs/colorschemes/alt.conf
