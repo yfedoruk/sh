@@ -41,3 +41,6 @@
 !/.vim/
 /.vim/*
 !/.vim/settings/
+
+
+#!/.Xkbmap
