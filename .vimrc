@@ -56,12 +56,11 @@ set ts=4
 set nocompatible               " be iMproved
  filetype off                   " required!
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
-
- " let Vundle manage Vundle
- " required! 
- Bundle 'gmarik/vundle'
+" Vundle 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
  " My Bundles here:
  "
@@ -176,17 +175,17 @@ set nu
 highlight LineNr guifg=#050505 ctermfg=grey     " line number color
 
 " Disable annoying auto line break
-fu! local:disableBr()
-  set wrap
-  set linebreak
-  set nolist  " list disables linebreak
-  set textwidth=0
-  set wrapmargin=0
-  set fo-=t
-endfu
+" fu! local:disableBr()
+"  set wrap
+"  set linebreak
+"  set nolist  " list disables linebreak
+"  set textwidth=0
+"  set wrapmargin=0
+"  set fo-=t
+" endfu
 
 " Disable line breaks for all file types
-:au BufNewFile,BufRead *.* call local:disableBr()
+":au BufNewFile,BufRead *.* call local:disableBr()
 
 :au SessionLoadPost * :source ~/.vimrc
 
