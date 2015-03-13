@@ -2,6 +2,7 @@ alias diff='colordiff'
 alias ge='geany'
 alias em='emacs'
 alias gvi='gvim'
+alias vi='vim'
 alias ..='cd ../'
 alias ll='ls -alFh'
 
