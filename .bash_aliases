@@ -1,3 +1,6 @@
+#fix terminal bug. new tab in cwd
+. /etc/profile.d/vte.sh
+
 alias diff='colordiff'
 alias ge='geany'
 alias em='emacs'
