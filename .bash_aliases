@@ -39,6 +39,9 @@ alias gauto='git add --all && git commit -m"--" && git push origin yfedoruck'
 alias gf='git flow'
 alias gfhs='git flow hotfix start'
 alias gfhf='git flow hotfix finish'
+alias g3sh='git checkout master && git pull origin master && git push origin master && \
+	git checkout release && git pull origin release && git merge master && git push origin release && \
+	git checkout develop && git pull origin develop && git push origin develop'
 
 # PS1='\[\e[1;31m\][\A]\[\e[1;33m\]\u\[\e[1;35m\]:\[\e[1;34m\]\w\$\[\e[0m\] '
 export PS1='\[\e[1;31m\][\A]\[\e[1;33m\]\u\[\e[1;35m\]:\[\e[1;34m\]\w\[\033[01;32m\]$(__git_ps1)\[\033[01;34m\]\$\[\033[00m\] '
