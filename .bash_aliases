@@ -10,6 +10,7 @@ alias ..='cd ../'
 alias ll='ls -alFh'
 
 alias ffind='find . -name'
+alias src='source ~/.bashrc'
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
 
@@ -37,8 +38,13 @@ alias gauto='git add --all && git commit -m"--" && git push origin yfedoruck'
 
 
 alias gf='git flow'
-alias gfhs='git flow hotfix start'
-alias gfhf='git flow hotfix finish'
+alias ghs='git flow hotfix start'
+alias gfs='git flow feature start'
+alias ghf='git flow hotfix finish'
+alias gff='git flow feature finish'
+alias g3ll='git checkout master && git pull origin master && \
+	git checkout release && git pull origin release && \
+	git checkout develop && git pull origin develop'
 alias g3sh='git checkout master && git pull origin master && git push origin master && \
 	git checkout release && git pull origin release && git merge master && git push origin release && \
 	git checkout develop && git pull origin develop && git push origin develop'
