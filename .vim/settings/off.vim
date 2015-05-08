@@ -22,3 +22,44 @@
 " -------------- colorscheme ---------------- "
 "colorscheme askapachecode
 "colorscheme default1
+
+
+
+" ******************************************* Need to explore **********
+" Disable annoying auto line break
+" fu! local:disableBr()
+"  set wrap
+"  set linebreak
+"  set nolist  " list disables linebreak
+"  set textwidth=0
+"  set wrapmargin=0
+"  set fo-=t
+" endfu
+
+" Disable line breaks for all file types
+":au BufNewFile,BufRead *.* call local:disableBr()
+
+
+" --------------
+" for vim-move.git 
+" let g:move_key_modifier = 'C'   " for vim-move. Need set also in plugin Up and Down keys by hands :("
+" --------------
+" execute pathogen#infect()
+" Bundle 'mbadran/headlights'
+" Bundle 'potion'
+" filetype on
+" Bundle 'matze/vim-move'
+
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (ie. when working on your own plugin)
+" Bundle 'file:///Users/gmarik/path/to/plugin'
+" Bundle 'file:///home/slava/tmp/taglist'
+
+" --------------
+
+" set backspace=2
+" set backspace=indent,eol,start
+" echo $TERM -- term env variable
+"set nocursorline
+" set synmaxcol=120 

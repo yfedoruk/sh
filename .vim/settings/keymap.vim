@@ -44,3 +44,13 @@ noremap <M-q> <ESC>
 
 " Fast saving
 nmap :W<cr> :w<cr>
+
+
+"duplicate current line
+map <C-d> yyp
+vmap <C-p> y'}P
+
+
+" tabs. Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
+vmap <Tab> >gv
+vmap <S-Tab> <gv
