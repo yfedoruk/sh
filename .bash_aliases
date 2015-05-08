@@ -43,6 +43,7 @@ alias ghs='git flow hotfix start'
 alias gfs='git flow feature start'
 alias ghf='git flow hotfix finish'
 alias gff='git flow feature finish'
+# x=$(git symbolic-ref --short -q HEAD) && echo ${x/feature\//}
 alias g3ll='git checkout master && git pull origin master && \
 	git checkout release && git pull origin release && \
 	git checkout develop && git pull origin develop'

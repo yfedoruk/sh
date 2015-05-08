@@ -25,6 +25,8 @@ nmap <leader>5 5gt
 map <LEADER>w :w<CR>
 map <LEADER>q :q<CR>
 map <LEADER>wq :wq<CR>
+map W :w<CR>
+map Q :q<CR>
 :map <Home> ^
 map <End> $
 :imap <Home> <Esc>^i
