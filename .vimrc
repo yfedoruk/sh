@@ -4,7 +4,7 @@ set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
 source ~/.vim/settings/keymap.vim
-source ~/.vim/settings/off.vim
+"source ~/.vim/settings/off.vim
 source ~/.vim/settings/textmanip.vim
 source ~/.vim/settings/gvim.rc
 set runtimepath+=$HOME/.vim/
@@ -48,7 +48,6 @@ Plugin 'gmarik/Vundle.vim'
  Plugin 'tpope/vim-fugitive'
  Plugin 'Lokaltog/vim-easymotion'
  Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
- Plugin 'tpope/vim-rails.git'
  Plugin 'vim-scripts/taglist.vim.git'
  Plugin 'vim-scripts/Tagbar.git'
  Plugin 'gerw/vim-HiLinkTrace.git'

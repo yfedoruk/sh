@@ -48,13 +48,20 @@
 " Bundle 'mbadran/headlights'
 " Bundle 'potion'
 " filetype on
-" Bundle 'matze/vim-move'
 
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (ie. when working on your own plugin)
 " Bundle 'file:///Users/gmarik/path/to/plugin'
 " Bundle 'file:///home/slava/tmp/taglist'
+
+
+"Removing plugins
+Plugin 'command-t'
+Plugin 'matze/vim-move'
+Plugin 'tpope/vim-rails.git'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'vundle'
 
 " --------------
 
