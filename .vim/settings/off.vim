@@ -70,3 +70,24 @@ Plugin 'vundle'
 " echo $TERM -- term env variable
 "set nocursorline
 " set synmaxcol=120 
+
+
+
+
+
+
+ " My Bundles here:
+ "
+ " vim-scripts repos
+ " Plugin 'L9'
+ " Plugin 'FuzzyFinder'
+ "
+ " original repos on github. git@github.com:
+ " Plugin 'tpope/vim-fugitive'
+ " Plugin 'Lokaltog/vim-easymotion'
+ " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+ " Plugin 'vim-scripts/taglist.vim.git'
+ " Plugin 'vim-scripts/Tagbar.git'
+ " Plugin 'gerw/vim-HiLinkTrace.git'
+ " Plugin 'scrooloose/nerdcommenter.git'
+ " Plugin 'ervandew/supertab.git'

@@ -20,13 +20,15 @@ nmap <leader>3 3gt
 nmap <leader>4 4gt
 nmap <leader>5 5gt
 
-
+" Move tabs with alt + left|right
+nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 map <LEADER>w :w<CR>
 map <LEADER>q :q<CR>
 map <LEADER>wq :wq<CR>
-map W :w<CR>
-map Q :q<CR>
+map :W :w<CR>
+map :Q :q<CR>
 :map <Home> ^
 map <End> $
 :imap <Home> <Esc>^i
@@ -54,3 +56,19 @@ vmap <C-p> y'}P
 " tabs. Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" ---------- tagbar settings ------------- "
+nnoremap <silent> <F9> :TagbarToggle<CR>
+
+
+" **************** vim-textmanip ********************
+
+xmap <M-d> <Plug>(textmanip-duplicate-down)
+nmap <M-d> <Plug>(textmanip-duplicate-down)
+xmap <M-D> <Plug>(textmanip-duplicate-up)
+nmap <M-D> <Plug>(textmanip-duplicate-up)
+
+map <C-Down> <Plug>(textmanip-move-down)
+map <C-Up> <Plug>(textmanip-move-up)
+map <C-h> <Plug>(textmanip-move-left)
+map <C-l> <Plug>(textmanip-move-right)
