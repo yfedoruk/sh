@@ -72,3 +72,7 @@ map <C-Down> <Plug>(textmanip-move-down)
 map <C-Up> <Plug>(textmanip-move-up)
 map <C-h> <Plug>(textmanip-move-left)
 map <C-l> <Plug>(textmanip-move-right)
+
+
+" remap autocompletion html-tags to ,/
+imap ,/ </<C-X><C-O>

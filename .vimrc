@@ -43,6 +43,10 @@ call vundle#begin()
  " filetype plugin indent on     " required!
  Plugin 'jiangmiao/auto-pairs.git'
  Plugin 't9md/vim-textmanip'
+ 
+ " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
+	Plugin 'sukima/xmledit'
+	Plugin 'othree/xml.vim'
 
 call vundle#end()            " required
 "filetype plugin indent on    " required
