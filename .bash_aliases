@@ -11,6 +11,8 @@ alias ll='ls -alFh'
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
+
+alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
 
