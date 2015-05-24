@@ -11,6 +11,10 @@ alias ll='ls -alFh'
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
+alias esrc='vim ~/.bash_aliases'
+
+alias jc='javac'
+alias j='java'
 
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts
