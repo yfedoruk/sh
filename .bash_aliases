@@ -11,7 +11,7 @@ alias ll='ls -alFh'
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
-alias esrc='vim ~/.bash_aliases'
+alias srce='vim ~/.bash_aliases'
 
 alias jc='javac'
 alias j='java'
@@ -41,7 +41,7 @@ alias guin='git update-index --no-assume-unchanged'
 alias gll='git pull origin yfedoruck'
 alias gsh='git push origin yfedoruck'
 alias gls='git pull origin yfedoruck && git push origin yfedoruck'
-alias gauto='git add --all && git commit -m"--" && git push origin yfedoruck'
+alias gauto='git add --all && git commit -m"--" && git pull origin yfedoruck && git push origin yfedoruck'
 
 
 alias gf='git flow'
