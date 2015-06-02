@@ -7,6 +7,7 @@ alias em='emacs'
 alias gvi='gvim'
 alias vi='vim'
 alias ..='cd ../'
+alias md='mkdir -p'
 alias ll='ls -alFh'
 
 alias ffind='find . -name'
