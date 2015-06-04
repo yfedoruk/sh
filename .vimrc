@@ -110,6 +110,7 @@ set scrolljump=5
 set nu                "set nonu
 set shiftwidth=4      "folding indent options
 set cursorline                                                          "select current line
+set noundofile        "not create backup (untouched) files
 hi cursorline term=bold cterm=bold guibg=#E5E5E5                        "cur. line color
 
 set tabstop=4              "set expandtab on 4 spaces
