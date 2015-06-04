@@ -15,6 +15,7 @@ alias ffind='find . -name'
 alias src='source ~/.bashrc'
 alias srce='vim ~/.bash_aliases'
 alias pcs='phpcs --colors --standard=Zend'
+alias pcbf='phpcbf --standard=Zend'
 
 alias jc='javac'
 alias j='java'
