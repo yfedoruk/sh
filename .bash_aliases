@@ -32,6 +32,7 @@ alias suspend="sh ~/.sh/suspend.sh"
 #Git aliases
 alias gittree='git diff-tree --no-commit-id --name-only -r'
 alias gs='git status'
+alias gst='git stash'
 alias gb='git branch'
 alias gm='git merge'
 alias gc='git commit -m'
