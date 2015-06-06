@@ -66,3 +66,5 @@ PATH=$PATH:$HOME/node_modules/.bin
 #echo "keycode 14 = BackSpace" | loadkeys
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; 
 NODE_PATH=/usr/lib/node_modules
+#export JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre/bin/java
+export JAVA_HOME=/usr
