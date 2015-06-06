@@ -108,10 +108,13 @@ set noswapfile
 set nowrap
 set scrolljump=5
 set nu                "set nonu
-set ts=4              "set expandtab
 set shiftwidth=4      "folding indent options
 set cursorline                                                          "select current line
+set noundofile        "not create backup (untouched) files
 hi cursorline term=bold cterm=bold guibg=#E5E5E5                        "cur. line color
+
+set tabstop=4              "set expandtab on 4 spaces
+set expandtab         "Use spaces, not tabs. `set noexpandtab` -- contra.  :#retab! -- Retabulate the whole file
 
 " whitespaces
 set list listchars=tab:→\ ,trail:·,extends:>,precedes:<
