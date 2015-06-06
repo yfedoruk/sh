@@ -47,6 +47,16 @@ call vundle#begin()
  " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
 	Plugin 'sukima/xmledit'
 	Plugin 'othree/xml.vim'
+ " php documentor
+ Plugin 'tobyS/pdv'
+ Plugin 'tobyS/vmustache'
+ Plugin 'SirVer/ultisnips'
+ " PHP documenter script bound to Control-P
+ "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
+ "autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
+ "autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR> 
+ let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+ nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
 
 call vundle#end()            " required
 "filetype plugin indent on    " required

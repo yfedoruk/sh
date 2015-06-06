@@ -50,7 +50,7 @@ nmap :W<cr> :w<cr>
 
 "duplicate current line
 map <C-d> yyp
-vmap <C-p> y'}P
+" vmap <C-p> y'}P "map to php-doc
 
 
 " tabs. Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
