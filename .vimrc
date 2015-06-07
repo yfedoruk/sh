@@ -51,12 +51,15 @@ call vundle#begin()
  Plugin 'tobyS/pdv'
  Plugin 'tobyS/vmustache'
  Plugin 'SirVer/ultisnips'
+
+ Plugin 'scrooloose/nerdtree'
+ Plugin 'wincent/command-t'
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
  "autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
  "autocmd FileType php vnoremap <C-p> :call PhpDocRange()<CR> 
  let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
- nnoremap <buffer> <C-p> :call pdv#DocumentWithSnip()<CR>
+ nnoremap <buffer> <C-l> :call pdv#DocumentWithSnip()<CR>
 
 call vundle#end()            " required
 "filetype plugin indent on    " required
