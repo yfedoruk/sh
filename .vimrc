@@ -54,6 +54,7 @@ call vundle#begin()
 
  Plugin 'scrooloose/nerdtree'
  Plugin 'wincent/command-t'
+ Plugin 'vim-scripts/Tagbar'
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
  "autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
