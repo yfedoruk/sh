@@ -80,3 +80,7 @@ PATH=$PATH:$HOME/node_modules/.bin
 NODE_PATH=/usr/lib/node_modules
 #export JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre/bin/java
 export JAVA_HOME=/usr
+
+#set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
