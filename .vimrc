@@ -53,6 +53,7 @@ call vundle#begin()
  Plugin 'SirVer/ultisnips'
 
  Plugin 'scrooloose/nerdtree'
+ Plugin 'scrooloose/nerdcommenter'
  Plugin 'wincent/command-t'
  Plugin 'vim-scripts/Tagbar'
  " PHP documenter script bound to Control-P
