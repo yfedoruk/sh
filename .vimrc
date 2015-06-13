@@ -54,8 +54,12 @@ call vundle#begin()
 
  Plugin 'scrooloose/nerdtree'
  Plugin 'scrooloose/nerdcommenter'
+ Plugin 'scrooloose/syntastic'
  Plugin 'wincent/command-t'
+ Plugin 'kien/ctrlp.vim'
+    "let g:ctrlp_map = '<C-p>'
  Plugin 'vim-scripts/Tagbar'
+
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
  "autocmd FileType php nnoremap <C-p> :call PhpDocSingle()<CR>
@@ -70,7 +74,6 @@ filetype on
 
 " for taglist!!!!
 let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
-
 
 " ---------- tagbar settings ------------- "
     " window left
@@ -142,3 +145,4 @@ highlight LineNr guifg=#050505 ctermfg=grey     " line number color
 
 
 let g:multi_cursor_next_key='<C-l>'
+" let mapleader = ","     "map leader key \ to ,
