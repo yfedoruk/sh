@@ -57,7 +57,8 @@ call vundle#begin()
  Plugin 'scrooloose/syntastic'
  Plugin 'wincent/command-t'
  Plugin 'kien/ctrlp.vim'
-    "let g:ctrlp_map = '<C-p>'
+ Plugin 'bling/vim-airline'
+    let g:airline#extensions#tabline#enabled = 1
  Plugin 'vim-scripts/Tagbar'
 
  " PHP documenter script bound to Control-P
