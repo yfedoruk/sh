@@ -91,3 +91,49 @@ Plugin 'vundle'
  " Plugin 'gerw/vim-HiLinkTrace.git'
  " Plugin 'scrooloose/nerdcommenter.git'
  " Plugin 'ervandew/supertab.git'
+ 
+ 
+
+" airline
+ function! AccentDemo()
+  let keys = ['a','b','c','d','e','f','g','h']
+  for k in keys
+    call airline#parts#define_text(k, k)
+  endfor
+  call airline#parts#define_accent('a', 'red')
+  call airline#parts#define_accent('b', 'green')
+  call airline#parts#define_accent('c', 'blue')
+  call airline#parts#define_accent('d', 'yellow')
+  call airline#parts#define_accent('e', 'orange')
+  call airline#parts#define_accent('f', 'purple')
+  call airline#parts#define_accent('g', 'bold')
+  call airline#parts#define_accent('h', 'italic')
+  let g:airline_section_a = airline#section#create(keys)
+endfunction
+autocmd VimEnter * call AccentDemo()
+ 
+ 
+ 
+ 
+ 
+nmap <leader>tn :tabnew<cr>
+nmap <leader>tc :tabclose<cr>
+nmap <leader>1 1gt
+nmap <leader>2 2gt
+nmap <leader>3 3gt
+nmap <leader>4 4gt
+nmap <leader>5 5gt
+
+
+map <C-t> :tabnew<cr>
+map <C-w> :tabclose<cr>
+map <M-1> 1gt
+map <M-2> 2gt
+map <M-3> 3gt
+map <M-4> 4gt
+map <M-5> 5gt
+map <M-6> 6gt
+map <M-7> 7gt
+map <M-8> 8gt
+map <M-9> 9gt
+map <M-0> 1gT

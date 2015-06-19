@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="close_tab" mtime="1377777737" type="string">
-		<stringvalue>&lt;Primary&gt;w</stringvalue>
+	<entry name="close_tab" mtime="1434743572" type="string">
+		<stringvalue>&lt;Primary&gt;q</stringvalue>
 	</entry>
 	<entry name="reset_and_clear" mtime="1380282362" type="string">
 		<stringvalue>&lt;Primary&gt;e</stringvalue>

@@ -1,4 +1,5 @@
 " *********  First start Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"vim -u NONE "load without vimrc"
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
@@ -55,10 +56,10 @@ call vundle#begin()
  Plugin 'scrooloose/nerdtree'
  Plugin 'scrooloose/nerdcommenter'
  Plugin 'scrooloose/syntastic'
- Plugin 'wincent/command-t'
- Plugin 'kien/ctrlp.vim'
+ " Plugin 'wincent/command-t'
+ " Plugin 'kien/ctrlp.vim'
  Plugin 'bling/vim-airline'
-    let g:airline#extensions#tabline#enabled = 1
+
  Plugin 'vim-scripts/Tagbar'
 
  " PHP documenter script bound to Control-P
