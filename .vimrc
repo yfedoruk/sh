@@ -64,6 +64,7 @@ call vundle#begin()
  Plugin 'bling/vim-airline'
 
  Plugin 'vim-scripts/Tagbar'
+ Plugin 'Valloric/YouCompleteMe'
 
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
