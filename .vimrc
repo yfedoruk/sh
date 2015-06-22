@@ -3,11 +3,12 @@
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
- source $VIMRUNTIME/vimrc_example.vim
- source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
+ "source $VIMRUNTIME/vimrc_example.vim
+ "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
 
 set nocompatible
 source ~/.vim/settings/keymap.vim
+source ~/.vim/settings/mswin.vim
 set runtimepath+=$HOME/.vim/
 
 
@@ -55,9 +56,11 @@ call vundle#begin()
 
  Plugin 'scrooloose/nerdtree'
  Plugin 'scrooloose/nerdcommenter'
- Plugin 'scrooloose/syntastic'
+ "Plugin 'scrooloose/syntastic'
  " Plugin 'wincent/command-t'
- " Plugin 'kien/ctrlp.vim'
+ "Plugin 'kien/ctrlp.vim'
+ Plugin 'Shougo/unite.vim'
+   "Plugin 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
  Plugin 'bling/vim-airline'
 
  Plugin 'vim-scripts/Tagbar'

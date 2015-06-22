@@ -7,6 +7,7 @@ alias em='emacs'
 alias gvi='gvim'
 alias vi='vim'
 alias vie='vim ~/.vimrc'
+alias vis='vim ~/.vim/settings/'
 alias ..='cd ../'
 alias md='mkdir -p'
 alias ll='ls -alFh'
@@ -87,3 +88,7 @@ export JAVA_HOME=/usr
 #set vim as default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+#jetty web-server
+JETTY_HOME=/home/slava/www/jetty
+

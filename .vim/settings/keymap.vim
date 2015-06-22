@@ -29,7 +29,7 @@ nmap :W<cr> :w<cr>
 
 
 "duplicate current line
-map <C-d> yyp
+"map <C-d> yyp
 " vmap <C-p> y'}P "map to php-doc
 
 
@@ -58,16 +58,38 @@ map <C-l> <Plug>(textmanip-move-right)
 imap ,/ </<C-X><C-O>
 
 
+ " == Unite =="
+ 
+  " auto insert mode"
+  let g:unite_enable_start_insert = 1
+
+  "place right and bottom
+  let g:unite_split_rule = "botright"
+
+  "disable overwriting  statusline 
+  let g:unite_force_overwrite_statusline = 0
+
+  "size unite window
+  let g:unite_winheight = 10
+
+  "pretty icons
+  let g:unite_candidate_icon="▷"
+
+  "general find mapping 
+  nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
+  
+  "buffers
+  nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
 
 
  " == AIRLINES == "
  "Note: Mappings will be ignored within a NERDTree buffer
   set encoding=utf-8
-  set laststatus=2
+  "set laststatus=2
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#show_buffers = 1
   let g:airline#extensions#tabline#buffer_idx_mode = 1
-  let g:airline_powerline_fonts=1
+  "let g:airline_powerline_fonts=0
   
   "extensions
     let g:airline#extensions#disable_rtp_load = 1
@@ -84,23 +106,23 @@ imap ,/ </<C-X><C-O>
   nmap <leader>8 <Plug>AirlineSelectTab8
   nmap <leader>9 <Plug>AirlineSelectTab9
   
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
-  let g:airline_symbols.space = "\ua0"
+  "if !exists('g:airline_symbols')
+    "let g:airline_symbols = {}
+  "endif
+  "let g:airline_symbols.space = "\ua0"
 
   " unicode symbols
-  let g:airline_left_sep = '»'
-  let g:airline_left_sep = '▶'
-  let g:airline_right_sep = '«'
-  let g:airline_right_sep = '◀'
-  let g:airline_symbols.crypt = '🔒'
-  let g:airline_symbols.linenr = '␊'
-  let g:airline_symbols.linenr = '␤'
-  let g:airline_symbols.linenr = '¶'
-  let g:airline_symbols.branch = '⎇'
-  let g:airline_symbols.paste = 'ρ'
-  let g:airline_symbols.paste = 'Þ'
-  let g:airline_symbols.paste = '∥'
-  let g:airline_symbols.whitespace = 'Ξ'
+  "let g:airline_left_sep = '»'
+  "let g:airline_left_sep = '▶'
+  "let g:airline_right_sep = '«'
+  "let g:airline_right_sep = '◀'
+  "let g:airline_symbols.crypt = '🔒'
+  "let g:airline_symbols.linenr = '␊'
+  "let g:airline_symbols.linenr = '␤'
+  "let g:airline_symbols.linenr = '¶'
+  "let g:airline_symbols.branch = '⎇'
+  "let g:airline_symbols.paste = 'ρ'
+  "let g:airline_symbols.paste = 'Þ'
+  "let g:airline_symbols.paste = '∥'
+  "let g:airline_symbols.whitespace = 'Ξ'
 
