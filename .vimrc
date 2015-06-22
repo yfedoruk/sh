@@ -91,7 +91,7 @@ let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
     let g:tagbar_iconchars = ['▶', '◢']
 
     " Don't sort
-    let g:tagbar_sort = 0
+    let g:tagbar_sort = 1
 
     " Single click"
     let g:tagbar_singleclick = 1
