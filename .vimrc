@@ -65,6 +65,10 @@ call vundle#begin()
 
  Plugin 'vim-scripts/Tagbar'
  Plugin 'Valloric/YouCompleteMe'
+"Plugin 'altercation/vim-colors-solarized'
+"syntax enable
+"set background=dark
+"colorscheme solarized
 
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
