@@ -67,7 +67,7 @@ call vundle#begin()
  Plugin 'Valloric/YouCompleteMe'
 "Plugin 'altercation/vim-colors-solarized'
  syntax enable
- "set background=dark
+ set background=dark
 "colorscheme solarized
 
  " PHP documenter script bound to Control-P
