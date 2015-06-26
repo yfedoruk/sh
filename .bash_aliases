@@ -94,3 +94,6 @@ JETTY_HOME=/home/slava/www/jetty
 
 # set language toggle on WinKey
 setxkbmap -option grp:lwin_toggle us,ru
+
+#devilspie
+devilspie &
