@@ -30,7 +30,7 @@ alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
 
 alias jc='javac'
-alias j='java'
+alias j='java -Dprism.order=sw'
 
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts

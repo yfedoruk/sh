@@ -3,12 +3,12 @@
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
- "source $VIMRUNTIME/vimrc_example.vim
- "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys)"
+ source $VIMRUNTIME/vimrc_example.vim
+ "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
-source ~/.vim/settings/keymap.vim
 source ~/.vim/settings/mswin.vim
+source ~/.vim/settings/keymap.vim
 set runtimepath+=$HOME/.vim/
 
 
@@ -66,7 +66,7 @@ call vundle#begin()
  Plugin 'vim-scripts/Tagbar'
  Plugin 'Valloric/YouCompleteMe'
 "Plugin 'altercation/vim-colors-solarized'
- syntax enable
+ "syntax enable
  set background=dark
 "colorscheme solarized
 
