@@ -65,6 +65,7 @@ call vundle#begin()
 
  Plugin 'vim-scripts/Tagbar'
  Plugin 'Valloric/YouCompleteMe'
+ Plugin 'kshenoy/vim-signature'
 "Plugin 'altercation/vim-colors-solarized'
  "syntax enable
  set background=dark
