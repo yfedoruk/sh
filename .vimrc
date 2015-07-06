@@ -13,7 +13,12 @@ set runtimepath+=$HOME/.vim/
 
 
 " -------------- colorscheme ---------------- "
-" colorscheme ron
+"colorscheme ron
+    let g:solarized_termcolors=256
+colorscheme solarized
+  if $COLORTERM == 'gnome-terminal'
+      set t_Co=256
+  endif
 " hi Normal guifg=white guibg=black
 
 " ******************************************** "
@@ -66,10 +71,9 @@ call vundle#begin()
  Plugin 'vim-scripts/Tagbar'
  Plugin 'Valloric/YouCompleteMe'
  Plugin 'kshenoy/vim-signature'
-"Plugin 'altercation/vim-colors-solarized'
- "syntax enable
- set background=dark
-"colorscheme solarized
+ Plugin 'altercation/vim-colors-solarized'
+    "syntax enable
+    set background=dark
 
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
