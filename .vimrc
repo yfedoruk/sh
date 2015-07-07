@@ -72,7 +72,7 @@ call vundle#begin()
  Plugin 'Valloric/YouCompleteMe'
  Plugin 'kshenoy/vim-signature'
  Plugin 'altercation/vim-colors-solarized'
-    "syntax enable
+    syntax enable
     set background=dark
 
  " PHP documenter script bound to Control-P
@@ -101,13 +101,13 @@ let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
     let g:tagbar_iconchars = ['▶', '◢']
 
     " Don't sort
-    let g:tagbar_sort = 1
+    "let g:tagbar_sort = 1
 
     " Single click"
     let g:tagbar_singleclick = 1
 
     " autoload
-    " autocmd VimEnter * nested :TagbarOpen
+    autocmd VimEnter * nested :TagbarOpen
 
 " Cursor
     " vertical

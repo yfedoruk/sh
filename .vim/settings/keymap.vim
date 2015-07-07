@@ -40,6 +40,17 @@ vmap <S-Tab> <gv
 " ---------- tagbar settings ------------- "
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
+  "hide php variables
+  let g:tagbar_type_php  = {
+    \ 'ctagstype' : 'php',
+    \ 'kinds'     : [
+        \ 'i:interfaces',
+        \ 'c:classes',
+        \ 'd:constant definitions',
+        \ 'f:functions',
+        \ 'j:javascript functions:1'
+    \ ]
+  \ }
 
 " **************** vim-textmanip ********************
 
