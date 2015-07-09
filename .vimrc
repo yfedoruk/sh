@@ -44,6 +44,7 @@ call vundle#begin()
  Plugin 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
  Plugin 'Quramy/tsuquyomi'
  
+ Plugin 'mhinz/vim-startify'
  " Plugin 'xolox/vim-misc.git'
  " Plugin 'xolox/vim-session.git'
  " Plugin 'terryma/vim-multiple-cursors'
