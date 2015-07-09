@@ -45,6 +45,7 @@ call vundle#begin()
  Plugin 'Quramy/tsuquyomi'
  
  Plugin 'mhinz/vim-startify'
+ " Plugin 'ervandew/supertab'
  " Plugin 'xolox/vim-misc.git'
  " Plugin 'xolox/vim-session.git'
  " Plugin 'terryma/vim-multiple-cursors'
