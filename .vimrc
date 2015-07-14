@@ -135,7 +135,7 @@ set ssop-=folds      " do not store folds"
 syntax sync minlines=256
 
 set ttyfast           " u got a fast terminal
-set ttyscroll=3
+"set ttyscroll=3
 set lazyredraw        " to avoid scrolling problems
 set nocursorcolumn
 set nocp
