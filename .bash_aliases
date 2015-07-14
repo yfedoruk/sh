@@ -99,3 +99,6 @@ setxkbmap -option grp:lwin_toggle us,ru
 
 #devilspie
 devilspie &
+
+#tmux
+[ -z "$TMUX" ] && export TERM=xterm-256color
