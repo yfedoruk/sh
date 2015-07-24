@@ -10,6 +10,7 @@ alias vie='vim ~/.vimrc'
 alias vis='vim ~/.vim/settings/'
 alias ..='cd ../'
 alias md='mkdir -p'
+alias moc='mocp'
 alias ll='ls -alFh'
 
 alias ffind='find . -name'
