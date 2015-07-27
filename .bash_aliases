@@ -9,9 +9,11 @@ alias vi='vim'
 alias vie='vim ~/.vimrc'
 alias vis='vim ~/.vim/settings/'
 alias ..='cd ../'
-alias md='mkdir -p'
+alias md='mkdir -pv'
 alias moc='mocp'
 alias ll='ls -alFh'
+alias l.='ls -d .* --color=auto'
+alias wget='wget -c'
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
@@ -29,6 +31,8 @@ alias fmys='phpcbf --standard=MySource'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
+
+alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
