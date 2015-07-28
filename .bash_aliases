@@ -75,11 +75,9 @@ alias gfs='git flow feature start'
 alias ghf='git flow hotfix finish'
 alias gff='git flow feature finish'
 # x=$(git symbolic-ref --short -q HEAD) && echo ${x/feature\//}
-alias g3ll='git checkout master && git pull origin master && \
-	git checkout release && git pull origin release && \
+alias g2ll='git checkout master && git pull origin master && \
 	git checkout develop && git pull origin develop'
-alias g3sh='git checkout master && git pull origin master && git push origin master && \
-	git checkout release && git pull origin release && git merge master && git push origin release && \
+alias g2sh='git checkout master && git pull origin master && git push origin master && \
 	git checkout develop && git pull origin develop && git push origin develop'
 
 # PS1='\[\e[1;31m\][\A]\[\e[1;33m\]\u\[\e[1;35m\]:\[\e[1;34m\]\w\$\[\e[0m\] '
