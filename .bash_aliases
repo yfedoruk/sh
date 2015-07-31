@@ -31,7 +31,7 @@ alias fmys='phpcbf --standard=MySource'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
-
+alias update="sudo apt-get update && sudo apt-get -y  upgrade && sudo apt-get -y dist-upgrade"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 
 alias jc='javac'
