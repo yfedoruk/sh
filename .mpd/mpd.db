@@ -1,0 +1,124 @@
+info_begin
+format: 1
+mpd_version: 0.18.7
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: m&m
+mtime: 1438337827
+begin: m&m
+song_begin: Act1.mp3
+Time: 2365
+Artist: Александр Градский
+Title: Первое действие, первая картина
+Album: Мастер и Маргарита
+Track: 01
+Date: 2009
+Genre: Опера
+Composer: Александр Градский?
+mtime: 1437651587
+song_end
+song_begin: Act2.mp3
+Time: 1593
+Artist: Александр Градский
+Title: Первое действие, вторая картина
+Album: Мастер и Маргарита
+Track: 02
+Date: 2009
+Genre: Опера
+Composer: Александр Градский
+mtime: 1437651587
+song_end
+song_begin: Act3.mp3
+Time: 3039
+Artist: Александр Градский
+Title: Второе действие, третья картина
+Album: Мастер и Маргарита
+Track: 03
+Date: 2009
+Genre: Опера
+Composer: Александр Градский
+mtime: 1437651573
+song_end
+song_begin: Act4.mp3
+Time: 4132
+Artist: Александр Градский
+Title: Второе действие, четвертая картина
+Album: Мастер и Маргарита
+Track: 04
+Date: 2009
+Genre: Опера
+Composer: Александр Градский
+mtime: 1437651587
+song_end
+end: m&m
+directory: rock
+mtime: 1438337736
+begin: rock
+song_begin: 01-What_Above_Love (another copy).mp3
+Time: 326
+Artist: Asia
+Title: What Above Love
+Album: Silent Nation
+Track: 01/10
+Date: 2004
+Genre: Progressive Rock
+mtime: 1437651587
+song_end
+song_begin: 01-What_Above_Love.mp3
+Time: 326
+Artist: Asia
+Title: What Above Love
+Album: Silent Nation
+Track: 01/10
+Date: 2004
+Genre: Progressive Rock
+mtime: 1437651587
+song_end
+end: rock
+song_begin: 01-What_Above_Love (another copy).mp3
+Time: 326
+Artist: Asia
+Title: What Above Love
+Album: Silent Nation
+Track: 01/10
+Date: 2004
+Genre: Progressive Rock
+mtime: 1437651587
+song_end
+song_begin: 01-What_Above_Love (copy).mp3
+Time: 326
+Artist: Asia
+Title: What Above Love
+Album: Silent Nation
+Track: 01/10
+Date: 2004
+Genre: Progressive Rock
+mtime: 1437651573
+song_end
+song_begin: 01-What_Above_Love.mp3
+Time: 326
+Artist: Asia
+Title: What Above Love
+Album: Silent Nation
+Track: 01/10
+Date: 2004
+Genre: Progressive Rock
+mtime: 1437651587
+song_end

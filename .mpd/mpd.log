@@ -1,0 +1,149 @@
+Jul 28 13:33 : state_file: failed to open /home/slava/.mpd/mpdstate: No such file or directory
+Jul 28 13:33 : avahi: Service 'Music Player' successfully established.
+Jul 28 13:35 : avahi: Service 'Music Player' successfully established.
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 28 13:35 : alsa_mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jul 28 13:40 : avahi: Service 'Music Player' successfully established.
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 28 13:40 : alsa_mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jul 28 13:45 : avahi: Service 'Music Player' successfully established.
+Jul 28 13:45 : alsa_mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jul 28 13:48 : avahi: Service 'Music Player' successfully established.
+Jul 28 13:49 : avahi: Service 'Music Player' successfully established.
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 28 13:49 : alsa_mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Jul 28 13:51 : db: No such directory
+Jul 28 13:51 : db: No such directory
+Jul 28 13:52 : update: added /Act3.mp3
+Jul 28 13:52 : update: added /01-What_Above_Love (copy).mp3
+Jul 28 13:52 : update: added /Act4.mp3
+Jul 28 13:52 : update: added /Act1.mp3
+Jul 28 13:52 : update: added /01-What_Above_Love.mp3
+Jul 28 13:52 : update: added /Act2.mp3
+Jul 28 13:52 : update: added /01-What_Above_Love (another copy).mp3
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 28 13:53 : output: Failed to open mixer for 'My ALSA Device'
+Jul 28 13:53 : player: played "01-What_Above_Love (another copy).mp3"
+Jul 28 13:53 : player: played "01-What_Above_Love (another copy).mp3"
+Jul 28 13:53 : player: played "01-What_Above_Love (another copy).mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 28 13:53 : output: Failed to open mixer for 'My ALSA Device'
+Jul 28 13:53 : player: played "Act1.mp3"
+Jul 28 13:53 : player: played "Act3.mp3"
+Jul 28 14:44 : player: played "Act3.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 11:50 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 11:50 : avahi: Service 'Music Player' successfully established.
+Jul 31 11:51 : player: played "Act3.mp3"
+Jul 31 11:51 : player: played "Act1.mp3"
+Jul 31 11:52 : player: played "Act4.mp3"
+Jul 31 11:53 : db: No such directory
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 12:24 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 12:24 : player: played "Act4.mp3"
+Jul 31 13:09 : playlist: No such playlist
+Jul 31 13:15 : update: added rock/01-What_Above_Love.mp3
+Jul 31 13:15 : update: added rock/01-What_Above_Love (another copy).mp3
+Jul 31 13:17 : update: removing Act1.mp3
+Jul 31 13:17 : update: removing Act2.mp3
+Jul 31 13:17 : update: removing Act3.mp3
+Jul 31 13:17 : update: removing Act4.mp3
+Jul 31 13:17 : player: played "Act4.mp3"
+Jul 31 13:17 : update: added m&m/Act3.mp3
+Jul 31 13:17 : update: added m&m/Act4.mp3
+Jul 31 13:17 : update: added m&m/Act1.mp3
+Jul 31 13:17 : update: added m&m/Act2.mp3
+Jul 31 13:26 : db: No such directory
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:48 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:49 : player: played "m&m/Act2.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:49 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:52 : player: played "m&m/Act4.mp3"
+Jul 31 13:52 : player: played "m&m/Act4.mp3"
+Jul 31 13:52 : player: played "m&m/Act1.mp3"
+Jul 31 13:53 : player: played "m&m/Act4.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:53 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:53 : player: played "m&m/Act4.mp3"
+Jul 31 13:53 : player: played "m&m/Act4.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:54 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:54 : player: played "m&m/Act2.mp3"
+Jul 31 13:54 : player: played "m&m/Act4.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:55 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:55 : avahi: Service 'Music Player' successfully established.
+Jul 31 13:55 : player: played "m&m/Act4.mp3"
+Jul 31 13:55 : player: played "m&m/Act4.mp3"
+Jul 31 13:55 : player: played "m&m/Act2.mp3"
+Jul 31 13:55 : player: played "m&m/Act4.mp3"
+Jul 31 13:56 : player: played "m&m/Act2.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:56 : output: Failed to open mixer for 'My ALSA Device'
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:56 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:56 : player: played "m&m/Act2.mp3"
+Jul 31 13:56 : player: played "m&m/Act2.mp3"
+No protocol specified
+xcb_connection_has_error() returned true
+No protocol specified
+xcb_connection_has_error() returned true
+Jul 31 13:59 : output: Failed to open mixer for 'My ALSA Device'
+Jul 31 13:59 : player: played "m&m/Act4.mp3"
+Jul 31 13:59 : player: played "m&m/Act4.mp3"
+Jul 31 14:01 : player: played "m&m/Act4.mp3"
