@@ -147,3 +147,49 @@ Jul 31 13:59 : output: Failed to open mixer for 'My ALSA Device'
 Jul 31 13:59 : player: played "m&m/Act4.mp3"
 Jul 31 13:59 : player: played "m&m/Act4.mp3"
 Jul 31 14:01 : player: played "m&m/Act4.mp3"
+Aug 05 10:11 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 10:11 : avahi: Service 'Music Player' successfully established.
+Aug 05 10:20 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 10:21 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 10:21 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 10:22 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 10:23 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 05 23:09 : avahi: Service 'Music Player' successfully established.
+Aug 06 09:04 : avahi: Service 'Music Player' successfully established.
+Aug 07 00:57 : avahi: Service 'Music Player' successfully established.
+Aug 07 11:06 : avahi: Service 'Music Player' successfully established.
+Aug 07 23:51 : avahi: Service 'Music Player' successfully established.
+Aug 08 23:56 : avahi: Service 'Music Player' successfully established.
+Aug 09 12:23 : avahi: Service 'Music Player' successfully established.
+Aug 09 19:18 : avahi: Service 'Music Player' successfully established.
+Aug 10 10:44 : avahi: Service 'Music Player' successfully established.
+Aug 10 12:54 : avahi: Service 'Music Player' successfully established.
+Aug 10 14:59 : avahi: Service 'Music Player' successfully established.
+Aug 10 19:02 : avahi: Service 'Music Player' successfully established.
+Aug 11 00:25 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 00:25 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:07 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:07 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:07 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:21 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:24 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:28 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:30 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:30 : Failed to open mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 11 01:33 : player_thread: played "m&m/Act1.mp3"
+Aug 11 10:43 : avahi: Service 'Music Player' successfully established.
+Aug 11 10:43 : avahi: Client Disconnected, will reconnect shortly
+WARNING: Unhandled message: interface=(null), path=(null), member=(null)
+Aug 11 10:43 : avahi: Service 'Music Player' successfully established.
+Aug 11 20:21 : avahi: Service 'Music Player' successfully established.
+Aug 13 01:35 : avahi: Service 'Music Player' successfully established.
+Aug 13 14:32 : avahi: Service 'Music Player' successfully established.
+Aug 13 15:18 : avahi: Service 'Music Player' successfully established.
+Aug 15 23:11 : avahi: Service 'Music Player' successfully established.
+Aug 17 09:06 : avahi: Service 'Music Player' successfully established.
+Aug 17 14:39 : avahi: Service 'Music Player' successfully established.
+Aug 18 00:20 : avahi: Service 'Music Player' successfully established.
+Aug 18 08:51 : avahi: Service 'Music Player' successfully established.
+Aug 18 09:33 : avahi: Service 'Music Player' successfully established.
+Aug 18 15:57 : avahi: Service 'Music Player' successfully established.
+Aug 18 17:12 : avahi: Service 'Music Player' successfully established.

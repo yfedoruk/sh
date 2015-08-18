@@ -47,4 +47,8 @@
 #!/.Xkbmap
 
 !/.mpd/
+/.mpd/*
+!/.mpd/mpd.conf
 !/.ncmpcpp/
+
+!.xinitrc
