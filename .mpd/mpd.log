@@ -193,3 +193,7 @@ Aug 18 08:51 : avahi: Service 'Music Player' successfully established.
 Aug 18 09:33 : avahi: Service 'Music Player' successfully established.
 Aug 18 15:57 : avahi: Service 'Music Player' successfully established.
 Aug 18 17:12 : avahi: Service 'Music Player' successfully established.
+Aug 18 19:26 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 19 22:09 : avahi: Service 'Music Player' successfully established.
+Aug 20 17:16 : avahi: Service 'Music Player' successfully established.
+Aug 21 11:24 : avahi: Service 'Music Player' successfully established.
