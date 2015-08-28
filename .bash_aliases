@@ -115,3 +115,11 @@ devilspie &
 
 #tmux
 [ -z "$TMUX" ] && export TERM=xterm-256color
+
+
+ 
+export FZF_DEFAULT_OPTS='
+  --extended
+  --bind ctrl-f:page-down,ctrl-b:page-up
+  --no-sort
+'
