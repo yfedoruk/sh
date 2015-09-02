@@ -54,6 +54,7 @@ alias gdn='git diff -w --name-only'
 alias ga='git add'
 alias grH='git reset HEAD'
 alias grhrd='git reset --hard'
+alias grsft='git reset --soft'
 alias grhH='git reset --hard HEAD'
 alias grsH='git reset --soft HEAD^'
 alias grm='git rm'
@@ -80,7 +81,7 @@ hotfix() {
     git stash pop
     git add --all :/
     git commit -m "$1"
-    git flow hotfix finish $1
+    #git flow hotfix finish $1
 }
 alias ghauto=hotfix
 # x=$(git symbolic-ref --short -q HEAD) && echo ${x/feature\//}
