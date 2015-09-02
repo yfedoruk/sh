@@ -50,5 +50,5 @@
 /.mpd/*
 !/.mpd/mpd.conf
 !/.ncmpcpp/
+!/.xinitrc
 
-!.xinitrc

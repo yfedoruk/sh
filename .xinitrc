@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+#!/bin/bash
+setxkbmap -option grp:lwin_toggle us,ru
+=======
 #!/bin/sh
 
 # /etc/X11/xinit/xinitrc
@@ -8,3 +12,4 @@
 . /etc/X11/Xsession
 
 exec openbox
+>>>>>>> afa13d1cc17e8168b926f79539bebababc72d7ea
