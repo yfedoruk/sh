@@ -45,6 +45,8 @@
 
 
 #!/.Xkbmap
+#Esc-to-CapsLock
+!/.xmodmap
 
 !/.mpd/
 /.mpd/*
