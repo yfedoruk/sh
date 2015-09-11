@@ -78,6 +78,10 @@ alias ghf='git flow hotfix finish'
 alias gff='git flow feature finish'
 hotfix() {
     git stash
+    git checkout master
+    git pull origin master
+    git checkout develop
+    git pull origin develop
     git flow hotfix start $1
     git stash pop
     git add --all :/
