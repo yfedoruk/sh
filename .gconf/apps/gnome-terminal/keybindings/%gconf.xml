@@ -3,8 +3,8 @@
 	<entry name="close_tab" mtime="1434743572" type="string">
 		<stringvalue>&lt;Primary&gt;q</stringvalue>
 	</entry>
-	<entry name="reset_and_clear" mtime="1434803655" type="string">
-		<stringvalue>&lt;Alt&gt;e</stringvalue>
+	<entry name="reset_and_clear" mtime="1442095287" type="string">
+		<stringvalue>&lt;Primary&gt;e</stringvalue>
 	</entry>
 	<entry name="new_window" mtime="1350908871" type="string">
 		<stringvalue>&lt;Primary&gt;n</stringvalue>
