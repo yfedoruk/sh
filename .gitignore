@@ -8,6 +8,7 @@
 !/.bash_aliases
 !/.config/
 /.config/*
+!/.inputrc
 
 !/.config/emacs/
 !.emacs
