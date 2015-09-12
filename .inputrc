@@ -1,3 +1,5 @@
+$include /etc/inputrc
+
 set completion-ignore-case on
 
 # type some command and then press Up/Down - let to move over command history
