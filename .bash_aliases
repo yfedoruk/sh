@@ -40,7 +40,9 @@ alias j='java -Dprism.order=sw'
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
-#alias yt="curl --ciphers RC4-SHA \"$(youtube-dl -g https://www.youtube.com/watch?v=$1)\" | mplayer -"
+ytb() {
+  curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
+}
 
 #Git aliases
 alias gittree='git diff-tree --no-commit-id --name-only -r'
