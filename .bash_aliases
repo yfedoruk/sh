@@ -33,6 +33,7 @@ alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
 alias update="sudo apt-get update && sudo apt-get -y  upgrade && sudo apt-get -y dist-upgrade"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
+alias killp="sudo kill -9 $(ps aux | pidof $1)"
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
@@ -104,6 +105,7 @@ export PS1='\[\e[1;31m\][\A]\[\e[1;33m\]\u\[\e[1;35m\]:\[\e[1;34m\]\w\[\033[01;3
 PATH=$PATH:/home/slava/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/node_modules/.bin
+PATH=$PATH:$HOME/.rvm/bin/rvm
 #echo "keycode 14 = BackSpace" | loadkeys
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; 
 NODE_PATH=/usr/lib/node_modules
