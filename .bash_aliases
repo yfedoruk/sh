@@ -40,6 +40,7 @@ alias j='java -Dprism.order=sw'
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
+alias shutdown="sudo shutdown -h now"
 ytb() {
   curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
 }
