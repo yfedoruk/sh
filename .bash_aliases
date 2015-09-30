@@ -132,7 +132,7 @@ devilspie &
 
  
 export FZF_DEFAULT_OPTS='
-  --extended
+  --extended-exact
   --bind ctrl-f:page-down,ctrl-b:page-up
   --no-sort
 '
