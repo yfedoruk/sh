@@ -130,13 +130,18 @@ devilspie &
 [ -z "$TMUX" ] && export TERM=xterm-256color
 
 
- 
+fh() {
+  eval $(history | fzf +s | sed 's/ *[0-9]* *//')
+
+}
+
 export FZF_DEFAULT_OPTS='
   --extended-exact
   --bind ctrl-f:page-down,ctrl-b:page-up
   --no-sort
 '
 
+alias fzf='fzf --bind "enter:execute(less {})"'
 fd() {
   local dir
   dir=$(find ${1:-*} -path '*/\.*' -prune \
@@ -145,9 +150,4 @@ fd() {
 
 }
 
-fh() {
-  eval $(history | fzf +s | sed 's/ *[0-9]* *//')
-
-}
-
-FZF_DEFAULT_COMMAND='fh'
+#FZF_DEFAULT_COMMAND="eval $(history | fzf +s | sed 's/ *[0-9]* *//')"
