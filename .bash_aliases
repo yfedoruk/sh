@@ -136,3 +136,18 @@ export FZF_DEFAULT_OPTS='
   --bind ctrl-f:page-down,ctrl-b:page-up
   --no-sort
 '
+
+fd() {
+  local dir
+  dir=$(find ${1:-*} -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m) &&
+  cd "$dir"
+
+}
+
+fh() {
+  eval $(history | fzf +s | sed 's/ *[0-9]* *//')
+
+}
+
+FZF_DEFAULT_COMMAND='fh'
