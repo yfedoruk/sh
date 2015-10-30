@@ -14,6 +14,7 @@ alias moc='mocp'
 alias ll='ls -alFh'
 alias l.='ls -d .* --color=auto'
 alias wget='wget -c'
+alias storm="/usr/local/src/PhpStorm-139.1348/bin/phpstorm.sh"
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
