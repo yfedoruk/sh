@@ -100,6 +100,7 @@ hotfix() {
 alias ghauto=hotfix
 # x=$(git symbolic-ref --short -q HEAD) && echo ${x/feature\//}
 alias g1sh='git checkout develop && git pull origin develop && git push origin develop'
+alias g0sh='git checkout master && git pull origin master && git push origin master'
 alias g2ll='git checkout master && git pull origin master && \
 	git checkout develop && git pull origin develop'
 alias g2sh='git checkout master && git pull origin master && git push origin master && \
