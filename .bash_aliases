@@ -47,12 +47,17 @@ ytb() {
   curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
 }
 
+# grep aliases
+alias grepk="grep -rn --exclude-dir=runtime"
+
 #Git aliases
 alias gittree='git diff-tree --no-commit-id --name-only -r'
 alias gs='git status'
 alias gst='git stash'
 alias gstp='git stash pop'
+alias gsw='git show'
 alias gb='git branch'
+alias gt='git tag'
 alias gm='git merge'
 alias gc='git commit -m'
 alias gmsgedit='git reset --soft HEAD^ && git commit -c ORIG_HEAD'
