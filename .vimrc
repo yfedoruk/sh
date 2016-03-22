@@ -15,7 +15,7 @@ set runtimepath+=$HOME/.vim/
 " -------------- colorscheme ---------------- "
 "colorscheme ron
     let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
   if $COLORTERM == 'gnome-terminal'
       set t_Co=256
   endif
@@ -72,7 +72,8 @@ call vundle#begin()
  Plugin 'bling/vim-airline'
 
  Plugin 'vim-scripts/Tagbar'
- Plugin 'Valloric/YouCompleteMe'
+ "need compilation
+ "Plugin 'Valloric/YouCompleteMe'
  Plugin 'kshenoy/vim-signature'
  Plugin 'altercation/vim-colors-solarized'
     syntax enable
