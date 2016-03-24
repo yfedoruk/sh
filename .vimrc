@@ -156,7 +156,7 @@ set expandtab         "Use spaces, not tabs. `set noexpandtab` -- contra.  :#ret
 " whitespaces
 set list listchars=tab:→\ ,trail:·,extends:>,precedes:<
 set list
-
+cmap w!! w !sudo tee > /dev/null %
 
 highlight LineNr guifg=#050505 ctermfg=grey     " line number color
 
