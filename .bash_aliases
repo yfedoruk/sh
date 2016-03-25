@@ -131,6 +131,7 @@ export EDITOR="$VISUAL"
 JETTY_HOME=/home/slava/www/jetty
 
 # set language toggle on WinKey
+setxkbmap -option grp:alt_shift_toggle us,ua
 setxkbmap -option grp:lwin_toggle us,ru
 
 #devilspie
