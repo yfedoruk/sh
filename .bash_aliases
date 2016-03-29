@@ -120,8 +120,9 @@ PATH=$PATH:$HOME/.rvm/bin/rvm
 #echo "keycode 14 = BackSpace" | loadkeys
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; 
 NODE_PATH=/usr/lib/node_modules
-#export JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre/bin/java
-export JAVA_HOME=/usr
+#export JAVA_HOME=/usr
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+OWTEST_READ_TIMEOUT=20000
 
 #set vim as default editor
 export VISUAL=vim
