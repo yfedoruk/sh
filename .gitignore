@@ -10,9 +10,6 @@
 /.config/*
 !/.inputrc
 
-!/.config/emacs/
-!.emacs
-
 !/.gconf/
 /.gconf/*
 !/.gconf/apps/
