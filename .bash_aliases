@@ -122,7 +122,7 @@ PATH=$PATH:$HOME/.rvm/bin/rvm
 NODE_PATH=/usr/lib/node_modules
 #export JAVA_HOME=/usr
 JAVA_HOME=/usr/lib/jvm/java-8-oracle
-OWTEST_READ_TIMEOUT=20000
+OWTEST_READ_TIMEOUT=20000000000
 
 #set vim as default editor
 export VISUAL=vim
