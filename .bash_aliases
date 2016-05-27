@@ -35,8 +35,8 @@ alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'
 alias update="sudo apt-get update && sudo apt-get -y  upgrade && sudo apt-get -y dist-upgrade"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 alias killp="sudo kill -9 $(ps aux | pidof $1)"
-alias xdebugen='sudo php5enmod xdebug && sudo service apache2 reload'
-alias xdebugdis='sudo php5dismod xdebug && sudo service apache2 reload'
+alias xdebugon='sudo php5enmod xdebug && sudo service apache2 reload'
+alias xdebugoff='sudo php5dismod xdebug && sudo service apache2 reload'
 alias tf='tail -f'
 
 alias jc='javac'
