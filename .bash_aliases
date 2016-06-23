@@ -165,6 +165,8 @@ fd() {
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
 
+alias ..='cd ../'
 }
 
 #FZF_DEFAULT_COMMAND="eval $(history | fzf +s | sed 's/ *[0-9]* *//')"
+PGPASSWORD=gthcgtrnbdf
