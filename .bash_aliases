@@ -39,6 +39,7 @@ alias killp="sudo kill -9 $(ps aux | pidof $1)"
 alias xdebugon='sudo php5enmod xdebug && sudo service apache2 reload'
 alias xdebugoff='sudo php5dismod xdebug && sudo service apache2 reload'
 alias tf='tail -f'
+alias install='sudo apt-get install'
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
@@ -122,6 +123,7 @@ PATH=$PATH:/home/slava/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/node_modules/.bin
 PATH=$PATH:$HOME/.rvm/bin/rvm
+PATH=$PATH:$HOME/.composer/vendor/bin
 #echo "keycode 14 = BackSpace" | loadkeys
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; 
 NODE_PATH=/usr/lib/node_modules
