@@ -31,6 +31,7 @@ alias fpsr2='phpcbf --standard=PSR2'
 alias fzend='phpcbf --standard=Zend'
 alias fsquiz='phpcbf --standard=Squiz'
 alias fmys='phpcbf --standard=MySource'
+alias ap2log='tail -f /var/log/apache2/error.log'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
