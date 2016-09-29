@@ -35,7 +35,7 @@ alias ap2log='tail -f /var/log/apache2/error.log'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
-alias update="sudo apt-get update && sudo apt-get -y  upgrade && sudo apt-get -y dist-upgrade"
+alias update="sudo apt update && sudo apt -y  upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 alias killp="sudo kill -9 $(ps aux | pidof $1)"
 alias xdebugon='sudo phpenmod xdebug && sudo service apache2 reload'
