@@ -41,7 +41,8 @@ alias killp="sudo kill -9 $(ps aux | pidof $1)"
 alias xdebugon='sudo phpenmod xdebug && sudo service apache2 reload'
 alias xdebugoff='sudo phpdismod xdebug && sudo service apache2 reload'
 alias tf='tail -f'
-alias install='sudo apt-get install'
+alias install='sudo apt install'
+alias alsa = 'pulseaudio -k && sudo alsa force-reload'
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
