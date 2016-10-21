@@ -1,5 +1,5 @@
 #fix terminal bug. new tab in cwd
-. /etc/profile.d/vte.sh
+#. /etc/profile.d/vte.sh
 
 alias diff='colordiff'
 alias ge='geany'
@@ -43,6 +43,7 @@ alias xdebugoff='sudo phpdismod xdebug && sudo service apache2 reload'
 alias tf='tail -f'
 alias install='sudo apt install'
 alias phpunit='phpunit --debug'
+alias sound='pulseaudio -k && sudo alsa force-reload'
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
