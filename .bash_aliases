@@ -49,7 +49,8 @@ alias jc='javac'
 alias j='java -Dprism.order=sw'
 
 # --- work --
-alias ihub='/media/veracrypt1/www/docker/run/phpfpm/ssh.sh'
+alias 1ihub='/media/veracrypt1/www/docker/run/phpfpm/ssh.sh'
+alias ihub='/home/slava/www/docker/run/phpfpm/ssh.sh'
 
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts

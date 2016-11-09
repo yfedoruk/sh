@@ -1,5 +1,6 @@
 #!/bin/bash
 setxkbmap -option grp:lwin_toggle us,ru
+setxkbmap -option caps:swapescape
 #!/bin/sh
 
 # /etc/X11/xinit/xinitrc
