@@ -44,6 +44,7 @@ alias tf='tail -f'
 alias install='sudo apt install'
 alias phpunit='phpunit --debug'
 alias sound='pulseaudio -k && sudo alsa force-reload'
+alias swap='sudo swapoff -a && sudo swapon -a'
 
 alias jc='javac'
 alias j='java -Dprism.order=sw'
