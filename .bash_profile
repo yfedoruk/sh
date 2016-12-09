@@ -21,8 +21,9 @@ fi
 
 
 # set key bindings
-xbindkeys -f .xbindkeysrc
+xbindkeys -f ~/.xbindkeysrc
 
 # set 
+source ~/.xinitrc
 
 
