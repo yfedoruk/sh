@@ -23,7 +23,7 @@ fi
 # set key bindings
 xbindkeys -f ~/.xbindkeysrc
 
-# set 
+# map keys
 source ~/.xinitrc
 
 
