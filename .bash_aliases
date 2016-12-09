@@ -150,7 +150,7 @@ JETTY_HOME=/home/slava/www/jetty
 
 # set language toggle on WinKey
 setxkbmap -option grp:alt_shift_toggle us,ua
-setxkbmap -option grp:lwin_toggle us,ru
+setxkbmap -option grp:rwin_toggle us,ru
 
 #devilspie
 devilspie &
@@ -182,3 +182,4 @@ alias ..='cd ../'
 
 #FZF_DEFAULT_COMMAND="eval $(history | fzf +s | sed 's/ *[0-9]* *//')"
 PGPASSWORD=gthcgtrnbdf
+alias lock='i3lock -c000000'

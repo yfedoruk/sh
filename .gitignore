@@ -42,9 +42,8 @@
 !/.vim/settings/
 
 
-#!/.Xkbmap
+#!/.Xkbmap, .Xmodmap
 #Esc-to-CapsLock
-!/.Xmodmap
 
 !/.mpd/
 /.mpd/*

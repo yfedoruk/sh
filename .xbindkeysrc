@@ -17,8 +17,8 @@ control + p
 "mocp -U"
 control + shift + p
 
-"setxkbmap -option grp:lwin_toggle us,ru"
+"setxkbmap -option grp:rwin_toggle us,ru"
 control + shift + 1
 
-"setxkbmap -option grp:lwin_toggle us,ua"
+"setxkbmap -option grp:rwin_toggle us,ua"
 control + shift + 2
