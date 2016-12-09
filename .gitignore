@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/.vimrc
+!/.bash_profile
 !.xbindkeysrc
 !/.Guardfile
 !/.tmux.conf
