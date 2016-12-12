@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/.vimrc
+!/.bash_profile
 !.xbindkeysrc
 !/.Guardfile
 !/.tmux.conf
@@ -42,13 +43,14 @@
 !/.vim/settings/
 
 
-#!/.Xkbmap
+#!/.Xkbmap, .Xmodmap
 #Esc-to-CapsLock
-!/.Xmodmap
 
 !/.mpd/
 /.mpd/*
 !/.mpd/mpd.conf
 !/.ncmpcpp/
 !/.xinitrc
+!/.i3/
+/.i3/config
 
