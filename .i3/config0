@@ -5,5 +5,7 @@ exec  --no-startup-id $HOME/bin/telegram
 exec  --no-startup-id /usr/bin/skype
 exec  --no-startup-id /usr/bin/thunderbird
 
+# disable non gui menu
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 xbindkeys -f $HOME/.xbindkeysrc
 
