@@ -1,0 +1,9 @@
+exec  --no-startup-id google-chrome
+exec  --no-startup-id gnome-terminal
+exec  --no-startup-id /usr/local/bin/pstorm
+exec  --no-startup-id $HOME/bin/telegram
+exec  --no-startup-id /usr/bin/skype
+exec  --no-startup-id /usr/bin/thunderbird
+
+xbindkeys -f $HOME/.xbindkeysrc
+

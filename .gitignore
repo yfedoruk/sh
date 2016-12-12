@@ -51,5 +51,6 @@
 !/.mpd/mpd.conf
 !/.ncmpcpp/
 !/.xinitrc
-!/.i3/config0
+!/.i3/
+/.i3/config
 
