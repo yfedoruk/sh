@@ -33,4 +33,10 @@ URxvt*font: xft:Monospace:pixelsize=14
 ! don't use a bold font
 URxvt*boldFont: xft:Monospace:pixelsize=14
 
+! fix font width
 URxvt*letterSpace: -1
+
+! open links in Firefox
+URxvt.perl-ext-common : default,matcher
+URxvt.urlLauncher     : firefox
+URxvt.matcher.button  : 1
