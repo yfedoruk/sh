@@ -52,7 +52,7 @@
 !/.ncmpcpp/
 !/.xinitrc
 !/.i3/
-/.i3/config
+!/.i3/config
 
 # rxvc-terminal
 !/.Xdefaults

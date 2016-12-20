@@ -1,7 +1,7 @@
 ! to match gnome-terminal "Linux console" scheme
 ! foreground/background
 URxvt*background: #000000
-URxvt*foreground: #ffffff
+URxvt*foreground: #AAAAAA
 ! black
 URxvt.color0  : #000000
 URxvt.color8  : #555555
@@ -44,7 +44,8 @@ URxvt.urlLauncher     : firefox
 URxvt.matcher.button  : 1
 
 ! Yankable URLs (no mouse)
-URxvt.perl-ext: default,keyboard-select
+URxvt.perl-ext: default
+!keyboard-select
 URxvt.keysym.M-u: perl:matcher:select
 !URxvt.url-select.launcher: /usr/bin/xdg-open
 !URxvt.url-select.underline: true
