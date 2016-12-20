@@ -55,5 +55,5 @@
 /.i3/config
 
 # rxvc-terminal
-!~/.Xdefaults
+!/.Xdefaults
 
