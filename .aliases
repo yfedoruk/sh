@@ -44,6 +44,7 @@ alias sound='pulseaudio -k && sudo alsa force-reload'
 alias swap='sudo swapoff -a && sudo swapon -a'
 alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
 alias ihub-start='~/www/docker/run/docker/restart.sh'
+alias icms-start='~/www/docker-icms/run/docker/start.sh'
 alias vpn-connect='printf "y\ny.fedoruk\nA2yfedoruck\ny" | /opt/cisco/anyconnect/bin/vpn -s connect 195.66.110.158'
 alias vpn-disconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
 
