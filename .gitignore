@@ -8,6 +8,7 @@
 
 !/.bash_aliases
 !/.aliases
+!/.env
 !/.config/
 /.config/*
 !/.inputrc
