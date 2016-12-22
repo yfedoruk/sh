@@ -37,3 +37,5 @@ fd() {
 #FZF_DEFAULT_COMMAND="eval $(history | fzf +s | sed 's/ *[0-9]* *//')"
 PGPASSWORD=gthcgtrnbdf
 alias lock='i3lock -c000000'
+
+#rofi -key-run F3 -key-window F2 &
