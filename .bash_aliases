@@ -38,4 +38,8 @@ fd() {
 PGPASSWORD=gthcgtrnbdf
 alias lock='i3lock -c000000'
 
-#rofi -key-run F3 -key-window F2 &
+
+if [ `pidof rofi`  ]; then
+    rofi -key-run F3 -key-window F2 &
+fi
+
