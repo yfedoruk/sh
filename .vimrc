@@ -153,6 +153,10 @@ hi cursorline term=bold cterm=bold guibg=#E5E5E5                        "cur. li
 set tabstop=4              "set expandtab on 4 spaces
 set expandtab         "Use spaces, not tabs. `set noexpandtab` -- contra.  :#retab! -- Retabulate the whole file
 
+
+# automatically use the '+' buffer (the system clipboard) by default.
+set clipboard=unnamedplus
+
 " whitespaces
 set list listchars=tab:→\ ,trail:·,extends:>,precedes:<
 set list
