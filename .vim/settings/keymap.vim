@@ -157,3 +157,7 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+
+
+" start a subshell. (go to bash without exiting vim)
+nnoremap <LEADER>s :sh<CR>
