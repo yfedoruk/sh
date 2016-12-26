@@ -154,7 +154,7 @@ set tabstop=4              "set expandtab on 4 spaces
 set expandtab         "Use spaces, not tabs. `set noexpandtab` -- contra.  :#retab! -- Retabulate the whole file
 
 
-# automatically use the '+' buffer (the system clipboard) by default.
+" automatically use the '+' buffer (the system clipboard) by default.
 set clipboard=unnamedplus
 
 " whitespaces
