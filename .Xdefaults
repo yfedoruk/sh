@@ -1,3 +1,6 @@
+! load config
+! xrdb -load ~/.Xdefaults
+!
 ! to match gnome-terminal "Linux console" scheme
 ! foreground/background
 URxvt*background: #000000
@@ -27,17 +30,19 @@ URxvt.color14 : #34E2E2
 URxvt.color7  : #D3D7CF
 URxvt.color15 : #EEEEEC
 
-# select font
-URxvt*font: xft:Monospace:pixelsize=14
+! select font
+! URxvt*font: xft:Monospace:pixelsize=14
+URxvt*font: xft:inconsolata:pixelsize=14
 
-! don't use a bold font
+! dont use a bold font
 URxvt*boldFont: xft:Monospace:pixelsize=14
 
 ! fix font width
 URxvt*letterSpace: -1
 
 ! perl extensions
-URxvt.perl-ext-common : default,matcher,tabbed
+URxvt.perl-ext-common : default,matcher
+!,tabbed
 
 ! open links in Firefox
 URxvt.urlLauncher     : firefox
@@ -56,10 +61,15 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keysym.M-s: perl:keyboard-select:search
 
 ! colors of tabs
-URxvt.tabbed.tabbar-fg: 8
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 7
-URxvt.tabbed.tab-bg: 0
+!URxvt.tabbed.tabbar-fg: 8
+!URxvt.tabbed.tabbar-bg: 0
+!URxvt.tabbed.tab-fg: 7
+!URxvt.tabbed.tab-bg: 0
+!URxvt.tabbed.autohide: yes
+!URxvt.tabbed.new-button: no
+!URxvt.tabbed.title: yes
+URxvt.colorUL: #4682B4
+URxvt.url-launcher: dwb
 
 
 ! do not scroll with output
