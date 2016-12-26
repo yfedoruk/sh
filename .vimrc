@@ -7,7 +7,7 @@
  "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
-source ~/.vim/settings/mswin.vim
+" source ~/.vim/settings/mswin.vim
 source ~/.vim/settings/keymap.vim
 set runtimepath+=$HOME/.vim/
 
