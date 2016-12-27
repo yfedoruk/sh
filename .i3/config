@@ -34,7 +34,7 @@ floating_modifier $mod
 bindsym $mod+Return exec rxvt-unicode
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
@@ -160,7 +160,7 @@ bar {
 
         #xrandr --listactivemonitors
         #xrandr --output DisplayPort-1 --primary
-        tray_output primary
+        #tray_output primary
         position bottom
 }
 
