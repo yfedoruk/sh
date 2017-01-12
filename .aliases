@@ -44,7 +44,7 @@ alias sound='pulseaudio -k && sudo alsa force-reload'
 alias swap='sudo swapoff -a && sudo swapon -a'
 alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
 alias ihub-start='cd ~/www/docker/ && ~/www/docker/run/docker/restart.sh && cd -'
-alias icms-start='~/www/docker-icms/run/docker/start.sh'
+alias icms-start='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/restart.sh && cd -'
 alias vpn-connect='printf "y\ny.fedoruk\nA2yfedoruck\ny" | /opt/cisco/anyconnect/bin/vpn -s connect 195.66.110.158'
 alias vpn-disconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
 
@@ -54,6 +54,7 @@ alias j='java -Dprism.order=sw'
 # --- work --
 alias 1ihub='/media/veracrypt1/www/docker/run/phpfpm/ssh.sh'
 alias ihub='/home/slava/www/docker/run/phpfpm/ssh.sh'
+alias icms='/home/slava/www/docker-icms/run/phpfpm/ssh.sh'
 
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 #scripts
