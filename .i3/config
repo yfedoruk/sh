@@ -201,3 +201,6 @@ bindsym $mod+minus scratchpad show
 
 # Toggle floating/tiling
 bindsym $mod+t floating toggle
+
+# disable mouse focus
+focus_follows_mouse no
