@@ -65,6 +65,11 @@ ytb() {
   curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
 }
 
+ytadd(){
+    mpc add `youtube-dl -f140 -g http://www.youtube.com/watch?v=$1`
+}
+
+
 # grep aliases
 alias grepk="grep -rn --exclude-dir=runtime"
 
