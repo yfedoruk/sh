@@ -70,7 +70,7 @@ ytadd(){
 }
 
 vplay(){
-    cd ~ && `nohup mpv $1 &` && cd -
+    cd ~ && `nohup mpv $1 --pause &` && cd -
 }
 
 # grep aliases
