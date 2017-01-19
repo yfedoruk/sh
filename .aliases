@@ -69,9 +69,13 @@ ytadd(){
     mpc add `youtube-dl -f140 -g http://www.youtube.com/watch?v=$1`
 }
 
+vplay(){
+    cd ~ && `nohup mpv $1 &` && cd -
+}
 
 # grep aliases
 alias grepk="grep -rn --exclude-dir=runtime"
+alias psgrep="ps aux | grep $1"
 
 #Git aliases
 alias gittree='git diff-tree --no-commit-id --name-only -r'

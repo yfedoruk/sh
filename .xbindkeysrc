@@ -11,7 +11,8 @@ control + 1
 "amixer set Master 1%+"
 control + 2
 
-"mocp -P"
+#"mocp -P"
+"mpv pause "
 control + p
 
 "mocp -U"
