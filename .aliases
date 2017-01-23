@@ -61,15 +61,15 @@ alias ppa-find="grep -rn \'$1\' /etc/apt/sources.list /etc/apt/sources.list.d/"
 #scripts
 alias suspend="sh ~/.sh/suspend.sh"
 alias shutdown="sudo shutdown -h now"
-ytb() {
-  curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
-}
+#ytb() {
+#  curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
+#}
 
 ytadd(){
     mpc add `youtube-dl -f140 -g http://www.youtube.com/watch?v=$1`
 }
 
-vplay(){
+ytb(){
     cd ~ && `nohup mpv $1 --pause &` && cd -
 }
 
