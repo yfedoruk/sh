@@ -9,6 +9,7 @@
 !/.bash_aliases
 !/.aliases
 !/.env
+!/.git-completion.bash
 !/.config/
 /.config/*
 !/.inputrc
