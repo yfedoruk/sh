@@ -20,7 +20,7 @@ if [ -f ~/.git-completion.bash  ]; then
   #add git completion to aliases
   __git_complete g __git_main
   __git_complete gk _git_checkout
-  __git_complete gm __git_merge
+  __git_complete gm _git_merge
   __git_complete gll _git_pull
   __git_complete ga _git_add
 fi
