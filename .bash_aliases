@@ -23,6 +23,8 @@ if [ -f ~/.git-completion.bash  ]; then
   __git_complete gm _git_merge
   __git_complete gll _git_pull
   __git_complete ga _git_add
+  __git_complete gd _git_diff
+  __git_complete gdn _git_diff
 fi
 
 devilspie &
