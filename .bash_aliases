@@ -40,12 +40,20 @@ export FZF_DEFAULT_OPTS='
   --no-sort
 '
 
-alias fzf='fzf --bind "enter:execute(less {})"'
+#alias fzf='fzf --bind "enter:execute(less {})"'      # this breaks select on press Enter button
 fd() {
   local dir
   dir=$(find ${1:-*} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
   cd "$dir"
+}
+
+# fgb - checkout git branch
+fgb() {
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
 #FZF_DEFAULT_COMMAND="eval $(history | fzf +s | sed 's/ *[0-9]* *//')"
