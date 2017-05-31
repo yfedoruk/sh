@@ -48,8 +48,8 @@ fd() {
   cd "$dir"
 }
 
-# fgb - checkout git branch
-fgb() {
+# fgk - checkout git branch
+fgk() {
   local branches branch
   branches=$(git branch -vv) &&
   branch=$(echo "$branches" | fzf +m) &&
