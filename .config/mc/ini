@@ -77,12 +77,16 @@ editor_backup_extension=~
 mcview_eof=
 ignore_ftp_chattr_errors=true
 keymap=mc.keymap
-skin=default
+skin=modarin256
 
 editor_cursor_after_inserted_block=0
 editor_ask_filename_before_edit=0
 editor_filesize_threshold=64M
 
+
+editor_drop_selection_on_copy=1
+editor_state_full_filename=1
+editor_stop_format_chars=-+*\\,.;:&>
 
 [Layout]
 message_visible=1
@@ -95,7 +99,7 @@ free_space=1
 
 horizontal_split=0
 vertical_equal=1
-left_panel_size=135
+left_panel_size=105
 horizontal_equal=1
 top_panel_size=92
 
@@ -139,6 +143,8 @@ filetype_mode=true
 permission_mode=false
 torben_fj_mode=false
 quick_search_mode=2
+
+select_flags=6
 
 [HotlistConfig]
 expanded_view_of_groups=0
