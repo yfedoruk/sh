@@ -77,7 +77,7 @@ editor_backup_extension=~
 mcview_eof=
 ignore_ftp_chattr_errors=true
 keymap=mc.keymap
-skin=modarin256
+skin=modarin256-defbg-thin
 
 editor_cursor_after_inserted_block=0
 editor_ask_filename_before_edit=0
@@ -130,7 +130,7 @@ show_mini_info=true
 kilobyte_si=false
 mix_all_files=false
 show_backups=true
-show_dot_files=false
+show_dot_files=true
 fast_reload=false
 fast_reload_msg_shown=false
 mark_moves_down=true
