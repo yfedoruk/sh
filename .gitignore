@@ -34,7 +34,6 @@
 !/.config/Terminal/
 
 !/.config/mc/
-/.config/mc/*
 # /.config/mc/ini
 !/.config/mc/mc.ext
 !/.config/gtk-3.0/
