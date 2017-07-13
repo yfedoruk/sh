@@ -6,8 +6,8 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
-if [ -f ~/Dropbox/.aliases ]; then
-    . ~/Dropbox/.aliases
+if [ -f ~/bi/.aliases ]; then
+    . ~/bi/.aliases
 fi
 
 if [ -f ~/.env ]; then
