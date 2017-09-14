@@ -16,7 +16,7 @@ alias df='df -h'
 alias chowns='sudo chown -R slava:slava'
 alias storm="/usr/local/src/PhpStorm-139.1348/bin/phpstorm.sh"
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
-
+alias i3-exit='i3-msg exit'
 
 
 alias ffind='find . -name'
