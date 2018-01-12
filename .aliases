@@ -153,4 +153,5 @@ gmdev(){
     git checkout dev
     git merge $source_branch
     git push origin dev
+    git checkout $source_branch
 }
