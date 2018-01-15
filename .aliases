@@ -19,6 +19,8 @@ alias chowns='sudo chown -R slava:slava'
 alias storm="/usr/local/src/PhpStorm-139.1348/bin/phpstorm.sh"
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias i3-exit='i3-msg exit'
+alias i3-reload='i3-msg reload'
+alias i3-restart='i3-msg restart'
 
 
 alias ffind='find . -name'
@@ -153,5 +155,14 @@ gmdev(){
     git checkout dev
     git merge $source_branch
     git push origin dev
+    git checkout $source_branch
+}
+
+
+gmmaster(){
+    source_branch=`git symbolic-ref --short HEAD`
+    git checkout master
+    git merge $source_branch
+    git push origin master
     git checkout $source_branch
 }
