@@ -150,7 +150,7 @@ alias g2ll='git checkout master && git pull origin master && \
 alias g2sh='git checkout master && git pull origin master && git push origin master && \
 	git checkout develop && git pull origin develop && git push origin develop'
 
-gmdev(){
+gmtdev(){
     source_branch=`git symbolic-ref --short HEAD`
     git checkout dev
     git merge $source_branch
@@ -159,7 +159,7 @@ gmdev(){
 }
 
 
-gmmaster(){
+gmtmaster(){
     source_branch=`git symbolic-ref --short HEAD`
     git checkout master
     git merge $source_branch
