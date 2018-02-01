@@ -166,3 +166,26 @@ gmtmaster(){
     git push origin master
     git checkout $source_branch
 }
+
+# -- bi --
+
+alias ihub-up='cd ~/www/docker/ && ~/www/docker/run/up.sh && cd -'
+alias ihub-update-docker='cd ~/www/docker/ && ~/www/docker/run/docker/update.sh && ~/www/docker/run/ihub/update.sh && cd -'
+alias ihub-update='cd ~/www/docker/ && ~/www/docker/run/ihub/update.sh && cd -'
+alias ihub-tests='cd ~/www/docker/ && ~/www/docker/run/_/project/test.sh && cd -'
+
+alias icms-up='cd ~/www/docker-icms/ && ~/www/docker-icms/run/up.sh && cd -'
+alias icms-tests='cd ~/www/docker-icms/ && ~/www/docker-icms/run/_/project/test.sh && cd -'
+alias icms-update-docker='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/update.sh && cd -'
+alias icms-update='cd ~/www/docker-icms/ && ~/www/docker-icms/run/icms/update.sh && cd -'
+
+alias casino-up='cd ~/www/casino-sw-backend-infrastructure && ~/www/casino-sw-backend-infrastructure/run/up.sh && cd -'
+alias cms-up='cd ~/www/docker-cms && ~/www/docker-cms/run/docker/restart.sh && cd -'
+
+alias ihub='cd ~/www/docker/ && ~/www/docker/run/docker/phpfpm/ssh.sh && cd -'
+alias icms='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/phpfpm/ssh.sh && cd -'
+alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-backend-infrastructure/run/docker/phpfpm/ssh.sh && cd -'
+
+alias icms-cd='cd ~/www/docker-icms/project'
+alias ihub-cd='cd ~/www/docker/project'
+alias casino-cd='cd ~/www/casino-sw-backend-infrastructure/project'
