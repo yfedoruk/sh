@@ -32,6 +32,7 @@
 !/.config/geany/filedefs/colorschemes/alt.conf
 
 !/.config/Terminal/
+!/.config/nvim/
 
 !/.config/mc/
 # /.config/mc/ini
