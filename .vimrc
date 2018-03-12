@@ -60,7 +60,7 @@ call vundle#begin()
  " php documentor
  Plugin 'tobyS/pdv'
  Plugin 'tobyS/vmustache'
- Plugin 'SirVer/ultisnips'
+ Plugin 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
 
  Plugin 'scrooloose/nerdtree'
  Plugin 'scrooloose/nerdcommenter'
