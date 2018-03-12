@@ -1,10 +1,9 @@
-" *********  First start Vundle: git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-"vim -u NONE "load without vimrc"
+" vim -u NONE "load without vimrc"
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
- "source $VIMRUNTIME/vimrc_example.vim
- "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
+" source $VIMRUNTIME/vimrc_example.vim
+" source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
 " source ~/.vim/settings/mswin.vim
@@ -30,52 +29,44 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-" Vundle 
-set nocompatible               " be iMproved
-filetype off                   " required!
-set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
-" let Vundle manage Vundle, required
- Plugin 'gmarik/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
- "Plugin 'leafgarland/typescript-vim'
- "let g:typescript_indent_disable = 1
- Plugin 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
- Plugin 'Quramy/tsuquyomi'
+ Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
+ Plug 'Quramy/tsuquyomi'
  
- Plugin 'mhinz/vim-startify'
- " Plugin 'ervandew/supertab'
- " Plugin 'xolox/vim-misc.git'
- " Plugin 'xolox/vim-session.git'
- " Plugin 'terryma/vim-multiple-cursors'
+ Plug 'mhinz/vim-startify'
+ " Plug 'ervandew/supertab'
+ " Plug 'xolox/vim-misc.git'
+ " Plug 'xolox/vim-session.git'
+ " Plug 'terryma/vim-multiple-cursors'
  " filetype plugin indent on     " required!
- Plugin 'jiangmiao/auto-pairs.git'
- Plugin 't9md/vim-textmanip'
- Plugin 'sheerun/vim-polyglot'
+ Plug 'jiangmiao/auto-pairs'
+ Plug 't9md/vim-textmanip'
+ Plug 'sheerun/vim-polyglot'
  
  " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
-	Plugin 'sukima/xmledit'
-	Plugin 'othree/xml.vim'
+	Plug 'sukima/xmledit'
+	Plug 'othree/xml.vim'
  " php documentor
- Plugin 'tobyS/pdv'
- Plugin 'tobyS/vmustache'
- Plugin 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
+ Plug 'tobyS/pdv'
+ Plug 'tobyS/vmustache'
+ Plug 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
 
- Plugin 'scrooloose/nerdtree'
- Plugin 'scrooloose/nerdcommenter'
- "Plugin 'scrooloose/syntastic'
- " Plugin 'wincent/command-t'
- "Plugin 'kien/ctrlp.vim'
- Plugin 'Shougo/unite.vim'
-   "Plugin 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
- Plugin 'bling/vim-airline'
+ Plug 'scrooloose/nerdtree'
+ Plug 'scrooloose/nerdcommenter'
+ "Plug 'scrooloose/syntastic'
+ " Plug 'wincent/command-t'
+ "Plug 'kien/ctrlp.vim'
+ Plug 'Shougo/unite.vim'
+   "Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
+ Plug 'bling/vim-airline'
 
- Plugin 'vim-scripts/Tagbar'
+ Plug 'vim-scripts/Tagbar'
  "need compilation
- "Plugin 'Valloric/YouCompleteMe'
- Plugin 'kshenoy/vim-signature'
- Plugin 'altercation/vim-colors-solarized'
+ "Plug 'Valloric/YouCompleteMe'
+ Plug 'kshenoy/vim-signature'
+ Plug 'altercation/vim-colors-solarized'
     syntax enable
     set background=dark
 
@@ -86,8 +77,7 @@ call vundle#begin()
  let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
  nnoremap <buffer> <C-l> :call pdv#DocumentWithSnip()<CR>
 
-call vundle#end()            " required
-"filetype plugin indent on    " required
+call plug#end()
 " To ignore plugin indent changes, instead use:
 filetype on
 

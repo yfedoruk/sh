@@ -62,6 +62,8 @@ Plugin 'matze/vim-move'
 Plugin 'tpope/vim-rails.git'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vundle'
+Plug 'leafgarland/typescript-vim'
+let g:typescript_indent_disable = 1
 
 " --------------
 
