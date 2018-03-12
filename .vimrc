@@ -3,7 +3,7 @@
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
- source $VIMRUNTIME/vimrc_example.vim
+ "source $VIMRUNTIME/vimrc_example.vim
  "source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
@@ -39,8 +39,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
  Plugin 'gmarik/Vundle.vim'
 
- Plugin 'leafgarland/typescript-vim'
- let g:typescript_indent_disable = 1
+ "Plugin 'leafgarland/typescript-vim'
+ "let g:typescript_indent_disable = 1
  Plugin 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
  Plugin 'Quramy/tsuquyomi'
  
