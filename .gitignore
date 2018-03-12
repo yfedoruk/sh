@@ -43,6 +43,7 @@
 !/.vim/
 /.vim/*
 !/.vim/settings/
+!/.vim/autoload/
 
 
 #!/.Xkbmap, .Xmodmap
