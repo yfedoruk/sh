@@ -16,8 +16,8 @@ alias l.='ls -d .* --color=auto'
 alias wget='wget -c'
 alias df='df -h'
 alias chowns='sudo chown -R slava:slava'
-alias storm="/usr/local/src/PhpStorm-139.1348/bin/phpstorm.sh"
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
+alias cmus="cmus --show-cursor"
 alias i3-exit='i3-msg exit'
 alias i3-reload='i3-msg reload'
 alias i3-restart='i3-msg restart'
