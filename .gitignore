@@ -34,6 +34,10 @@
 !/.config/Terminal/
 !/.config/nvim/
 
+!/.config/cmus/
+/.config/cmus/*
+!/.config/cmus/rc
+
 !/.config/mc/
 # /.config/mc/ini
 !/.config/mc/mc.ext
