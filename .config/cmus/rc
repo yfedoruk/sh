@@ -1,1 +1,5 @@
 set continue=true
+bind -f common q quit -i
+bind -f common Q quit
+bind -f 1 left win-next
+bind -f 1 right win-next
