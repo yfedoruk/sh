@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+# !!!! if xinirc is not loading, do it: !!!
+# ln -s $HOME/.xinitrc $HOME/.xsessionrc
+# or maybe? ln -s $HOME/.xinitrc $HOME/.xsession
+
+
 # set language toggle on Right WinKey
 setxkbmap -option grp:rwin_toggle us,ru
 
