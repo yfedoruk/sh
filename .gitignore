@@ -14,6 +14,7 @@
 /.config/*
 !/.inputrc
 
+!/.devilspie/
 !/.gconf/
 /.gconf/*
 !/.gconf/apps/

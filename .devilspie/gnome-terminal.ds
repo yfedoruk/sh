@@ -1,0 +1,1 @@
+(if (and (contains (window_role) "gnome-terminal") (contains (window_name) "StartUp")) (begin (set_workspace 1) (fullscreen)))
