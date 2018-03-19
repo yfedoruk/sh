@@ -120,7 +120,7 @@ alias gunn='git update-index --no-assume-unchanged'
 alias gll='git pull'
 alias gsh='git push'
 alias gls='git pull origin yfedoruck && git push origin yfedoruck'
-alias gauto='git add --all && git commit -m"--" && git pull origin yfedoruck && git push origin yfedoruck'
+alias gauto='git add --all && git commit -m"--" && git pull && git push'
 
 alias gprev='git rev-parse --verify HEAD^1'
 alias ghead='git rev-parse --abbrev-ref HEAD'
