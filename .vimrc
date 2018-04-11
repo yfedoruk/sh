@@ -51,7 +51,7 @@ call plug#begin('~/.vim/plugged')
  " php documentor
  Plug 'tobyS/pdv'
  Plug 'tobyS/vmustache'
- Plug 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
+ " Plug 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
 
  Plug 'scrooloose/nerdtree'
  Plug 'scrooloose/nerdcommenter'
