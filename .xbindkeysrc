@@ -11,6 +11,10 @@ control + 1
 "amixer set Master 1%+"
 control + 2
 
+#mute
+"amixer set Master 100%-"
+control + 3
+
 #"mocp -P"
 "mpv pause "
 control + p
