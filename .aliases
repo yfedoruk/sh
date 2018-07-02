@@ -187,6 +187,7 @@ alias cms-up='cd ~/www/docker-cms && ~/www/docker-cms/run/docker/restart.sh && c
 
 alias ihub='cd ~/www/docker/ && ~/www/docker/run/docker/phpfpm/ssh.sh && cd -'
 alias icms='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/phpfpm/ssh.sh && cd -'
+alias cms='cd ~/www/docker-cms/ && ~/www/docker-cms/run/phpfpm/ssh.sh && cd -'
 alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-backend-infrastructure/run/docker/phpfpm/ssh.sh && cd -'
 
 alias icms-cd='cd ~/www/docker-icms/project'
