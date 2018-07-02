@@ -26,4 +26,5 @@ xbindkeys -f ~/.xbindkeysrc
 # map keys
 source ~/.xinitrc
 
+safeeyes &
 
