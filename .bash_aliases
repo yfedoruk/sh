@@ -27,7 +27,7 @@ if [ -f ~/.git-completion.bash  ]; then
   __git_complete gdn _git_diff
 fi
 
-devilspie &
+#devilspie &
 
 fh() {
   eval $(history | fzf +s | sed 's/ *[0-9]* *//')
