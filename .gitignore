@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/.vimrc
+!/.gvimrc
 !/.bash_profile
 !.xbindkeysrc
 !/.Guardfile
