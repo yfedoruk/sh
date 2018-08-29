@@ -46,8 +46,8 @@ call plug#begin('~/.vim/plugged')
  Plug 'sheerun/vim-polyglot'
  "Plug 'skywind3000/asyncrun.vim'
 
- autocmd filetype c nnoremap <F4> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
- autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR><Paste>
+ autocmd filetype c nnoremap <F9> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+ autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR><Paste>
  
  " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
 	Plug 'sukima/xmledit'
