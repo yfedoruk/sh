@@ -63,6 +63,7 @@ call plug#begin('~/.vim/plugged')
  " Plug 'wincent/command-t'
  "Plug 'kien/ctrlp.vim'
  "Plug 'Shougo/unite.vim'
+ Plug 'yegappan/mru'
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
  "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
  "Plug 'Shougo/denite.nvim'
@@ -71,7 +72,7 @@ call plug#begin('~/.vim/plugged')
 
  Plug 'vim-scripts/Tagbar'
  "need compilation
- "Plug 'Valloric/YouCompleteMe'
+ Plug 'Valloric/YouCompleteMe'
  Plug 'kshenoy/vim-signature'
  Plug 'fatih/vim-go'
     set autowrite
