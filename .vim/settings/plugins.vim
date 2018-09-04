@@ -32,8 +32,11 @@ call plug#begin('~/.vim/plugged')
  "Plug 'Shougo/unite.vim'
  Plug 'yegappan/mru'
 
+
+ " ******** fzf **********
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
  Plug 'junegunn/fzf.vim'
+
  "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
  "Plug 'Shougo/denite.nvim'
    "Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
