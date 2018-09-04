@@ -90,7 +90,7 @@ imap ,/ </<C-X><C-O>
   nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
   
   "buffers
-  nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
+  "nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
 
 
  " == AIRLINES == "

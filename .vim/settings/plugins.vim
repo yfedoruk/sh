@@ -36,6 +36,7 @@ call plug#begin('~/.vim/plugged')
  " ******** fzf **********
  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
  Plug 'junegunn/fzf.vim'
+    nmap <leader>b :Buffers<CR>
 
  "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
  "Plug 'Shougo/denite.nvim'
@@ -46,10 +47,10 @@ call plug#begin('~/.vim/plugged')
  "need compilation
  Plug 'Valloric/YouCompleteMe'
  Plug 'kshenoy/vim-signature'
- Plug 'fatih/vim-go'
-    set autowrite
-    autocmd FileType go nmap <leader>b  <Plug>(go-build)
-    autocmd FileType go nmap <leader>r  <Plug>(go-run)
+ "Plug 'fatih/vim-go'
+    "set autowrite
+    "autocmd FileType go nmap <leader>b  <Plug>(go-build)
+    "autocmd FileType go nmap <leader>r  <Plug>(go-run)
  Plug 'altercation/vim-colors-solarized'
     syntax enable
     set background=dark
