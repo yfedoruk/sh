@@ -31,6 +31,7 @@ call plug#begin('~/.vim/plugged')
  "Plug 'ctrlpvim/ctrlp.vim'
  "Plug 'Shougo/unite.vim'
  Plug 'yegappan/mru'
+    nmap <leader>h :MRU<CR>
 
 
  " ******** fzf **********
