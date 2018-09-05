@@ -3,14 +3,13 @@
 call plug#begin('~/.vim/plugged')
 
  Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
-
  Plug 'mhinz/vim-startify'
+ Plug 'jiangmiao/auto-pairs'
  " Plug 'ervandew/supertab'
  " Plug 'xolox/vim-misc.git'
  " Plug 'xolox/vim-session.git'
  " Plug 'terryma/vim-multiple-cursors'
  " filetype plugin indent on     " required!
- Plug 'jiangmiao/auto-pairs'
 
 
 " **************** vim-textmanip ********************
@@ -46,13 +45,13 @@ call plug#begin('~/.vim/plugged')
     nmap <leader>h :MRU<CR>
 
 
- " ******** fzf **********
- Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
- Plug 'junegunn/fzf.vim'
-    nmap <leader>b :Buffers<CR>
+ " == fzf ==
+     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+     Plug 'junegunn/fzf.vim'
+        nmap <leader>b :Buffers<CR>
 
 
- " == AIRLINES == "
+ " == AIRLINES ==
        Plug 'bling/vim-airline'
      "Note: Mappings will be ignored within a NERDTree buffer
       set encoding=utf-8
@@ -99,19 +98,19 @@ call plug#begin('~/.vim/plugged')
 
 
  " == tagbar ==
- Plug 'vim-scripts/Tagbar'
-    nnoremap <silent> <F9> :TagbarToggle<CR>
-      "hide php variables
-      let g:tagbar_type_php  = {
-        \ 'ctagstype' : 'php',
-        \ 'kinds'     : [
-            \ 'i:interfaces',
-            \ 'c:classes',
-            \ 'd:constant definitions',
-            \ 'f:functions',
-            \ 'j:javascript functions:1'
-        \ ]
-      \ }
+     Plug 'vim-scripts/Tagbar'
+        nnoremap <silent> <F9> :TagbarToggle<CR>
+          "hide php variables
+          let g:tagbar_type_php  = {
+            \ 'ctagstype' : 'php',
+            \ 'kinds'     : [
+                \ 'i:interfaces',
+                \ 'c:classes',
+                \ 'd:constant definitions',
+                \ 'f:functions',
+                \ 'j:javascript functions:1'
+            \ ]
+          \ }
 
  "need compilation
 
@@ -121,6 +120,8 @@ call plug#begin('~/.vim/plugged')
      "sudo apt install ycmd
 
  Plug 'kshenoy/vim-signature'
+
+ " == Solarized ==
  Plug 'altercation/vim-colors-solarized'
     syntax enable
     set background=dark
