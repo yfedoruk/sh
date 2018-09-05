@@ -2,11 +2,11 @@
 " source ~/.vim/settings/off.vim
 " source ~/.vim/settings/gvim.rc
 " source ~/.vim/settings/textmanip.vim
+" source ~/.vim/settings/mswin.vim
 " source $VIMRUNTIME/vimrc_example.vim
 " source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
-" source ~/.vim/settings/mswin.vim
 source ~/.vim/settings/keymap.vim
 source ~/.vim/settings/plugins.vim
 set runtimepath+=$HOME/.vim/
