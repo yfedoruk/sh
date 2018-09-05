@@ -14,7 +14,6 @@ set runtimepath+=$HOME/.vim/
 
 " -------------- colorscheme ---------------- "
 "colorscheme ron
-    let g:solarized_termcolors=256
 "colorscheme solarized
   if $COLORTERM == 'gnome-terminal'
       set t_Co=256

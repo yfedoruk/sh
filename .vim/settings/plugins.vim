@@ -145,6 +145,7 @@ call plug#begin('~/.vim/plugged')
 
  " == Solarized ==
  Plug 'altercation/vim-colors-solarized'
+    let g:solarized_termcolors=256
     syntax enable
     set background=dark
 
