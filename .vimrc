@@ -38,25 +38,6 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " for taglist!!!!
 let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
 
-" ---------- tagbar settings ------------- "
-    " window left
-    let g:tagbar_left = 1
-
-    " window width
-    let g:tagbar_width = 30
-
-    " Show arrow instead of +/-
-    let g:tagbar_iconchars = ['▶', '◢']
-
-    " Don't sort
-    "let g:tagbar_sort = 1
-
-    " Single click"
-    let g:tagbar_singleclick = 1
-
-    " autoload
-    autocmd VimEnter * nested :TagbarOpen
-
 " Cursor
     " vertical
 	let &t_EI = "\<Esc>]12;red\x7"
