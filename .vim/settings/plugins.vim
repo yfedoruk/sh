@@ -35,11 +35,6 @@ call plug#begin('~/.vim/plugged')
  " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
 	Plug 'sukima/xmledit'
 	Plug 'othree/xml.vim'
- " php documentor
- Plug 'tobyS/pdv'
- Plug 'tobyS/vmustache'
- " Plug 'SirVer/ultisnips'  "sudo pip install neovim or pip3 install neovim
-
  Plug 'scrooloose/nerdtree'
  Plug 'scrooloose/nerdcommenter'
  "Plug 'scrooloose/syntastic'
@@ -47,12 +42,10 @@ call plug#begin('~/.vim/plugged')
  Plug 'yegappan/mru'
     nmap <leader>h :MRU<CR>
 
-
  " == fzf ==
      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
      Plug 'junegunn/fzf.vim'
         nmap <leader>b :Buffers<CR>
-
 
  " == AIRLINES ==
        Plug 'bling/vim-airline'
