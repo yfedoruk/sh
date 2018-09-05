@@ -21,10 +21,12 @@ call plug#begin('~/.vim/plugged')
     xmap <M-D> <Plug>(textmanip-duplicate-up)
     nmap <M-D> <Plug>(textmanip-duplicate-up)
 
-    map <C-Down> <Plug>(textmanip-move-down)
-    map <C-Up> <Plug>(textmanip-move-up)
-    map <C-h> <Plug>(textmanip-move-left)
-    map <C-l> <Plug>(textmanip-move-right)
+    map <M-Down> <Plug>(textmanip-move-down)
+    map <M-Up> <Plug>(textmanip-move-up)
+    map <M-j> <Plug>(textmanip-move-down)
+    map <M-k> <Plug>(textmanip-move-up)
+    map <M-h> <Plug>(textmanip-move-left)
+    map <M-l> <Plug>(textmanip-move-right)
 
  Plug 'sheerun/vim-polyglot'
  "Plug 'skywind3000/asyncrun.vim'
