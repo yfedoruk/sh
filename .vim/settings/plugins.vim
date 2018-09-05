@@ -42,7 +42,30 @@ call plug#begin('~/.vim/plugged')
  "Plug 'scrooloose/syntastic'
  " Plug 'wincent/command-t'
  "Plug 'ctrlpvim/ctrlp.vim'
- "Plug 'Shougo/unite.vim'
+
+ " == Unite ==
+ " Plug 'Shougo/unite.vim'
+      " auto insert mode"
+      "let g:unite_enable_start_insert = 1
+
+      "place right and bottom
+      "let g:unite_split_rule = "botright"
+
+      "disable overwriting  statusline
+      "let g:unite_force_overwrite_statusline = 0
+
+      "size unite window
+      "let g:unite_winheight = 10
+
+      "pretty icons
+      "let g:unite_candidate_icon="▷"
+
+      "general find mapping
+      "nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
+
+      "buffers
+      "nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
+
  Plug 'yegappan/mru'
     nmap <leader>h :MRU<CR>
 

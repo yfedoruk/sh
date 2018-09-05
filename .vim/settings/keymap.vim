@@ -40,30 +40,6 @@ vmap <S-Tab> <gv
 " remap autocompletion html-tags to ,/
 imap ,/ </<C-X><C-O>
 
-
- " == Unite =="
- 
-  " auto insert mode"
-  let g:unite_enable_start_insert = 1
-
-  "place right and bottom
-  let g:unite_split_rule = "botright"
-
-  "disable overwriting  statusline 
-  let g:unite_force_overwrite_statusline = 0
-
-  "size unite window
-  let g:unite_winheight = 10
-
-  "pretty icons
-  let g:unite_candidate_icon="▷"
-
-  "general find mapping 
-  nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
-  
-  "buffers
-  "nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
-
 "*****************************************************************************
 """ Abbreviations
 "*****************************************************************************
