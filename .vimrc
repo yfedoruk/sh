@@ -11,8 +11,7 @@ source ~/.vim/settings/keymap.vim
 source ~/.vim/settings/plugins.vim
 set runtimepath+=$HOME/.vim/
 
-
-" -------------- colorscheme ---------------- "
+" == colorscheme ==
   if $COLORTERM == 'gnome-terminal'
       set t_Co=256
   endif
