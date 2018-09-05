@@ -108,7 +108,6 @@ call plug#begin('~/.vim/plugged')
             \ ]
           \ }
 
-        " ---------- tagbar settings ------------- "
             " window left
             let g:tagbar_left = 1
 
