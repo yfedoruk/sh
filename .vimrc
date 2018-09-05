@@ -75,6 +75,4 @@ highlight LineNr guifg=#050505 ctermfg=grey     " line number color
 
 :au SessionLoadPost * :source ~/.vimrc
 
-
-let g:multi_cursor_next_key='<C-l>'
 " let mapleader = ","     "map leader key \ to ,

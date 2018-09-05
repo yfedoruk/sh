@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
      "let g:session_autoload = 'no'   "for vim-session.git
      "let g:session_autosave = 'no'  "for vim-session.git
  " Plug 'terryma/vim-multiple-cursors'
+    "let g:multi_cursor_next_key='<C-l>'
  " filetype plugin indent on     " required!
 
 
