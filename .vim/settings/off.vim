@@ -166,3 +166,14 @@ map <M-7> 7gt
 map <M-8> 8gt
 map <M-9> 9gt
 map <M-0> 1gT
+
+
+
+" == this save file on press ESC in insert mode ==
+if has("autocmd")
+	au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+	au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
+	au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
+endif
+
+

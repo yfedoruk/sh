@@ -30,23 +30,14 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
-
  autocmd filetype c nnoremap <F9> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
  autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR><Paste>
- 
 
 " Cursor
     " vertical
 	let &t_EI = "\<Esc>]12;red\x7"
 	autocmd InsertEnter * set cul
 	autocmd InsertLeave * set nocul
-
-" this save file on press ESC in insert mode.
-if has("autocmd")
-	"au InsertEnter * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-	"au InsertLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block"
-	"au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
-endif
 
 set ssop-=options    " do not store global and local values in a session"
 set ssop-=folds      " do not store folds"
@@ -71,7 +62,6 @@ hi cursorline term=bold cterm=bold guibg=#E5E5E5                        "cur. li
 
 set tabstop=4              "set expandtab on 4 spaces
 set expandtab         "Use spaces, not tabs. `set noexpandtab` -- contra.  :#retab! -- Retabulate the whole file
-
 
 " automatically use the '+' buffer (the system clipboard) by default.
 set clipboard=unnamedplus
