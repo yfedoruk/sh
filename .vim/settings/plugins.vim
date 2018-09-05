@@ -37,7 +37,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'othree/xml.vim'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/nerdcommenter'
- "Plug 'scrooloose/syntastic'
+    Plug 'scrooloose/syntastic'
 
  Plug 'yegappan/mru'
     nmap <leader>h :MRU<CR>
