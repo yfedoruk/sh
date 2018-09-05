@@ -1,5 +1,3 @@
-" ***************  mapping *************** "
-
 " Move tabs with alt + left|right
 nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
@@ -32,7 +30,6 @@ nmap :W<cr> :w<cr>
 "map <C-d> yyp
 " vmap <C-p> y'}P "map to php-doc
 
-
 " tabs. Tabbing selected section forward/back (don't write comments on right side of code, so as it thinks whitespace is command!)
 vmap <Tab> >gv
 vmap <S-Tab> <gv
@@ -54,7 +51,6 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
-
 
 " start a subshell. (go to bash without exiting vim)
 nnoremap <LEADER>s :sh<CR>
