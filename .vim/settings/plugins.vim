@@ -126,10 +126,6 @@ call plug#begin('~/.vim/plugged')
      "sudo apt install ycmd
 
  Plug 'kshenoy/vim-signature'
- "Plug 'fatih/vim-go'
-    "set autowrite
-    "autocmd FileType go nmap <leader>b  <Plug>(go-build)
-    "autocmd FileType go nmap <leader>r  <Plug>(go-run)
  Plug 'altercation/vim-colors-solarized'
     syntax enable
     set background=dark
