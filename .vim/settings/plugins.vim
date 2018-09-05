@@ -3,7 +3,6 @@
 call plug#begin('~/.vim/plugged')
 
  Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
- Plug 'Quramy/tsuquyomi'
 
  Plug 'mhinz/vim-startify'
  " Plug 'ervandew/supertab'
@@ -127,7 +126,7 @@ call plug#begin('~/.vim/plugged')
       "let g:airline_symbols.whitespace = 'Ξ'
 
 
- " ******* tagbar *******
+ " == tagbar ==
  Plug 'vim-scripts/Tagbar'
     nnoremap <silent> <F9> :TagbarToggle<CR>
       "hide php variables
@@ -147,6 +146,7 @@ call plug#begin('~/.vim/plugged')
  " == YouCompleteMe ==
  Plug 'Valloric/YouCompleteMe'
      let g:ycm_key_list_select_completion = [ '<TAB>', '<Down>' ]
+     "sudo apt install ycmd
 
  Plug 'kshenoy/vim-signature'
  "Plug 'fatih/vim-go'
