@@ -88,7 +88,9 @@ let g:typescript_indent_disable = 1
  " Plugin 'tpope/vim-fugitive'
  " Plugin 'Lokaltog/vim-easymotion'
  " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
- " Plugin 'vim-scripts/taglist.vim.git'
+ Plugin 'vim-scripts/taglist.vim.git'
+    let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
+
  " Plugin 'vim-scripts/Tagbar.git'
  " Plugin 'gerw/vim-HiLinkTrace.git'
  " Plugin 'scrooloose/nerdcommenter.git'

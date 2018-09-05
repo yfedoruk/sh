@@ -35,9 +35,6 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
  autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR><Paste>
  
 
-" for taglist!!!!
-let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
-
 " Cursor
     " vertical
 	let &t_EI = "\<Esc>]12;red\x7"
