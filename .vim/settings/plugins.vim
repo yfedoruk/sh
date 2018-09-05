@@ -41,8 +41,6 @@ call plug#begin('~/.vim/plugged')
  Plug 'scrooloose/nerdtree'
  Plug 'scrooloose/nerdcommenter'
  "Plug 'scrooloose/syntastic'
- " Plug 'wincent/command-t'
- "Plug 'ctrlpvim/ctrlp.vim'
 
  Plug 'yegappan/mru'
     nmap <leader>h :MRU<CR>
@@ -53,8 +51,6 @@ call plug#begin('~/.vim/plugged')
  Plug 'junegunn/fzf.vim'
     nmap <leader>b :Buffers<CR>
 
- "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
- "Plug 'Shougo/denite.nvim'
    "Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
 
  " == AIRLINES == "

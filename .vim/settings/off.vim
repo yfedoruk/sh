@@ -94,8 +94,12 @@ let g:typescript_indent_disable = 1
  " Plugin 'scrooloose/nerdcommenter.git'
  " Plugin 'ervandew/supertab.git'
 
+ "Plug 'wincent/command-t'
+ "Plug 'ctrlpvim/ctrlp.vim'
+
  " == Unite ==
  " Plug 'Shougo/unite.vim'
+ " Plug 'Shougo/denite.nvim'
       " auto insert mode"
       "let g:unite_enable_start_insert = 1
 
@@ -116,7 +120,7 @@ let g:typescript_indent_disable = 1
 
       "buffers
       "nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
-
+      "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
 " airline
  function! AccentDemo()
   let keys = ['a','b','c','d','e','f','g','h']
