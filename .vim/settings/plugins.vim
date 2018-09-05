@@ -8,6 +8,8 @@ call plug#begin('~/.vim/plugged')
  " Plug 'ervandew/supertab'
  " Plug 'xolox/vim-misc.git'
  " Plug 'xolox/vim-session.git'
+     "let g:session_autoload = 'no'   "for vim-session.git
+     "let g:session_autosave = 'no'  "for vim-session.git
  " Plug 'terryma/vim-multiple-cursors'
  " filetype plugin indent on     " required!
 

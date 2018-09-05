@@ -70,10 +70,6 @@ if has("autocmd")
 	"au VimLeave * silent execute "!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam"
 endif
 
-" vim-session
-let g:session_autoload = 'no'   "for vim-session.git 
-let g:session_autosave = 'no'  "for vim-session.git 
-
 set ssop-=options    " do not store global and local values in a session"
 set ssop-=folds      " do not store folds"
 
