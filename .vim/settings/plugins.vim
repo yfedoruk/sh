@@ -15,19 +15,19 @@ call plug#begin('~/.vim/plugged')
  " filetype plugin indent on     " required!
 
 
-" **************** vim-textmanip ********************
- Plug 't9md/vim-textmanip'
-    xmap <M-d> <Plug>(textmanip-duplicate-down)
-    nmap <M-d> <Plug>(textmanip-duplicate-down)
-    xmap <M-D> <Plug>(textmanip-duplicate-up)
-    nmap <M-D> <Plug>(textmanip-duplicate-up)
+" == vim-textmanip ==
+     Plug 't9md/vim-textmanip'
+        xmap <M-d> <Plug>(textmanip-duplicate-down)
+        nmap <M-d> <Plug>(textmanip-duplicate-down)
+        xmap <M-D> <Plug>(textmanip-duplicate-up)
+        nmap <M-D> <Plug>(textmanip-duplicate-up)
 
-    map <M-Down> <Plug>(textmanip-move-down)
-    map <M-Up> <Plug>(textmanip-move-up)
-    map <M-j> <Plug>(textmanip-move-down)
-    map <M-k> <Plug>(textmanip-move-up)
-    map <M-h> <Plug>(textmanip-move-left)
-    map <M-l> <Plug>(textmanip-move-right)
+        map <M-Down> <Plug>(textmanip-move-down)
+        map <M-Up> <Plug>(textmanip-move-up)
+        map <M-j> <Plug>(textmanip-move-down)
+        map <M-k> <Plug>(textmanip-move-up)
+        map <M-h> <Plug>(textmanip-move-left)
+        map <M-l> <Plug>(textmanip-move-right)
 
  Plug 'sheerun/vim-polyglot'
  "Plug 'skywind3000/asyncrun.vim'
@@ -137,11 +137,11 @@ call plug#begin('~/.vim/plugged')
  Plug 'kshenoy/vim-signature'
 
  " == Solarized ==
- Plug 'altercation/vim-colors-solarized'
-    let g:solarized_termcolors=256
-    syntax enable
-    set background=dark
-    "colorscheme solarized
+     Plug 'altercation/vim-colors-solarized'
+        let g:solarized_termcolors=256
+        syntax enable
+        set background=dark
+        "colorscheme solarized
 
  " PHP documenter script bound to Control-P
  "autocmd FileType php inoremap <C-p> <ESC>:call PhpDocSingle()<CR>i
