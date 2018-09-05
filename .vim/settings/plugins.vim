@@ -33,10 +33,10 @@ call plug#begin('~/.vim/plugged')
  "Plug 'skywind3000/asyncrun.vim'
 
  " autoclose html http://stackoverflow.com/a/134990/2310783. sukima/xmledit + othree/xml.vim
-	Plug 'sukima/xmledit'
-	Plug 'othree/xml.vim'
- Plug 'scrooloose/nerdtree'
- Plug 'scrooloose/nerdcommenter'
+    Plug 'sukima/xmledit'
+    Plug 'othree/xml.vim'
+    Plug 'scrooloose/nerdtree'
+    Plug 'scrooloose/nerdcommenter'
  "Plug 'scrooloose/syntastic'
 
  Plug 'yegappan/mru'
@@ -127,14 +127,15 @@ call plug#begin('~/.vim/plugged')
             " autoload
             autocmd VimEnter * nested :TagbarOpen
 
- "need compilation
+ " *** need compilation ***
 
  " == YouCompleteMe ==
- Plug 'Valloric/YouCompleteMe'
-     let g:ycm_key_list_select_completion = [ '<TAB>', '<Down>' ]
-     "sudo apt install ycmd
+     Plug 'Valloric/YouCompleteMe'
+         let g:ycm_key_list_select_completion = [ '<TAB>', '<Down>' ]
+         "sudo apt install ycmd
 
- Plug 'kshenoy/vim-signature'
+" == Plugin to toggle, display and navigate marks
+    Plug 'kshenoy/vim-signature'
 
  " == Solarized ==
      Plug 'altercation/vim-colors-solarized'
