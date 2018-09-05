@@ -73,7 +73,11 @@ call plug#begin('~/.vim/plugged')
       \ }
 
  "need compilation
+
+ " == YouCompleteMe ==
  Plug 'Valloric/YouCompleteMe'
+     let g:ycm_key_list_select_completion = [ '<TAB>', '<Down>' ]
+
  Plug 'kshenoy/vim-signature'
  "Plug 'fatih/vim-go'
     "set autowrite
