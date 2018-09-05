@@ -40,12 +40,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/syntastic'
 
  Plug 'yegappan/mru'
-    nmap <leader>h :MRU<CR>
+    "nmap <leader>h :MRU<CR>
 
  " == fzf ==
      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
      Plug 'junegunn/fzf.vim'
         nmap <leader>b :Buffers<CR>
+        nmap <leader>h :History<CR>
 
  " == AIRLINES ==
        Plug 'bling/vim-airline'
