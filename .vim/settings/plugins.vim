@@ -12,7 +12,20 @@ call plug#begin('~/.vim/plugged')
  " Plug 'terryma/vim-multiple-cursors'
  " filetype plugin indent on     " required!
  Plug 'jiangmiao/auto-pairs'
+
+
+" **************** vim-textmanip ********************
  Plug 't9md/vim-textmanip'
+    xmap <M-d> <Plug>(textmanip-duplicate-down)
+    nmap <M-d> <Plug>(textmanip-duplicate-down)
+    xmap <M-D> <Plug>(textmanip-duplicate-up)
+    nmap <M-D> <Plug>(textmanip-duplicate-up)
+
+    map <C-Down> <Plug>(textmanip-move-down)
+    map <C-Up> <Plug>(textmanip-move-up)
+    map <C-h> <Plug>(textmanip-move-left)
+    map <C-l> <Plug>(textmanip-move-right)
+
  Plug 'sheerun/vim-polyglot'
  "Plug 'skywind3000/asyncrun.vim'
 
@@ -44,7 +57,21 @@ call plug#begin('~/.vim/plugged')
    "Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
  Plug 'bling/vim-airline'
 
+ " ******* tagbar *******
  Plug 'vim-scripts/Tagbar'
+    nnoremap <silent> <F9> :TagbarToggle<CR>
+      "hide php variables
+      let g:tagbar_type_php  = {
+        \ 'ctagstype' : 'php',
+        \ 'kinds'     : [
+            \ 'i:interfaces',
+            \ 'c:classes',
+            \ 'd:constant definitions',
+            \ 'f:functions',
+            \ 'j:javascript functions:1'
+        \ ]
+      \ }
+
  "need compilation
  Plug 'Valloric/YouCompleteMe'
  Plug 'kshenoy/vim-signature'

@@ -37,34 +37,6 @@ nmap :W<cr> :w<cr>
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
-" ---------- tagbar settings ------------- "
-nnoremap <silent> <F9> :TagbarToggle<CR>
-
-  "hide php variables
-  let g:tagbar_type_php  = {
-    \ 'ctagstype' : 'php',
-    \ 'kinds'     : [
-        \ 'i:interfaces',
-        \ 'c:classes',
-        \ 'd:constant definitions',
-        \ 'f:functions',
-        \ 'j:javascript functions:1'
-    \ ]
-  \ }
-
-" **************** vim-textmanip ********************
-
-xmap <M-d> <Plug>(textmanip-duplicate-down)
-nmap <M-d> <Plug>(textmanip-duplicate-down)
-xmap <M-D> <Plug>(textmanip-duplicate-up)
-nmap <M-D> <Plug>(textmanip-duplicate-up)
-
-map <C-Down> <Plug>(textmanip-move-down)
-map <C-Up> <Plug>(textmanip-move-up)
-map <C-h> <Plug>(textmanip-move-left)
-map <C-l> <Plug>(textmanip-move-right)
-
-
 " remap autocompletion html-tags to ,/
 imap ,/ </<C-X><C-O>
 
