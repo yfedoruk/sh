@@ -51,7 +51,6 @@ call plug#begin('~/.vim/plugged')
  Plug 'junegunn/fzf.vim'
     nmap <leader>b :Buffers<CR>
 
-   "Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
 
  " == AIRLINES == "
        Plug 'bling/vim-airline'
