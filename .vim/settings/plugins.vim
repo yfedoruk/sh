@@ -2,7 +2,6 @@
 
 call plug#begin('~/.vim/plugged')
 
- Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make
  Plug 'mhinz/vim-startify'
  Plug 'jiangmiao/auto-pairs'
  " Plug 'ervandew/supertab'

@@ -101,29 +101,31 @@ let g:typescript_indent_disable = 1
  "Plug 'ctrlpvim/ctrlp.vim'
 
  " == Unite ==
- " Plug 'Shougo/unite.vim'
- " Plug 'Shougo/denite.nvim'
+  Plug 'Shougo/vimproc.vim', { 'build': {'linux': 'make'} }		"cd ~/.vim/bundle/vimproc.vim && make.  https://github.com/Shougo/vimproc.vim/issues/83
+  Plug 'Shougo/unite.vim'
+  Plug 'Shougo/denite.nvim'
       " auto insert mode"
-      "let g:unite_enable_start_insert = 1
+      let g:unite_enable_start_insert = 1
 
       "place right and bottom
-      "let g:unite_split_rule = "botright"
+      let g:unite_split_rule = "botright"
 
       "disable overwriting  statusline
-      "let g:unite_force_overwrite_statusline = 0
+      let g:unite_force_overwrite_statusline = 0
 
       "size unite window
-      "let g:unite_winheight = 10
+      let g:unite_winheight = 10
 
       "pretty icons
-      "let g:unite_candidate_icon="▷"
+      let g:unite_candidate_icon="▷"
 
       "general find mapping
-      "nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
+      nnoremap <leader>f :<C-u>Unite -buffer-name=files -start-insert buffer file_rec/async:!<cr>
 
       "buffers
-      "nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
-      "nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
+      nnoremap <leader>b :<C-u>Unite -start-insert -auto-resize buffer<CR>
+      nnoremap <space>s :Unite -quick-match buffer<cr><Paste>
+
 " airline
  function! AccentDemo()
   let keys = ['a','b','c','d','e','f','g','h']
