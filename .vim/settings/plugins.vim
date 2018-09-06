@@ -35,6 +35,17 @@ call plug#begin('~/.vim/plugged')
     Plug 'sukima/xmledit'
     Plug 'othree/xml.vim'
     Plug 'scrooloose/nerdtree'
+        " autostart
+        autocmd vimenter * NERDTree | wincmd p
+        map <A-1> :NERDTreeFocus<CR>
+        map <A-2> :wincmd p<CR>
+        let NERDTreeMinimalUI = 1
+        let NERDTreeDirArrows = 1
+
+        "close vim if the only window left open is a NERDTree
+        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/syntastic'
 
