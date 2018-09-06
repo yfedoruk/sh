@@ -109,7 +109,7 @@ call plug#begin('~/.vim/plugged')
           \ }
 
             " window left
-            let g:tagbar_left = 1
+            "let g:tagbar_left = 1
 
             " window width
             let g:tagbar_width = 30
