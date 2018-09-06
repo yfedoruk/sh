@@ -105,37 +105,37 @@ call plug#begin('~/.vim/plugged')
 
 
  " == tagbar ==
-     Plug 'vim-scripts/Tagbar'
-        nnoremap <silent> <F9> :TagbarToggle<CR>
+     "Plug 'vim-scripts/Tagbar'
+        "nnoremap <silent> <F9> :TagbarToggle<CR>
           "hide php variables
-          let g:tagbar_type_php  = {
-            \ 'ctagstype' : 'php',
-            \ 'kinds'     : [
-                \ 'i:interfaces',
-                \ 'c:classes',
-                \ 'd:constant definitions',
-                \ 'f:functions',
-                \ 'j:javascript functions:1'
-            \ ]
-          \ }
+          "let g:tagbar_type_php  = {
+            "\ 'ctagstype' : 'php',
+            "\ 'kinds'     : [
+                "\ 'i:interfaces',
+                "\ 'c:classes',
+                "\ 'd:constant definitions',
+                "\ 'f:functions',
+                "\ 'j:javascript functions:1'
+            "\ ]
+          "\ }
 
             " window left
             "let g:tagbar_left = 1
 
             " window width
-            let g:tagbar_width = 30
+            "let g:tagbar_width = 30
 
             " Show arrow instead of +/-
-            let g:tagbar_iconchars = ['▶', '◢']
+            "let g:tagbar_iconchars = ['▶', '◢']
 
             " Don't sort
             "let g:tagbar_sort = 1
 
             " Single click"
-            let g:tagbar_singleclick = 1
+            "let g:tagbar_singleclick = 1
 
             " autoload
-            autocmd VimEnter * nested :TagbarOpen
+            "autocmd VimEnter * nested :TagbarOpen
 
  " *** need compilation ***
 
