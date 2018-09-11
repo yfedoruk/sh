@@ -141,7 +141,12 @@ call plug#begin('~/.vim/plugged')
 
  " == YouCompleteMe ==
      Plug 'Valloric/YouCompleteMe'
-         let g:ycm_key_list_select_completion = [ '<TAB>', '<Down>' ]
+         inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"
+         inoremap <expr> <UP> pumvisible() ? "\<C-Y>" : "\<UP>"
+         inoremap <expr> <DOWN> pumvisible() ? "\<C-Y>" : "\<DOWN>"
+         let g:ycm_key_list_select_completion = ['<TAB>', '<DOWN>']
+         let g:ycm_key_list_previous_completion = ['<S-TAB>', '<UP>']
+         let g:ycm_key_list_stop_completion = ['<C-y>']
          "sudo apt install ycmd
 
 " == Plugin to toggle, display and navigate marks
