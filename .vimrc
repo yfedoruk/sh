@@ -7,6 +7,7 @@
 " source $VIMRUNTIME/mswin.vim        "(windows shortcut keys). /usr/share/vim/vim74/mswin.vim"
 
 set nocompatible
+syntax on
 source ~/.vim/settings/keymap.vim
 source ~/.vim/settings/plugins.vim
 set runtimepath+=$HOME/.vim/
@@ -28,7 +29,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
  "autocmd filetype c nnoremap <F9> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
  autocmd filetype c nnoremap <F9> :w <bar> exec 'make'<CR>
- autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+ autocmd filetype cpp nnoremap <F9> :w <bar> exec 'make'<CR>
 
 " Cursor
     " vertical
