@@ -36,7 +36,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'othree/xml.vim'
     Plug 'scrooloose/nerdtree'
         " autostart
-        "autocmd vimenter * NERDTree | wincmd p
+        autocmd vimenter * NERDTree | wincmd p
         nnoremap <silent> <F3> :NERDTreeToggle<CR>:wincmd p<CR>
         map <A-1> :NERDTreeFocus<CR>
         map <A-2> :wincmd p<CR>

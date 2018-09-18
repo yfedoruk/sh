@@ -54,3 +54,6 @@ cnoreabbrev Qall qall
 
 " start a subshell. (go to bash without exiting vim)
 nnoremap <LEADER>s :sh<CR>
+
+"hi Search guibg=peru guifg=red
+hi Search cterm=NONE ctermfg=red " ctermbg=blue
