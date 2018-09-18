@@ -178,6 +178,9 @@ call plug#begin('~/.vim/plugged')
         map <Leader>j <Plug>(easymotion-j)
         map <Leader>k <Plug>(easymotion-k)
 
+" == GitGutter ==
+    Plug 'airblade/vim-gitgutter'
+
 call plug#end()
 
 " To ignore plugin indent changes, instead use:
