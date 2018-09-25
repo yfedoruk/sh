@@ -3,8 +3,9 @@ nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 map <LEADER>w :w<CR>
-map <LEADER>q :q<CR>
-map <LEADER>wq :wq<CR>
+map <LEADER>qq :q<CR>
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>.
+map <leader>wq :w<bar>bp<bar>sp<bar>bn<bar>bd<CR>.
 map :W :w<CR>
 map :Q :q<CR>
 :map <Home> ^
