@@ -181,6 +181,12 @@ call plug#begin('~/.vim/plugged')
 " == GitGutter ==
     Plug 'airblade/vim-gitgutter'
 
+" == Multiple cursors ==
+    Plug 'terryma/vim-multiple-cursors'
+
+" == Lint ==
+    Plug 'w0rp/ale'
+
 call plug#end()
 
 " To ignore plugin indent changes, instead use:
