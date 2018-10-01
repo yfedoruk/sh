@@ -191,6 +191,8 @@ call plug#begin('~/.vim/plugged')
 " == Lint ==
     Plug 'w0rp/ale'
 
+    "Plug 'dracula/vim', { 'as': 'dracula' }
+
 call plug#end()
 
 " To ignore plugin indent changes, instead use:
