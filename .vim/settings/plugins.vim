@@ -52,6 +52,8 @@ call plug#begin('~/.vim/plugged')
 
  Plug 'yegappan/mru'
     nmap <leader>h :MRU<CR>
+    "https://stackoverflow.com/questions/15397567/vim-error-detected-while-processing-function-snr37-mru-loadlist
+    ":call delete(g:MRU_File)
 
  " == fzf ==
      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -146,6 +148,8 @@ call plug#begin('~/.vim/plugged')
          let g:ycm_key_list_select_completion = ['<TAB>', '<DOWN>']
          let g:ycm_key_list_previous_completion = ['<S-TAB>', '<UP>']
          let g:ycm_key_list_stop_completion = ['<C-y>']
+         "Youcompleteme fix
+            let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
          "sudo apt install ycmd
 
 " == Plugin to toggle, display and navigate marks
