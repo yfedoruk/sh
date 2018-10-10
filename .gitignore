@@ -36,6 +36,7 @@
 
 !/.config/Terminal/
 !/.config/nvim/
+!/.config/emacs/
 
 !/.config/cmus/
 /.config/cmus/*
@@ -68,4 +69,6 @@
 
 # rxvc-terminal
 !/.Xdefaults
+
+!.emacs
 
