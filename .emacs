@@ -9,18 +9,20 @@
     ;;(add-hook 'after-init-hook (lambda () (load "post-init.el")))
         ;; disable automatic loading of packages after init.el is done
         (setq package-enable-at-startup nil)
-    (package-initialize)
+    ;(package-initialize)
 )   ;;http://www.logilab.org/173886
 
 ;; M-x package-list-packages
 ;; M-x list-packages
 
-(add-to-list 'load-path "~/.emacs.d/")
+;(add-to-list 'load-path "~/.emacs.d/")
 (add-to-list 'load-path "~/.config/emacs")
 
 ; CEDET
 (load-file "~/.config/emacs/minimial-cedet-config.el")
 
+; ECB
+(load-file "~/.config/emacs/ecb.el")
 
 ;; ********************** plugins *****************
 ;(elscreen-start)
@@ -35,13 +37,13 @@
 (require 'php-electric)
 (php-electric-mode 1)
 ;; auto-complete
-    (require 'auto-complete-config)
-    (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
-    (ac-config-default)
-    (global-auto-complete-mode t)
-    (define-key ac-completing-map "\t" 'ac-complete)
-    (define-key ac-completing-map "\r" nil)
-    (setq ac-ignore-case nil)
+    ;(require 'auto-complete-config)
+    ;(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+    ;(ac-config-default)
+    ;(global-auto-complete-mode t)
+    ;(define-key ac-completing-map "\t" 'ac-complete)
+    ;(define-key ac-completing-map "\r" nil)
+    ;(setq ac-ignore-case nil)
 
 ;; yasnippet ( http://github.com/capitaomorte/yasnippet )
     ;(require 'yasnippet)
@@ -50,17 +52,6 @@
     ;(yas/load-directory "~/.emacs.d/elpa/yasnippet-20131031.628/snippets/text-mode")   ; bug
       ;; Let's have snippets in the auto-complete dropdown
     ;(add-to-list 'ac-sources 'ac-source-yasnippet)
-
-;; JavaScript
-    (require 'js-comint)
-    (setq inferior-js-program-command "/usr/bin/java org.mozilla.javascript.tools.shell.Main")
-    (add-hook 'js2-mode-hook '(lambda () 
-                    (local-set-key "\C-x\C-e" 'js-send-last-sexp)
-                    (local-set-key "\C-\M-x" 'js-send-last-sexp-and-go)
-                    (local-set-key "\C-cb" 'js-send-buffer)
-                    (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
-                    (local-set-key "\C-cl" 'js-load-file-and-go)
-                    ))
 
 ;; undo-tree
     (require 'undo-tree)
@@ -90,54 +81,10 @@
 (global-set-key [C-up] 'move-text-up)
 (global-set-key [C-down] 'move-text-down)
 
-;; evil
-    ;(require 'evil)
-    ;(evil-mode 1)
-        ; esc quits
-    ;(define-key evil-normal-state-map [escape] 'keyboard-quit)
-    ;(define-key evil-visual-state-map [escape] 'keyboard-quit)
-    ;(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
-    ;(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
-
 	; Map escape to cancel (like C-g)
 	(define-key isearch-mode-map [escape] 'isearch-abort)   ;; isearch
 	(global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
 
-
-;;code view
-(require 'ecb)
-  (require 'ecb-autoloads)
-  (setq ecb-auto-expand-tag-tree 'all)
-  
-  (global-set-key (kbd "C-x C-;") 'ecb-activate)
-  (global-set-key (kbd "C-x C-'") 'ecb-deactivate)
-  (global-set-key (kbd "C-.") 'ecb-goto-window-edit1)
-  (global-set-key (kbd "C-,") 'ecb-goto-window-methods)
-  
-  
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(current-language-environment "utf-8")
- '(ecb-display-image-icons-for-semantic-tags t)
- '(ecb-expand-methods-nodes "10")
- '(ecb-layout-name "left9")
- '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.15028901734104047 . 0.975)))))
- '(ecb-options-version "2.40")
- '(ecb-tip-of-the-day nil)
- '(ecb-tree-expand-symbol-before t)
- '(ecb-use-speedbar-instead-native-tree-buffer nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 
 ;; ++++++++++++++++++++++++ Custom functions +++++++++++++++++++++++++++

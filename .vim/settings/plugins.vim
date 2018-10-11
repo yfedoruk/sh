@@ -50,8 +50,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdcommenter'
     Plug 'scrooloose/syntastic'
 
- Plug 'yegappan/mru'
-    nmap <leader>h :MRU<CR>
+ "Plug 'yegappan/mru'
+    "nmap <leader>h :MRU<CR>
     "https://stackoverflow.com/questions/15397567/vim-error-detected-while-processing-function-snr37-mru-loadlist
     ":call delete(g:MRU_File)
 
