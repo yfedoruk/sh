@@ -153,6 +153,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        #status_command ~/.i3/i3script.sh
+        #status_command SCRIPT_DIR=~/.config/i3blocks MIXER=pulse i3blocks
+        #status_command i3blocks
         tray_output primary
         colors {
             separator #ff1493
@@ -161,6 +164,8 @@ bar {
 }
 
 # my configs
+
+for_window [class="Yad"] floating enable
 
 # disable mouse focus
 focus_follows_mouse no
