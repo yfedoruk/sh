@@ -1,0 +1,16 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="java" externalSystemModuleVersion="1.0" linkedProjectId=":ios" linkedProjectPath="$MODULE_DIR$/../../../ios" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../ios">
+      <excludeFolder url="file://$MODULE_DIR$/../../../ios/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../ios/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../ios/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

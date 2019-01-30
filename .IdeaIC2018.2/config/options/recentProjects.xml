@@ -1,0 +1,103 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="/media/slava/d/games/ZombieBird" />
+        <option value="/media/slava/d/games/ZombieBird/ZombieBird.ipr" />
+        <option value="/media/slava/d/games/hello" />
+        <option value="$USER_HOME$/projects/game" />
+        <option value="/media/slava/d/java" />
+        <option value="$USER_HOME$/IdeaProjects/hello" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="/media/slava/d/games/ZombieBird" />
+      </list>
+    </option>
+    <option name="lastPath" value="/media/slava/d/games/ZombieBird" />
+    <option name="pid" value="23881" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/hello">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548762244572" />
+              <option name="buildTimestamp" value="1533567824673" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/IdeaProjects/untitled">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1534514400405" />
+              <option name="buildTimestamp" value="1533567836026" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/game">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548779712201" />
+              <option name="buildTimestamp" value="1533567824673" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/media/slava/d/games/ZombieBird">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548848549509" />
+              <option name="buildTimestamp" value="1533567802248" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/media/slava/d/games/ZombieBird/ZombieBird.ipr">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548846896400" />
+              <option name="buildTimestamp" value="1533567802248" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/media/slava/d/games/hello">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548788137223" />
+              <option name="buildTimestamp" value="1533567824673" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="/media/slava/d/java">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-182.3911.36" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1548764437095" />
+              <option name="buildTimestamp" value="1533567824673" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="/media/slava/d/games" />
+  </component>
+</application>

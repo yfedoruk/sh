@@ -1,0 +1,329 @@
+2018-08-17 17:04:57,646 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-17 17:04:57,646 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-17 17:04:57,690 [     44]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-17 17:04:57,798 [    152]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 142 ms
+2018-08-17 17:04:57,919 [    273]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-17 17:04:58,102 [    456]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 183 ms
+2018-08-17 17:04:58,102 [    456]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-17 17:04:58,146 [    500]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-17 17:04:58,211 [    565]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2018-08-17 17:04:58,212 [    566]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled: true
+2018-08-17 17:04:58,214 [    568]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2018-08-17 17:04:58,214 [    568]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 166ce6b7
+2018-08-17 17:04:58,218 [    572]   INFO - s.index.CompilerReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException
+2018-08-17 17:04:58,238 [    592]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2018-08-17 17:05:01,021 [   3375]   INFO - kotlin.jps.build.KotlinBuilder - Compiled successfully
+2018-08-17 17:05:01,165 [   3519]   INFO - rains.jps.cmdline.BuildSession - Build duration: 'Kotlin Builder' builder took 2849 ms, 1 sources processed (2849ms per file)
+2018-08-17 17:05:01,705 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-17 17:05:01,705 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-17 17:05:01,762 [     57]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-17 17:05:01,884 [    179]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 162 ms
+2018-08-17 17:05:01,973 [    268]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-17 17:05:02,241 [    536]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 268 ms
+2018-08-17 17:05:02,241 [    536]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-17 17:05:02,287 [    582]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-17 17:05:02,362 [    657]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 658 ms
+2018-08-17 17:05:02,404 [    699]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2018-08-17 18:20:56,178 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-17 18:20:56,179 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-17 18:20:56,263 [     85]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-17 18:20:56,459 [    281]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 263 ms
+2018-08-17 18:20:56,678 [    500]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-17 18:20:57,022 [    844]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 344 ms
+2018-08-17 18:20:57,022 [    844]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-17 18:20:57,094 [    916]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-17 18:20:57,613 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-17 18:20:57,613 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-17 18:20:57,687 [     74]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-17 18:20:57,836 [    223]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 208 ms
+2018-08-17 18:20:57,918 [    305]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-17 18:20:58,196 [    583]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 278 ms
+2018-08-17 18:20:58,196 [    583]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-17 18:20:58,256 [    643]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-17 18:20:58,402 [    789]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 790 ms
+2018-08-17 18:43:25,727 [1348114]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2018-08-29 18:26:42,160 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-29 18:26:42,161 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-29 18:26:42,237 [     77]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-29 18:26:42,477 [    317]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 300 ms
+2018-08-29 18:26:42,677 [    517]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-29 18:26:43,003 [    843]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 327 ms
+2018-08-29 18:26:43,003 [    843]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-29 18:26:43,112 [    952]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-29 18:26:43,545 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-08-29 18:26:43,545 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-08-29 18:26:43,632 [     87]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-08-29 18:26:43,796 [    251]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 221 ms
+2018-08-29 18:26:43,884 [    339]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-08-29 18:26:44,176 [    631]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 291 ms
+2018-08-29 18:26:44,176 [    631]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-08-29 18:26:44,245 [    700]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-08-29 18:26:44,381 [    836]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 837 ms
+2018-08-29 18:27:35,828 [  52283]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2018-11-06 10:24:25,981 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-11-06 10:24:26,011 [     30]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-11-06 10:24:26,501 [    520]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-11-06 10:24:28,043 [   2062]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1940 ms
+2018-11-06 10:24:29,242 [   3261]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-11-06 10:24:31,115 [   5134]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1873 ms
+2018-11-06 10:24:31,115 [   5134]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-11-06 10:24:31,592 [   5611]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-11-06 10:24:33,290 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-11-06 10:24:33,290 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-11-06 10:24:33,341 [     51]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-11-06 10:24:33,470 [    180]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 170 ms
+2018-11-06 10:24:33,531 [    241]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-11-06 10:24:33,744 [    454]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 213 ms
+2018-11-06 10:24:33,745 [    455]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-11-06 10:24:33,796 [    506]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-11-06 10:24:34,048 [    758]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 759 ms
+2018-11-06 11:01:06,384 [2193094]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2018-11-06 11:01:06,386 [2193096]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2018-11-06 11:01:06,386 [2193096]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2018-11-06 11:01:06,388 [2193098]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2018-11-06 11:01:06,388 [2193098]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 56ca4b63
+2018-11-06 11:01:06,409 [2193119]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 1 ms
+2018-11-06 11:01:09,402 [2196112]   INFO - kotlin.jps.build.KotlinBuilder - Compiled successfully
+2018-11-06 11:01:09,524 [2196234]   INFO - brains.jps.incremental.Builder - Dependency analysis found 0 affected files
+2018-11-06 11:01:09,535 [2196245]   INFO - rains.jps.cmdline.BuildSession - Build duration: 'Kotlin Builder' builder took 3025 ms, 1 sources processed (3025ms per file)
+2018-11-06 11:01:10,047 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-11-06 11:01:10,048 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-11-06 11:01:10,103 [     56]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-11-06 11:01:10,247 [    200]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 186 ms
+2018-11-06 11:01:10,321 [    274]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-11-06 11:01:10,512 [    465]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 191 ms
+2018-11-06 11:01:10,512 [    465]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-11-06 11:01:10,563 [    516]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-11-06 11:01:10,634 [    587]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 588 ms
+2018-11-06 11:01:13,954 [   3907]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2018-11-06 11:01:14,138 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-11-06 11:01:14,139 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-11-06 11:01:14,184 [     46]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-11-06 11:01:14,293 [    155]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 144 ms
+2018-11-06 11:01:14,342 [    204]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-11-06 11:01:14,524 [    386]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 182 ms
+2018-11-06 11:01:14,524 [    386]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-11-06 11:01:14,569 [    431]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-11-06 11:01:14,641 [    503]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 503 ms
+2018-11-06 11:01:27,635 [  13497]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2018-11-06 11:01:27,851 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2018-11-06 11:01:27,852 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2018-11-06 11:01:27,898 [     47]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2018-11-06 11:01:28,007 [    156]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 145 ms
+2018-11-06 11:01:28,060 [    209]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2018-11-06 11:01:28,244 [    393]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 184 ms
+2018-11-06 11:01:28,245 [    394]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2018-11-06 11:01:28,290 [    439]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2018-11-06 11:01:28,354 [    503]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 503 ms
+2019-01-29 11:52:55,362 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 11:52:55,363 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 11:52:55,447 [     85]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 11:52:55,616 [    254]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 239 ms
+2019-01-29 11:52:55,815 [    453]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 11:52:56,169 [    807]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 354 ms
+2019-01-29 11:52:56,170 [    808]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2019-01-29 11:52:56,252 [    890]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 11:52:56,789 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 11:52:56,790 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 11:52:56,844 [     55]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 11:52:56,993 [    204]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 186 ms
+2019-01-29 11:52:57,098 [    309]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 11:52:57,380 [    591]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 282 ms
+2019-01-29 11:52:57,380 [    591]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2019-01-29 11:52:57,435 [    646]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 11:52:57,535 [    746]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 747 ms
+2019-01-29 11:53:10,480 [  13691]   INFO - rains.jps.cmdline.BuildSession - No changes found since last build. Exiting.
+2019-01-29 11:53:10,698 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 11:53:10,699 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 11:53:10,770 [     72]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 11:53:10,930 [    232]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 218 ms
+2019-01-29 11:53:10,985 [    287]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 11:53:11,172 [    474]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 187 ms
+2019-01-29 11:53:11,172 [    474]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2019-01-29 11:53:11,218 [    520]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 11:53:11,286 [    588]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 590 ms
+2019-01-29 11:57:50,895 [ 280197]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 13:25:50,844 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:25:50,844 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:25:50,905 [     61]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:25:51,025 [    181]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 167 ms
+2019-01-29 13:25:51,228 [    384]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:25:51,520 [    676]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 293 ms
+2019-01-29 13:25:51,520 [    676]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2019-01-29 13:25:51,598 [    754]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:25:52,092 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:25:52,092 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:25:52,169 [     77]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:25:52,334 [    242]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 225 ms
+2019-01-29 13:25:52,425 [    333]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /home/slava/IdeaProjects/hello, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:25:52,702 [    610]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 277 ms
+2019-01-29 13:25:52,702 [    610]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 1 libraries
+2019-01-29 13:25:52,783 [    691]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:25:52,889 [    797]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 799 ms
+2019-01-29 13:44:04,609 [1092517]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 13:58:18,720 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:58:18,721 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:58:18,777 [     57]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:58:18,903 [    183]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 171 ms
+2019-01-29 13:58:18,994 [    274]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:58:19,190 [    470]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 13:58:19,202 [    482]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 13:58:19,249 [    529]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 254 ms
+2019-01-29 13:58:19,249 [    529]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 13:58:19,328 [    608]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:58:19,403 [    683]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2019-01-29 13:58:19,406 [    686]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2019-01-29 13:58:19,406 [    686]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2019-01-29 13:58:19,410 [    690]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2019-01-29 13:58:19,410 [    690]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 3f639d01
+2019-01-29 13:58:19,414 [    694]   INFO - s.index.CompilerReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException
+2019-01-29 13:58:19,439 [    719]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 7 ms
+2019-01-29 13:58:19,642 [    922]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: core_main
+2019-01-29 13:58:20,079 [   1359]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: ios_main
+2019-01-29 13:58:20,231 [   1511]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: ios-moe_main
+2019-01-29 13:58:20,301 [   1581]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: html_main
+2019-01-29 13:58:20,364 [   1644]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: desktop_main
+2019-01-29 13:58:20,385 [   1665]   INFO - rains.jps.cmdline.BuildSession - Build duration: 'java' builder took 657 ms, 5 sources processed (131ms per file)
+2019-01-29 13:58:20,386 [   1666]   INFO - s.incremental.java.JavaBuilder - javac 1.8.0_101 was used to compile [ios_main, ios-moe_main, desktop_main, html_main, core_main]
+2019-01-29 13:58:20,625 [      1]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:58:20,625 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:58:20,710 [     86]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:58:20,853 [    229]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 211 ms
+2019-01-29 13:58:20,913 [    289]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:58:21,156 [    532]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 13:58:21,180 [    556]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 13:58:21,266 [    642]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 353 ms
+2019-01-29 13:58:21,266 [    642]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 13:58:21,392 [    768]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:58:21,480 [    856]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 857 ms
+2019-01-29 13:58:21,557 [    933]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 13:58:23,831 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:58:23,831 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:58:23,884 [     53]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:58:23,994 [    163]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 153 ms
+2019-01-29 13:58:24,074 [    243]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:58:24,260 [    429]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 13:58:24,272 [    441]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 13:58:24,315 [    484]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 241 ms
+2019-01-29 13:58:24,315 [    484]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 13:58:24,388 [    557]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:58:24,454 [    623]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2019-01-29 13:58:24,456 [    625]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2019-01-29 13:58:24,456 [    625]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2019-01-29 13:58:24,460 [    629]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2019-01-29 13:58:24,460 [    629]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started e7eb406d
+2019-01-29 13:58:24,482 [    651]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2019-01-29 13:58:25,028 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 13:58:25,028 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 13:58:25,073 [     45]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 13:58:25,179 [    151]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 142 ms
+2019-01-29 13:58:25,234 [    206]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 13:58:25,433 [    405]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 13:58:25,447 [    419]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 13:58:25,495 [    467]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 261 ms
+2019-01-29 13:58:25,495 [    467]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 13:58:25,574 [    546]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 13:58:25,644 [    616]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 617 ms
+2019-01-29 14:00:51,793 [ 146765]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 14:01:40,251 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:01:40,252 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:01:40,306 [     55]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:01:40,428 [    177]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 166 ms
+2019-01-29 14:01:40,513 [    262]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:01:40,712 [    461]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:01:40,724 [    473]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:01:40,764 [    513]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 251 ms
+2019-01-29 14:01:40,764 [    513]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:01:40,835 [    584]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:01:40,898 [    647]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
+2019-01-29 14:01:40,900 [    649]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2019-01-29 14:01:40,900 [    649]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2019-01-29 14:01:40,904 [    653]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2019-01-29 14:01:40,904 [    653]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 8a90e29a
+2019-01-29 14:01:40,923 [    672]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
+2019-01-29 14:01:41,379 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:01:41,380 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:01:41,462 [     83]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:01:41,583 [    204]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 184 ms
+2019-01-29 14:01:41,647 [    268]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:01:41,829 [    450]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:01:41,842 [    463]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:01:41,887 [    508]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 240 ms
+2019-01-29 14:01:41,887 [    508]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:01:41,990 [    611]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:01:42,093 [    714]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 715 ms
+2019-01-29 14:02:25,529 [  44150]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 14:17:11,268 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:17:11,269 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:17:11,330 [     62]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:17:11,475 [    207]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 191 ms
+2019-01-29 14:17:11,616 [    348]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:17:11,975 [    707]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:17:11,995 [    727]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:17:12,092 [    824]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 476 ms
+2019-01-29 14:17:12,093 [    825]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:17:12,242 [    974]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:17:12,889 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:17:12,889 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:17:12,937 [     48]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:17:13,044 [    155]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 145 ms
+2019-01-29 14:17:13,106 [    217]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:17:13,305 [    416]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:17:13,316 [    427]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:17:13,368 [    479]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 262 ms
+2019-01-29 14:17:13,368 [    479]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:17:13,439 [    550]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:17:13,507 [    618]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 619 ms
+2019-01-29 14:17:21,358 [   8469]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-29 14:17:48,155 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:17:48,155 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:17:48,230 [     75]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:17:48,406 [    251]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 233 ms
+2019-01-29 14:17:48,534 [    379]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:17:48,812 [    657]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:17:48,833 [    678]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:17:48,890 [    735]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 356 ms
+2019-01-29 14:17:48,891 [    736]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:17:49,041 [    886]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:17:49,562 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-29 14:17:49,563 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-29 14:17:49,609 [     47]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-29 14:17:49,720 [    158]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 148 ms
+2019-01-29 14:17:49,771 [    209]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/java, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-29 14:17:49,936 [    374]   INFO - serialization.JpsProjectLoader - External project config dir is used: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/project
+2019-01-29 14:17:49,948 [    386]   INFO - serialization.JpsProjectLoader - External project config dir is used for modules: /home/slava/.IdeaIC2018.2/system/external_build_system/java.8b25db63/modules
+2019-01-29 14:17:50,017 [    455]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 246 ms
+2019-01-29 14:17:50,018 [    456]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 16 modules, 88 libraries
+2019-01-29 14:17:50,095 [    533]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-29 14:17:50,165 [    603]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 604 ms
+2019-01-29 14:20:37,117 [ 167555]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-01-30 13:14:37,426 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-30 13:14:37,427 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-30 13:14:37,473 [     47]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-30 13:14:37,587 [    161]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 149 ms
+2019-01-30 13:14:37,714 [    288]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/games/ZombieBird/ZombieBird.ipr, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-30 13:14:37,897 [    471]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 183 ms
+2019-01-30 13:14:37,897 [    471]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 6 modules, 0 libraries
+2019-01-30 13:14:37,964 [    538]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-30 13:14:38,038 [    612]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2019-01-30 13:14:38,041 [    615]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2019-01-30 13:14:38,041 [    615]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2019-01-30 13:14:38,047 [    621]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2019-01-30 13:14:38,047 [    621]   INFO - kotlin.jps.build.KotlinBuilder - Label in local history: build started 6a08be78
+2019-01-30 13:14:38,052 [    626]   INFO - s.index.CompilerReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException
+2019-01-30 13:14:38,087 [    661]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 16 ms
+2019-01-30 13:14:38,264 [    838]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: core
+2019-01-30 13:14:38,641 [   1215]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: ios
+2019-01-30 13:14:38,802 [   1376]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: html
+2019-01-30 13:14:38,895 [   1469]   INFO - s.incremental.java.JavaBuilder - Compiling 1 java files; module: desktop
+2019-01-30 13:14:38,923 [   1497]   INFO - s.incremental.java.JavaBuilder - javac 1.8.0_101 was used to compile [core, desktop, html, ios]
+2019-01-30 13:14:39,189 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-01-30 13:14:39,189 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: /home/slava/programs/idea/lib/jps-launcher.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/home/slava/programs/idea/lib/optimizedFileManager.jar
+2019-01-30 13:14:39,233 [     44]   INFO - til.internal.PlatformDependent - Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2019-01-30 13:14:39,340 [    151]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 141 ms
+2019-01-30 13:14:39,383 [    194]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = /media/slava/d/games/ZombieBird/ZombieBird.ipr, global options path = /home/slava/.IdeaIC2018.2/config/options
+2019-01-30 13:14:39,558 [    369]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 175 ms
+2019-01-30 13:14:39,558 [    369]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 6 modules, 0 libraries
+2019-01-30 13:14:39,625 [    436]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-01-30 13:14:39,700 [    511]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 512 ms
+2019-01-30 13:14:39,740 [    551]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.

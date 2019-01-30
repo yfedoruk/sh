@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <file path="/media/slava/d/games/ZombieBird/.idea/gradle.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__ant_1_6_5.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__apache_el_8_0_9_M3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__apache_jsp_8_0_9_M3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__apache_jsp_9_2_14_v20151106.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__asm_5_0_3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__asm_commons_5_0_3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__asm_tree_5_0_3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__asm_util_5_0_3.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__colt_1_2_0.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_1_9_9_jar.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_android_1_9_9_jar.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__commons_codec_1_10.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__commons_collections_3_2_2.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__commons_io_2_4.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__commons_lang3_3_4.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__commons_logging_1_2.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__cssparser_0_9_18.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_1_9_9.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_1_9_9_sources.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_backend_gwt_1_9_9.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_backend_gwt_1_9_9_sources.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_backend_lwjgl_1_9_9.xml" timestamp="1548846937000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_backend_robovm_1_9_9.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_platform_1_9_9_natives_desktop.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gdx_platform_1_9_9_natives_ios.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gson_2_6_2.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gwt_codeserver_2_8_0.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gwt_dev_2_8_0.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__gwt_user_2_8_0.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__htmlunit_2_19.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__htmlunit_core_js_2_17.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__httpclient_4_5_1.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__httpcore_4_4_3.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__httpmime_4_5_1.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__icu4j_50_1_1.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__javax_annotation_api_1_2.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__javax_servlet_api_3_1_0.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_annotations_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_continuation_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_http_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_io_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_jndi_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_plus_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_schemas_3_1_M0.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_security_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_server_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_servlet_9_2_14_v20151106.xml" timestamp="1548846938000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_servlets_9_2_14_v20151106.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_util_9_2_14_v20151106.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_webapp_9_2_14_v20151106.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jetty_xml_9_2_14_v20151106.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jinput_2_0_5.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jinput_platform_2_0_5_natives_linux.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jinput_platform_2_0_5_natives_osx.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jinput_platform_2_0_5_natives_windows.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jlayer_1_0_1_gdx.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jorbis_0_0_17.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jsinterop_annotations_1_0_1.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jsinterop_annotations_1_0_1_sources.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__jutils_1_0_0.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__lwjgl_2_9_2.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__lwjgl_platform_2_9_2_natives_linux.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__lwjgl_platform_2_9_2_natives_osx.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__lwjgl_platform_2_9_2_natives_windows.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__lwjgl_util_2_9_2.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__nekohtml_1_9_22.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__robovm_cocoatouch_2_3_5.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__robovm_objc_2_3_5.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__robovm_rt_2_3_5.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__sac_1_3.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__serializer_2_7_2.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__tapestry_4_0_2.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__validation_api_1_0_0_GA.xml" timestamp="1548846939000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__validation_api_1_0_0_GA_sources.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__websocket_api_9_2_13_v20150730.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__websocket_client_9_2_13_v20150730.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__websocket_common_9_2_13_v20150730.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__xalan_2_7_2.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__xercesImpl_2_11_0.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/libraries/Gradle__xml_apis_1_4_01.xml" timestamp="1548846940000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/misc.xml" timestamp="1548846919000" />
+    <file path="/media/slava/d/games/ZombieBird/.idea/workspace.xml" timestamp="1548848549000" />
+  </project-files>
+</conversion>
+

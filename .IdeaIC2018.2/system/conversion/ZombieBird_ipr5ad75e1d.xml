@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="android-module-to-java-module" />
+    <converter id="android-proguard-options" />
+    <converter id="android-sdk-library" />
+    <converter id="groovy-modules-to-facets" />
+    <converter id="groovy-script-run-configurations" />
+    <converter id="junit-to-android-junit-configurations" />
+    <converter id="kotlin-non-jvm-source-roots" />
+  </applied-converters>
+  <project-files>
+    <file path="/media/slava/d/games/ZombieBird/ZombieBird.iml" timestamp="1548845377000" />
+    <file path="/media/slava/d/games/ZombieBird/ZombieBird.ipr" timestamp="1548846876000" />
+    <file path="/media/slava/d/games/ZombieBird/ZombieBird.iws" timestamp="1548846896000" />
+    <file path="/media/slava/d/games/ZombieBird/android/android.iml" timestamp="1548846876000" />
+    <file path="/media/slava/d/games/ZombieBird/core/core.iml" timestamp="1548845377000" />
+    <file path="/media/slava/d/games/ZombieBird/desktop/desktop.iml" timestamp="1548845377000" />
+    <file path="/media/slava/d/games/ZombieBird/html/html.iml" timestamp="1548845377000" />
+    <file path="/media/slava/d/games/ZombieBird/ios/ios.iml" timestamp="1548845377000" />
+  </project-files>
+</conversion>
+

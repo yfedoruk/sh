@@ -1,0 +1,17 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="java" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0" linkedProjectId=":core:main" linkedProjectPath="$MODULE_DIR$/../../../core" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
+    <output url="file://$MODULE_DIR$/../../../core/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../core/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../core/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-box2d:1.9.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.9" level="project" />
+  </component>
+</module>

@@ -1,0 +1,23 @@
+<module>
+  <component name="DeprecatedModuleOptionManager">
+    <option key="type" value="JAVA_MODULE" />
+  </component>
+  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="java" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0" linkedProjectId=":ios-moe:test" linkedProjectPath="$MODULE_DIR$/../../../ios-moe" rootProjectPath="$MODULE_DIR$/../../.." />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output-test url="file://$MODULE_DIR$/../../../ios-moe/out/test/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../ios-moe/src/test" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="ios-moe_main" />
+    <orderEntry type="library" name="Gradle: multi-os-engine:moe-core:1.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: multi-os-engine:moe-ios:1.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: multi-os-engine:java8support:1.4.0" level="project" />
+    <orderEntry type="module" module-name="core_main" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-backend-moe:1.9.9" level="project" />
+    <orderEntry type="library" name="Gradle: multi-os-engine:moe-ios-junit:1.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx-box2d:1.9.9" level="project" />
+    <orderEntry type="library" name="Gradle: com.badlogicgames.gdx:gdx:1.9.9" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="ios-moe_main" />
+</module>
