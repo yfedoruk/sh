@@ -185,10 +185,10 @@ alias icms-update='cd ~/www/docker-icms/ && ~/www/docker-icms/run/icms/update.sh
 alias casino-up='cd ~/www/casino-sw-backend-infrastructure && ~/www/casino-sw-backend-infrastructure/run/up.sh && cd -'
 alias cms-up='cd ~/www/docker-cms && ~/www/docker-cms/run/docker/restart.sh && cd -'
 
-alias ihub='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/docker/phpfpm/ssh.sh && cd -'
+alias ihub='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/docker/webserver/ssh.sh && cd -'
 alias icms='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/webserver/ssh.sh && cd -'
 alias cms='cd ~/www/docker-cms/ && ~/www/docker-cms/run/docker/phpfpm/ssh.sh && cd -'
-alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-backend-infrastructure/run/docker/phpfpm/ssh.sh && cd -'
+alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-backend-infrastructure/run/docker/webserver/ssh.sh && cd -'
 
 alias icms-cd='cd ~/www/docker-icms/project'
 alias ihub-cd='cd ~/www/docker-ihub/project'
