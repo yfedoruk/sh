@@ -76,3 +76,6 @@
 # idea
 !/.IdeaIC2018.2/
 /.IdeaIC2018.2/*
+!/.IdeaIC2018.2/config/
+/.IdeaIC2018.2/config/*
+!/.IdeaIC2018.2/config/idea.properties
