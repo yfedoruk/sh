@@ -1,9 +1,0 @@
-ByteCodeViewer
-CVS
-Coverage
-Subversion
-TestNG-J
-XPathView
-XSLT-Debugger
-hg4idea
-org.jetbrains.idea.eclipse

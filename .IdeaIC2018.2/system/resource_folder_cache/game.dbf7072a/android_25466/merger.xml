@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="res"><source path="/home/slava/projects/game/android/res"><file path="/home/slava/projects/game/android/res/values/color.xml" qualifiers="" timestamp="1548764348000"><color name="ic_background_color">#FFFFFFFF</color></file><file path="/home/slava/projects/game/android/res/values/styles.xml" qualifiers="" timestamp="1548764348000"><style name="GdxTheme" parent="android:Theme">
-		<item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowFullscreen">true</item>
-    </style></file><file path="/home/slava/projects/game/android/res/values/strings.xml" qualifiers="" timestamp="1548764348000"><string name="app_name">drop</string></file></source></dataSet><mergedItems/></merger>
