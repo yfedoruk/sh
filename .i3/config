@@ -199,6 +199,7 @@ exec --no-startup-id i3-msg 'workspace 1; exec safeeyes'
 
 #!!!!!!!!!!!!!!!!! EXAMPLE HOW TO ENABLE FLOAT !!!!!
 #gvim && i3-msg '[instance="^gvim$"] floating enable'
+# xdotool  search --class ZombieBird
 
 
 for_window [class="URxvt" instance"floating"] floating enable
