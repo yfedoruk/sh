@@ -196,3 +196,12 @@ exec --no-startup-id xbindkeys
 exec --no-startup-id i3-msg 'workspace 1; exec safeeyes'
 #exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
 #exec --no-startup-id tint2
+
+#!!!!!!!!!!!!!!!!! EXAMPLE HOW TO ENABLE FLOAT !!!!!
+#gvim && i3-msg '[instance="^gvim$"] floating enable'
+
+
+for_window [class="URxvt" instance"floating"] floating enable
+
+bindsym $sup+4 exec urxvt -name floating
+for_window [class="URxvt" instance="floating"] floating enable border pixel 3
