@@ -193,3 +193,4 @@ alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-back
 alias icms-cd='cd ~/www/docker-icms/project'
 alias ihub-cd='cd ~/www/docker-ihub/project'
 alias casino-cd='cd ~/www/casino-sw-backend-infrastructure/project'
+alias docker-stop-all='docker stop $(docker ps -aq)'
