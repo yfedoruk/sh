@@ -178,6 +178,7 @@ alias ihub-update='cd ~/www/docker/ && ~/www/docker/run/ihub/update.sh && cd -'
 alias ihub-tests='cd ~/www/docker/ && ~/www/docker/run/_/project/test.sh && cd -'
 
 alias icms-up='cd ~/www/docker-icms/ && ~/www/docker-icms/run/up.sh && cd -'
+alias icms-restart='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/restart.sh && cd -'
 alias icms-tests='cd ~/www/docker-icms/ && ~/www/docker-icms/run/_/project/test.sh && cd -'
 alias icms-update-docker='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/update.sh && cd -'
 alias icms-update='cd ~/www/docker-icms/ && ~/www/docker-icms/run/icms/update.sh && cd -'
