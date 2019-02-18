@@ -173,6 +173,7 @@ gmtmaster(){
 # -- bi --
 
 alias ihub-up='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/up.sh && cd -'
+alias ihub-restart='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/docker/restart.sh && cd -'
 alias ihub-update-docker='cd ~/www/docker/ && ~/www/docker/run/docker/update.sh && ~/www/docker/run/ihub/update.sh && cd -'
 alias ihub-update='cd ~/www/docker/ && ~/www/docker/run/ihub/update.sh && cd -'
 alias ihub-tests='cd ~/www/docker/ && ~/www/docker/run/_/project/test.sh && cd -'
