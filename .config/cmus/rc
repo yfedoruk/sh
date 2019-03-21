@@ -3,3 +3,6 @@ bind -f common q quit -i
 bind -f common Q quit
 bind -f library left win-next
 bind -f library right win-next
+
+# error on start: no audio plugin or something like
+# :set output_plugin=pulse
