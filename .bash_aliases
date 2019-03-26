@@ -65,5 +65,5 @@ if [ `pidof rofi`  ]; then
     rofi -key-run F3 -key-window F2 &
 fi
 
-mount -t ext4 /dev/sda /media/slava/d
+#sudo mount -t ext4 /dev/sda /media/slava/d
 
