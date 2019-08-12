@@ -188,7 +188,7 @@ bindsym $mod+D exec "rofi -modi drun,window,run -show run"
 # start apps
 #exec --no-startup-id /usr/bin/skypeforlinux
 exec --no-startup-id google-chrome
-exec --no-startup-id gnome-terminal
+#exec --no-startup-id gnome-terminal
 exec --no-startup-id /usr/local/bin/pstorm
 exec --no-startup-id $HOME/bin/telegram
 exec --no-startup-id nm-applet
