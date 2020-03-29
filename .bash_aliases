@@ -2,7 +2,9 @@
 #. /etc/profile.d/vte.sh
 
 
-. ~/.bash_completion
+if [ -f ~/.bash_completion ]; then
+    . ~/.bash_completion
+fi
 
 if [ -f ~/.aliases ]; then
     . ~/.aliases
