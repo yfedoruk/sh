@@ -9,6 +9,7 @@
 
 !/.bash_aliases
 !/.bash_completion
+!/.bash_completion.d
 !/.aliases
 !/.autostart
 !/.env
