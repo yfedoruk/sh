@@ -8,6 +8,7 @@
 !/.tmux.conf
 
 !/.bash_aliases
+!/.bash_completion
 !/.aliases
 !/.autostart
 !/.env
