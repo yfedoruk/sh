@@ -1,2 +1,2 @@
-source ~/.aliases        
+source ~/.aliases
 source ~/.env
