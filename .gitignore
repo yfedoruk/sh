@@ -8,6 +8,7 @@
 !/.tmux.conf
 
 !/.bash_aliases
+!/.bashrc
 !/.bash_completion
 !/.bash_completion.d
 !/.aliases
