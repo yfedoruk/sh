@@ -22,26 +22,22 @@ alias cmus="cmus --show-cursor"
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
 alias srce='vi ~/.aliases'
-alias suspend='systemctl suspend'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
-alias update="sudo apt update && sudo apt -y  upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 # alias killp="sudo kill -9 $(ps aux | pidof $1)"
 alias tf='tail -f'
-alias install='sudo apt install'
 alias sound='pulseaudio -k && sudo alsa force-reload'
+
+# ubuntu
+alias install='sudo apt install'
+alias update="sudo apt update && sudo apt -y  upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove"
+alias suspend='systemctl suspend'
+alias shutdown="sudo shutdown -h now"
 alias swap='sudo swapoff -a && sudo swapon -a'
-alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
-
-# --- work --
-
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 alias ppa-find="grep -rn \'$1\' /etc/apt/sources.list /etc/apt/sources.list.d/"
-#scripts
-#alias suspend="sh ~/.sh/suspend.sh"
-alias shutdown="sudo shutdown -h now"
 
 # grep aliases
 alias grepk="grep -rn --exclude-dir=runtime"
@@ -84,9 +80,10 @@ alias gchh='git checkout HEAD'
 alias gll='git pull'
 alias gsh='git push'
 alias gauto='git add --all && git commit -m"--" && git pull && git push'
-
 alias gprev='git rev-parse --verify HEAD^1'
 alias ghead='git rev-parse --abbrev-ref HEAD'
 
+# docker
 alias docker-stop-all='docker stop $(docker ps -aq)'
 alias docker-clean='docker system prune'
+alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
