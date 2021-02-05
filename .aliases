@@ -18,26 +18,10 @@ alias df='df -h'
 alias chowns='sudo chown -R slava:slava'
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias cmus="cmus --show-cursor"
-alias i3-exit='i3-msg exit'
-alias i3-reload='i3-msg reload'
-alias i3-restart='i3-msg restart'
-alias nautilus='nautilus --no-desktop&'
-
 
 alias ffind='find . -name'
 alias src='source ~/.bashrc'
 alias srce='vi ~/.aliases'
-alias psr1='phpcs --colors --standard=PSR1'
-alias psr2='phpcs --colors --standard=PSR2'
-alias zend='phpcs --colors --standard=Zend'
-alias squiz='phpcs --colors --standard=Squiz'
-alias mys='phpcs --colors --standard=MySource'
-alias fpsr1='phpcbf --standard=PSR1'
-alias fpsr2='phpcbf --standard=PSR2'
-alias fzend='phpcbf --standard=Zend'
-alias fsquiz='phpcbf --standard=Squiz'
-alias fmys='phpcbf --standard=MySource'
-alias ap2log='tail -f /var/log/apache2/error.log'
 alias suspend='systemctl suspend'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
@@ -45,17 +29,11 @@ alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'
 alias update="sudo apt update && sudo apt -y  upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove"
 alias mp3="find -iname '*.mp3' -print0 | xargs -0 mid3iconv -eCP1251 --remove-v1"
 # alias killp="sudo kill -9 $(ps aux | pidof $1)"
-alias xdebugon='sudo phpenmod xdebug && sudo service apache2 reload'
-alias xdebugoff='sudo phpdismod xdebug && sudo service apache2 reload'
 alias tf='tail -f'
 alias install='sudo apt install'
-alias phpunit='phpunit --debug'
 alias sound='pulseaudio -k && sudo alsa force-reload'
 alias swap='sudo swapoff -a && sudo swapon -a'
 alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
-
-alias jc='javac'
-alias j='java -Dprism.order=sw'
 
 # --- work --
 
@@ -64,17 +42,6 @@ alias ppa-find="grep -rn \'$1\' /etc/apt/sources.list /etc/apt/sources.list.d/"
 #scripts
 #alias suspend="sh ~/.sh/suspend.sh"
 alias shutdown="sudo shutdown -h now"
-#ytb() {
-#  curl --ciphers RC4-SHA "$(youtube-dl -g https://www.youtube.com/watch?v=$1)" | mplayer -
-#}
-
-ytadd(){
-    mpc add `youtube-dl -f140 -g http://www.youtube.com/watch?v=$1`
-}
-
-ytb(){
-    cd ~ && `nohup mpv $1 --pause &` && cd -
-}
 
 # grep aliases
 alias grepk="grep -rn --exclude-dir=runtime"
@@ -91,13 +58,10 @@ alias gswn='git show --name-only'
 alias gb='git branch'
 alias gt='git tag'
 alias gm='git merge'
-alias gmbase='git merge-base master `git rev-parse --abbrev-ref HEAD`'
 alias gc='git commit -m'
 alias gmsgedit='git reset --soft HEAD^ && git commit -c ORIG_HEAD'
 alias gd='git diff -w'
 alias gdn='git diff -w --name-only'
-#   alias gfd='git status --porcelain | grep -E "^(\?\?|(A|\s|M)M|R.*\s\->)\s" | sed "s/\(??\|\(A\|\s\|M\|M\)M\|R\.\*\s->\)\s//g" |  head -1 | xargs git diff'
-alias grm-new='git status --porcelain | grep -E "^\?\?\s" | sed "s/\??\s//g" | xargs sudo rm -rf'
 alias gfd='git ls-files --modified | head -1 | xargs git diff'
 alias gfdn='git ls-files --modified | head -1 | xargs git diff -w'
 alias gfa='git ls-files --modified | head -1 | xargs git add'
@@ -115,86 +79,14 @@ alias gk='git checkout'
 alias gkb='git checkout -b'
 alias gkm='git checkout master'
 alias gmm='git merge master'
-alias gkd='git checkout dev'
 alias gA='git add --all :/'
 alias gchh='git checkout HEAD'
-alias gun='git update-index --assume-unchanged'
-alias gunn='git update-index --no-assume-unchanged'
 alias gll='git pull'
 alias gsh='git push'
-alias gls='git pull origin yfedoruck && git push origin yfedoruck'
 alias gauto='git add --all && git commit -m"--" && git pull && git push'
 
 alias gprev='git rev-parse --verify HEAD^1'
 alias ghead='git rev-parse --abbrev-ref HEAD'
 
-alias gf='git flow'
-alias ghs='git flow hotfix start'
-alias gfs='git flow feature start'
-alias ghf='git flow hotfix finish'
-alias gff='git flow feature finish'
-hotfix() {
-    git stash
-    git checkout master
-    git pull origin master
-    git checkout develop
-    git pull origin develop
-    git flow hotfix start $1
-    git stash pop
-    git add --all :/
-    git commit -m "$1"
-    #git flow hotfix finish $1
-}
-alias ghauto=hotfix
-
-alias g1sh='git checkout develop && git pull origin develop && git push origin develop'
-alias g0sh='git checkout master && git pull origin master && git push origin master'
-alias g2ll='git checkout master && git pull origin master && \
-	git checkout develop && git pull origin develop'
-alias g2sh='git checkout master && git pull origin master && git push origin master && \
-	git checkout develop && git pull origin develop && git push origin develop'
-
-gmtdev(){
-    source_branch=`git symbolic-ref --short HEAD`
-    git checkout dev
-    git merge $source_branch
-    git push origin dev
-    git checkout $source_branch
-}
-
-
-gmtmaster(){
-    source_branch=`git symbolic-ref --short HEAD`
-    git checkout master
-    git merge $source_branch
-    git push origin master
-    git checkout $source_branch
-}
-
-# -- bi --
-
-alias ihub-up='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/up.sh && cd -'
-alias ihub-restart='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/docker/restart.sh && cd -'
-alias ihub-update-docker='cd ~/www/docker/ && ~/www/docker/run/docker/update.sh && ~/www/docker/run/ihub/update.sh && cd -'
-alias ihub-update='cd ~/www/docker/ && ~/www/docker/run/ihub/update.sh && cd -'
-alias ihub-tests='cd ~/www/docker/ && ~/www/docker/run/_/project/test.sh && cd -'
-
-alias icms-up='cd ~/www/docker-icms/ && ~/www/docker-icms/run/up.sh && cd -'
-alias icms-restart='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/restart.sh && cd -'
-alias icms-tests='cd ~/www/docker-icms/ && ~/www/docker-icms/run/_/project/test.sh && cd -'
-alias icms-update-docker='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/update.sh && cd -'
-alias icms-update='cd ~/www/docker-icms/ && ~/www/docker-icms/run/icms/update.sh && cd -'
-
-alias casino-up='cd ~/www/casino-sw-backend-infrastructure && ~/www/casino-sw-backend-infrastructure/run/up.sh && cd -'
-alias cms-up='cd ~/www/docker-cms && ~/www/docker-cms/run/docker/restart.sh && cd -'
-
-alias ihub='cd ~/www/docker-ihub/ && ~/www/docker-ihub/run/docker/webserver/ssh.sh && cd -'
-alias icms='cd ~/www/docker-icms/ && ~/www/docker-icms/run/docker/webserver/ssh.sh && cd -'
-alias cms='cd ~/www/docker-cms/ && ~/www/docker-cms/run/docker/phpfpm/ssh.sh && cd -'
-alias casino='cd ~/www/casino-sw-backend-infrastructure/ && ~/www/casino-sw-backend-infrastructure/run/docker/webserver/ssh.sh && cd -'
-
-alias icms-cd='cd ~/www/docker-icms/project'
-alias ihub-cd='cd ~/www/docker-ihub/project'
-alias casino-cd='cd ~/www/casino-sw-backend-infrastructure/project'
 alias docker-stop-all='docker stop $(docker ps -aq)'
 alias docker-clean='docker system prune'
