@@ -38,6 +38,7 @@ alias shutdown="sudo shutdown -h now"
 alias swap='sudo swapoff -a && sudo swapon -a'
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
 alias ppa-find="grep -rn \'$1\' /etc/apt/sources.list /etc/apt/sources.list.d/"
+alias app-list="ls /usr/share/applications/*.desktop"
 
 # grep aliases
 alias grepk="grep -rn --exclude-dir=runtime"
@@ -85,5 +86,9 @@ alias ghead='git rev-parse --abbrev-ref HEAD'
 
 # docker
 alias docker-stop-all='docker stop $(docker ps -aq)'
-alias docker-clean='docker system prune'
+#alias docker-clean='docker system prune'
 alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
+alias dps='docker ps -a'
+
+# go
+alias gomt="go mod tidy"
