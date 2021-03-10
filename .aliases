@@ -34,6 +34,7 @@ alias sound='pulseaudio -k && sudo alsa force-reload'
 alias install='sudo apt install'
 alias update="sudo apt update && sudo apt -y  upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove"
 alias suspend='systemctl suspend'
+alias snap-apps='ls -a /var/lib/snapd/desktop/applications/'
 alias shutdown="sudo shutdown -h now"
 alias swap='sudo swapoff -a && sudo swapon -a'
 alias ppa-list='grep -RoPish "ppa.launchpad.net/[^/]+/[^/ ]+" /etc/apt | sort -u | sed -r "s/\.[^/]+\//:/"'
