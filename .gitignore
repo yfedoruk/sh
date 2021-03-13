@@ -16,7 +16,7 @@
 !/.env
 !/.git-completion.bash
 !/.config/
-/.config/*
+# /.config/*
 !/.inputrc
 
 !/.devilspie/
