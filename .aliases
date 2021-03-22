@@ -85,6 +85,7 @@ alias gauto='git add --all && git commit -m"--" && git pull && git push'
 alias gprev='git rev-parse --verify HEAD^1'
 alias grprev='git rev-parse --verify HEAD^1 | xargs git reset --soft'
 alias ghead='git rev-parse --abbrev-ref HEAD'
+alias gremove-first-commit='git update-ref -d HEAD'
 
 # docker
 alias docker-stop-all='docker stop $(docker ps -aq)'
