@@ -65,11 +65,8 @@ alias gfdn='git ls-files --modified | head -1 | xargs git diff -w'
 alias gfa='git ls-files --modified | head -1 | xargs git add'
 alias gfr='git ls-files --modified | head -1 | xargs git checkout HEAD'
 alias ga='git add'
-#alias grh='git reset HEAD'
 alias grhrd='git reset --hard'
 alias grsft='git reset --soft'
-#alias grhH='git reset --hard HEAD'
-#alias grsH='git reset --soft HEAD^'
 alias grm='git rm'
 alias gl='git log'
 alias glfp='git log --first-parent'
@@ -77,7 +74,6 @@ alias gk='git checkout'
 alias gkb='git checkout -b'
 alias gkm='git checkout master'
 alias gmm='git merge master'
-#alias gA='git add --all :/'
 alias gchh='git checkout HEAD'
 alias gll='git pull'
 alias gsh='git push'
@@ -87,6 +83,10 @@ alias grprev='git rev-parse --verify HEAD^1 | xargs git reset --soft'
 alias ghead='git rev-parse --abbrev-ref HEAD'
 alias grename='git branch -m'
 alias gremove-first-commit='git update-ref -d HEAD'
+#alias grh='git reset HEAD'
+#alias grhH='git reset --hard HEAD'
+#alias grsH='git reset --soft HEAD^'
+#alias gA='git add --all :/'
 
 # docker
 alias docker-stop-all='docker stop $(docker ps -aq)'
@@ -95,6 +95,6 @@ alias ddu='docker-compose down --remove-orphans && docker-compose up -d'
 alias dps='docker ps -a'
 
 # go
-alias gomt="go mod tidy"
+alias gotidy="go mod tidy"
 
 alias k9="kill -9"
