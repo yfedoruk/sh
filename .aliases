@@ -20,8 +20,10 @@ alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 alias cmus="cmus --show-cursor"
 
 alias ffind='find . -name'
-alias src='source ~/.bashrc'
+# alias src='source ~/.bashrc'
+alias src='source ~/.zshrc'
 alias srce='vi ~/.aliases'
+alias srcl='vi ~/.local_aliases'
 
 alias awkf="awk -F: '{print $1\" +\"$2}'"
 alias grepf="grep -rn --color=always  $@[1] $@[2] | awk -F: '{print $1\" +\"$2}'"
