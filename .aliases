@@ -69,6 +69,7 @@ alias gfdn='git ls-files --modified | head -1 | xargs git diff -w'
 alias gfrm='git ls-files --modified | head -1 | xargs git rm'
 alias gfa='git ls-files --modified | head -1 | xargs git add'
 alias fa='git ls-files --modified | head -1 | xargs git add'
+#alias fi='git ls-files --modified | head -1 | xargs git update-index --assume-unchanged'
 alias gfr='git ls-files --modified | head -1 | xargs git checkout HEAD'
 alias ga='git add'
 alias grhrd='git reset --hard'
@@ -99,10 +100,12 @@ alias gremove-first-commit='git update-ref -d HEAD'
 # docker
 alias docker-stop-all='docker stop $(docker ps -aq)'
 #alias docker-clean='docker system prune'
-alias dup='docker-compose down --remove-orphans && docker-compose up -d'
+alias docker-up='docker-compose down --remove-orphans && docker-compose up -d'
 alias dps='docker ps -a'
+alias docker-prune='docker container prune'
 
 # go
 alias gotidy="go mod tidy"
+alias gg='go generate ./...'
 
 alias k9="kill -9"
